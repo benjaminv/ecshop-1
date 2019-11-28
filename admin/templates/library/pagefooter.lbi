@@ -1,0 +1,23 @@
+<div id="footer">
+    <p>版权所有 © 2005-2019 商城管理后台演示，并保留所有权利。</p>
+</div>
+{insert_scripts files='jquery.purebox.js,../js/jquery.picTip.js'}
+{if $cat_belongs eq 0 || $brand_belongs eq 0}
+<script type="text/javascript">
+$(function(){
+	$.jqueryAjax('dialog.php', 'is_ajax=1&act=dialog_upgrade', function(data){
+		var content = data.content;
+		pb({
+			id:"categroy_dialog",
+			title:jl_reminder,
+			width:788,
+			content:content,
+			ok_title:"{$lang.button_submit_alt}",
+			drag:false,
+			foot:false,
+			cl_cBtn:false
+		});			
+	});
+});
+</script>
+{/if}
