@@ -1,4 +1,3 @@
-
 <?php $_from = $this->_var['ad_posti']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'posti');if (count($_from)):
     foreach ($_from AS $this->_var['key'] => $this->_var['posti']):
 ?>

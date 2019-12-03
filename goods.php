@@ -1045,7 +1045,6 @@ if (!empty($seo['title'])) {
 else {
 	$smarty->assign('page_title', $position['title']);
 }
-
 $smarty->display('goods.dwt', $cache_id);
 
 ?>

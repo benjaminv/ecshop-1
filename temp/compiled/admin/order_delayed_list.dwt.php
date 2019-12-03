@@ -62,24 +62,24 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $_from = $this->_var['order_delay_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'order_delay_list_0_19539500_1574922671');if (count($_from)):
-    foreach ($_from AS $this->_var['order_delay_list_0_19539500_1574922671']):
+                                <?php $_from = $this->_var['order_delay_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'order_delay_list_0_24750100_1575345457');if (count($_from)):
+    foreach ($_from AS $this->_var['order_delay_list_0_24750100_1575345457']):
 ?>
                             	<tr>
-                                    <td class="sign"><div class="tDiv"><input type="checkbox" name="checkboxes[]"  class="checkbox" value="<?php echo $this->_var['order_delay_list_0_19539500_1574922671']['delayed_id']; ?>" id="checkbox_<?php echo $this->_var['order_delay_list_0_19539500_1574922671']['delayed_id']; ?>"  autocomplete="off" /><label for="checkbox_<?php echo $this->_var['order_delay_list_0_19539500_1574922671']['delayed_id']; ?>" class="checkbox_stars"></label></div></td>
-                                    <td><div class="tDiv"><?php echo htmlspecialchars($this->_var['order_delay_list_0_19539500_1574922671']['user_name']); ?></div></td>
-                                    <td><div class="tDiv"><?php echo $this->_var['order_delay_list_0_19539500_1574922671']['order_sn']; ?></div></td>
+                                    <td class="sign"><div class="tDiv"><input type="checkbox" name="checkboxes[]"  class="checkbox" value="<?php echo $this->_var['order_delay_list_0_24750100_1575345457']['delayed_id']; ?>" id="checkbox_<?php echo $this->_var['order_delay_list_0_24750100_1575345457']['delayed_id']; ?>"  autocomplete="off" /><label for="checkbox_<?php echo $this->_var['order_delay_list_0_24750100_1575345457']['delayed_id']; ?>" class="checkbox_stars"></label></div></td>
+                                    <td><div class="tDiv"><?php echo htmlspecialchars($this->_var['order_delay_list_0_24750100_1575345457']['user_name']); ?></div></td>
+                                    <td><div class="tDiv"><?php echo $this->_var['order_delay_list_0_24750100_1575345457']['order_sn']; ?></div></td>
                                     <td>
                                         <div class="tDiv">
-                                            <?php if ($this->_var['order_delay_list_0_19539500_1574922671']['review_status']): ?>
-                                                <?php echo $this->_var['order_delay_list_0_19539500_1574922671']['apply_day']; ?>
+                                            <?php if ($this->_var['order_delay_list_0_24750100_1575345457']['review_status']): ?>
+                                                <?php echo $this->_var['order_delay_list_0_24750100_1575345457']['apply_day']; ?>
                                             <?php else: ?>
-                                                <input type="text" name="commission_rate" class="text w40" value="<?php echo $this->_var['order_delay_list_0_19539500_1574922671']['apply_day']; ?>" onkeyup="listTable.editInput(this, 'edit_apply_day', '<?php echo $this->_var['order_delay_list_0_19539500_1574922671']['delayed_id']; ?>')">
+                                                <input type="text" name="commission_rate" class="text w40" value="<?php echo $this->_var['order_delay_list_0_24750100_1575345457']['apply_day']; ?>" onkeyup="listTable.editInput(this, 'edit_apply_day', '<?php echo $this->_var['order_delay_list_0_24750100_1575345457']['delayed_id']; ?>')">
                                             <?php endif; ?>
                                         </div>
                                     </td>
-                                    <td><div class="tDiv"><?php echo $this->_var['order_delay_list_0_19539500_1574922671']['review_admin_user']; ?></div></td>
-                                    <td><div class="tDiv handle"><?php echo $this->_var['order_delay_list_0_19539500_1574922671']['review_status_info']; ?></div></td>
+                                    <td><div class="tDiv"><?php echo $this->_var['order_delay_list_0_24750100_1575345457']['review_admin_user']; ?></div></td>
+                                    <td><div class="tDiv handle"><?php echo $this->_var['order_delay_list_0_24750100_1575345457']['review_status_info']; ?></div></td>
                                 </tr>
                                 <?php endforeach; else: ?>
                                 <tr><td class="no-records" colspan="12"><?php echo $this->_var['lang']['no_records']; ?></td></tr>

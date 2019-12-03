@@ -1083,7 +1083,6 @@ if (isset($_REQUEST['act']) && $_REQUEST['act'] == 'load_more_goods' || !$smarty
 				$goodslist[] = array();
 			}
 		}
-
 		$smarty->assign('goods_list', $goodslist);
 		$smarty->assign('category', $cat_id);
 		$smarty->assign('script_name', $dwt_name);
@@ -1136,7 +1135,6 @@ if (!empty($seo['cate_title'])) {
 else {
 	$smarty->assign('page_title', $position['title']);
 }
-
 $smarty->display($dwt_name . '.dwt', $cache_id);
 
 ?>

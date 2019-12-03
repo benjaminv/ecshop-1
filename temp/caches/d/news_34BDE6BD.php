@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:41:"D:/ecshop/themes/ecmoban_dsc2017/news.dwt";i:1;s:61:"D:/ecshop/themes/ecmoban_dsc2017/library/js_languages_new.lbi";i:2;s:63:"D:/ecshop/themes/ecmoban_dsc2017/library/page_header_common.lbi";i:3;s:56:"D:/ecshop/themes/ecmoban_dsc2017/library/page_footer.lbi";}s:7:"expires";i:1574927084;s:8:"maketime";i:1574923484;}<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:41:"D:/ecshop/themes/ecmoban_dsc2017/news.dwt";i:1;s:61:"D:/ecshop/themes/ecmoban_dsc2017/library/js_languages_new.lbi";i:2;s:63:"D:/ecshop/themes/ecmoban_dsc2017/library/page_header_common.lbi";i:3;s:56:"D:/ecshop/themes/ecmoban_dsc2017/library/page_footer.lbi";}s:7:"expires";i:1575338942;s:8:"maketime";i:1575335342;}<!doctype html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -49,10 +49,10 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                     <dl class="fore1">
                         <dt>特色主题</dt>
                         <dd>
-                                                                                                <div class="item"><a href="category.php?id=858" target="_blank">家用电器</a></div>
-                                                                                                                                <div class="item"><a href="category.php?id=3" target="_blank">手机数码</a></div>
-                                                                                                                                <div class="item"><a href="category.php?id=4" target="_blank">电脑办公</a></div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </dd>
+                                                                                                <div class="item"><a href="category.php?id=1" target="_blank"></a></div>
+                                                                                                                                <div class="item"><a href="category.php?id=2" target="_blank"></a></div>
+                                                                                                                                <div class="item"><a href="category.php?id=3" target="_blank"></a></div>
+                                                                                                                                                                                                                                                                        </dd>
                     </dl>
                     <dl class="fore2">
                         <dt>促销活动</dt>
@@ -86,12 +86,6 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                     <button type="submit" class="button button-goods" onclick="checkstore_search_cmt(0)">搜商品</button>
                     <button type="submit" class="button button-store" onclick="checkstore_search_cmt(1)">搜店铺</button>
                                     </form>
-                                <ul class="keyword">
-                                <li><a href="search.php?keywords=%E5%91%A8%E5%A4%A7%E7%A6%8F" target="_blank">周大福</a></li>
-                                <li><a href="search.php?keywords=%E5%86%85%E8%A1%A3" target="_blank">内衣</a></li>
-                                <li><a href="search.php?keywords=Five+Plus" target="_blank">Five Plus</a></li>
-                                <li><a href="search.php?keywords=%E6%89%8B%E6%9C%BA" target="_blank">手机</a></li>
-                                </ul>
                                 
                 <div class="suggestions_box" id="suggestions" style="display:none;">
                     <div class="suggestions_list" id="auto_suggestions_list">
@@ -115,7 +109,6 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                 <div class="nav-main" id="nav">
             <ul class="navitems">
                 <li><a href="index.php" >首页</a></li>
-                                <li><a href="category.php?id=12"  target="_blank">食品特产222</a></li>
                                 <li><a href="store_street.php"  >店铺街</a></li>
                                 <li><a href="presale.php"  >预售</a></li>
                                 <li><a href="news.php" class="curr" >CMS频道</a></li>
@@ -124,8 +117,7 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                                 <li><a href="exchange.php"  >积分商城</a></li>
                                 <li><a href="category.php?id=858"  >大家电</a></li>
                                 <li><a href="category.php?id=6"  >服装城</a></li>
-                                <li><a href="category.php?id=8"  >鞋靴箱包</a></li>
-                                <li><a href="brand.php"  >品牌专区22222</a></li>
+                                <li><a href="brand.php"  >品牌专区</a></li>
                             </ul>
         </div>
             </div>
@@ -351,7 +343,7 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                 </div>
             </div>
             <div class="contact">
-                <div class="contact-item contact-item-first"><i class="f-icon f-icon-tel"></i><span>123456789</span></div>
+                <div class="contact-item contact-item-first"><i class="f-icon f-icon-tel"></i><span>15955555555</span></div>
                 <div class="contact-item">
                 	                    <a id="IM" IM_type="dsc" onclick="openWin(this)" href="javascript:;" class="btn-ctn"><i class="f-icon f-icon-kefu"></i><span>咨询客服</span></a>
                                     </div>
@@ -452,13 +444,12 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                  
                  
             </p>
-                        
-                        <p class="copyright_links">
+                                    <p class="copyright_links">
                                     
-                                                    <a href="http://" target="_blank" title="ECJia">ECJia</a>
+                                                    <a href="http://www.aliyun.com" target="_blank" title="友情链接二">友情链接二</a>
                      
                     <span class="spacer"></span>
-                                                        <a href="http://" target="_blank" title="电商学院">电商学院</a>
+                                                        <a href="http://www.baidu.com" target="_blank" title="友情链接一">友情链接一</a>
                                                                 </p>
                         
                         <p><span>©&nbsp;2015-2019&nbsp;dsc.suanmy.cn&nbsp;版权所有&nbsp;&nbsp;</span><span>ICP备案证书号:</span><a href="http://www.miibeian.gov.cn/" target="_blank">15002903</a>&nbsp;POWERED <a href="http://dsc.suanmy.cn/" target="_blank">EC商城</a>2.0</p>
@@ -481,7 +472,7 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
     <div class="hidden">
         <input type="hidden" name="seller_kf_IM" value="" rev="" ru_id="0" />
         <input type="hidden" name="seller_kf_qq" value="360682078" />
-        <input type="hidden" name="seller_kf_tel" value="123456789" />
+        <input type="hidden" name="seller_kf_tel" value="15955555555" />
         <input type="hidden" name="user_id" ectype="user_id" value="0" />
     </div>
 </div>

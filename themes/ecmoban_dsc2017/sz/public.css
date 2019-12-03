@@ -107,7 +107,7 @@
   display: inline-block;
   width: 15px;
   height: 25px;
-  background: url(../images/public_header_icon.png) no-repeat;
+  background: url(../sz/img/public_header_icon.png) no-repeat;
   background-position: -42px -106px;
   margin-right: 6px;
   vertical-align: middle;
@@ -129,7 +129,7 @@
   display: inline-block;
   width: 15px;
   height: 25px;
-  background: url(../images/public_header_icon.png) no-repeat;
+  background: url(../sz/img/public_header_icon.png) no-repeat;
   background-position: -42px -106px;
   margin-right: 6px;
   vertical-align: middle;
@@ -160,7 +160,7 @@
   display: inline-block;
   width: 18px;
   height: 20px;
-  background: url("../images/public_header_icon.png") no-repeat;
+  background: url("../sz/img/public_header_icon.png") no-repeat;
   background-position: -42px -76px;
   margin-right: 6px;
   vertical-align: text-bottom;
@@ -170,7 +170,7 @@
   display: inline-block;
   width: 18px;
   height: 20px;
-  background: url("../images/public_header_icon.png") no-repeat;
+  background: url("../sz/img/public_header_icon.png") no-repeat;
   background-position: -42px -36px;
   margin-right: 6px;
   vertical-align: middle;
@@ -181,7 +181,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url("../images/public_header_icon.png") no-repeat;
+  background: url("../sz/img/public_header_icon.png") no-repeat;
   background-position: -42px -2px;
   margin-left: 6px;
   vertical-align: middle;

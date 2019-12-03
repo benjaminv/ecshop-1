@@ -1,5 +1,4 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
 <!--{foreach from=$ad_posti item=posti key=key}-->
 <!--{if $posti.posti_type eq 'floor_banner'}-->
 	<div class="full-banner">

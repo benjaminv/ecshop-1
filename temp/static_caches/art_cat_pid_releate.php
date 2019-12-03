@@ -2,20 +2,6 @@
 $data = array (
   0 => 
   array (
-    'cat_id' => '15',
-    'cat_name' => '商家入驻商家说明',
-    'cat_type' => '1',
-    'keywords' => '',
-    'cat_desc' => '',
-    'sort_order' => '50',
-    'show_in_nav' => '0',
-    'parent_id' => '0',
-    'has_children' => '0',
-    'aricle_num' => '5',
-    'description' => 'ecmoban',
-  ),
-  1 => 
-  array (
     'cat_id' => '17',
     'cat_name' => 'App',
     'cat_type' => '1',
@@ -28,7 +14,7 @@ $data = array (
     'aricle_num' => '0',
     'description' => NULL,
   ),
-  2 => 
+  1 => 
   array (
     'cat_id' => '4',
     'cat_name' => '3G资讯',
@@ -42,7 +28,7 @@ $data = array (
     'aricle_num' => '4',
     'description' => '',
   ),
-  3 => 
+  2 => 
   array (
     'cat_id' => '19',
     'cat_name' => '发票问题',
@@ -56,7 +42,7 @@ $data = array (
     'aricle_num' => '1',
     'description' => '',
   ),
-  4 => 
+  3 => 
   array (
     'cat_id' => '20',
     'cat_name' => '公告',
@@ -70,7 +56,7 @@ $data = array (
     'aricle_num' => '3',
     'description' => '',
   ),
-  5 => 
+  4 => 
   array (
     'cat_id' => '21',
     'cat_name' => '促销',
@@ -84,7 +70,7 @@ $data = array (
     'aricle_num' => '3',
     'description' => '',
   ),
-  6 => 
+  5 => 
   array (
     'cat_id' => '1000',
     'cat_name' => '微分销',
@@ -97,6 +83,20 @@ $data = array (
     'has_children' => '0',
     'aricle_num' => '2',
     'description' => '',
+  ),
+  6 => 
+  array (
+    'cat_id' => '1001',
+    'cat_name' => '热门目的地,旅行资讯',
+    'cat_type' => '1',
+    'keywords' => '',
+    'cat_desc' => '',
+    'sort_order' => '50',
+    'show_in_nav' => '0',
+    'parent_id' => '0',
+    'has_children' => '0',
+    'aricle_num' => '1',
+    'description' => '测试',
   ),
   7 => 
   array (
@@ -156,17 +156,17 @@ $data = array (
   ),
   11 => 
   array (
-    'cat_id' => '2',
-    'cat_name' => '网店信息',
-    'cat_type' => '3',
+    'cat_id' => '15',
+    'cat_name' => '商家入驻商家说明',
+    'cat_type' => '1',
     'keywords' => '',
-    'cat_desc' => '网店信息分类',
+    'cat_desc' => '',
     'sort_order' => '50',
     'show_in_nav' => '0',
-    'parent_id' => '1',
+    'parent_id' => '0',
     'has_children' => '0',
     'aricle_num' => '5',
-    'description' => '',
+    'description' => 'ecmoban',
   ),
   12 => 
   array (
@@ -184,6 +184,20 @@ $data = array (
   ),
   13 => 
   array (
+    'cat_id' => '2',
+    'cat_name' => '网店信息',
+    'cat_type' => '3',
+    'keywords' => '',
+    'cat_desc' => '网店信息分类',
+    'sort_order' => '50',
+    'show_in_nav' => '0',
+    'parent_id' => '1',
+    'has_children' => '0',
+    'aricle_num' => '5',
+    'description' => '',
+  ),
+  14 => 
+  array (
     'cat_id' => '5',
     'cat_name' => '新手上路 ',
     'cat_type' => '5',
@@ -196,7 +210,7 @@ $data = array (
     'aricle_num' => '4',
     'description' => '',
   ),
-  14 => 
+  15 => 
   array (
     'cat_id' => '7',
     'cat_name' => '配送与支付 ',
@@ -210,7 +224,7 @@ $data = array (
     'aricle_num' => '4',
     'description' => '',
   ),
-  15 => 
+  16 => 
   array (
     'cat_id' => '8',
     'cat_name' => '服务保证 ',
@@ -224,7 +238,7 @@ $data = array (
     'aricle_num' => '3',
     'description' => '',
   ),
-  16 => 
+  17 => 
   array (
     'cat_id' => '9',
     'cat_name' => '联系我们 ',
@@ -238,7 +252,7 @@ $data = array (
     'aricle_num' => '3',
     'description' => '',
   ),
-  17 => 
+  18 => 
   array (
     'cat_id' => '10',
     'cat_name' => '会员中心',
@@ -252,7 +266,7 @@ $data = array (
     'aricle_num' => '3',
     'description' => '',
   ),
-  18 => 
+  19 => 
   array (
     'cat_id' => '18',
     'cat_name' => 'ios',

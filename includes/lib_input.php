@@ -166,7 +166,7 @@ function INPUT_I($name, $default = '', $filter = NULL, $datas = NULL)
 	else {
 		$data = (isset($default) ? $default : NULL);
 	}
-
+	var_dump($data);die;
 	return $data;
 }
 

@@ -9,7 +9,7 @@
   top: -70px;
   overflow: hidden;
   height: 560px;
-  background: url(../images/banner-default.png) no-repeat center;
+  background: url(../sz/img/banner-default.png) no-repeat center;
 }
 .header .banner li {
   position: relative;
@@ -118,7 +118,7 @@
 .search .theme {
   width: 24px;
   height: 24px;
-  background: url("../images/theme-city-icon.png");
+  background: url("../sz/img/theme-city-icon.png");
   background-size: cover;
 }
 .search input.active {
@@ -144,7 +144,7 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  background: url(../images/del_icon.png) no-repeat center;
+  background: url(../sz/img/del_icon.png) no-repeat center;
   vertical-align: top;
   margin-left: 3px;
   cursor: pointer;
@@ -269,7 +269,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("../images/search-city-icon.png") no-repeat 3px 0;
+  background: url("../sz/img/search-city-icon.png") no-repeat 3px 0;
   vertical-align: top;
 }
 .place .search-modal.has-words li .icon_after:after {
@@ -335,7 +335,7 @@
   padding: 0 20px;
 }
 .time .theme {
-  background: url("../images/theme-time-icon.png");
+  background: url("../sz/img/theme-time-icon.png");
 }
 .time .clear {
   content: '&times';
@@ -360,7 +360,7 @@
   height: 17px;
   line-height: 17px;
   vertical-align: baseline;
-  background: url("../images/night-count.png") no-repeat center;
+  background: url("../sz/img/night-count.png") no-repeat center;
 }
 .time .search-modal {
   width: 680px;
@@ -370,7 +370,7 @@
   padding-left: 20px;
 }
 .people .theme {
-  background: url("../images/theme-people-icon.png");
+  background: url("../sz/img/theme-people-icon.png");
 }
 .people .search-modal {
   padding: 0;
@@ -396,7 +396,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url("../images/search-down-icon.png") no-repeat center;
+  background: url("../sz/img/search-down-icon.png") no-repeat center;
   position: absolute;
   left: 46px;
   top: 24px;
@@ -467,7 +467,7 @@
   top: 8px;
   width: 22px;
   height: 15px;
-  background: url("../images/city-hot-icon.png") no-repeat;
+  background: url("../sz/img/city-hot-icon.png") no-repeat;
   background-size: cover;
 }
 /* 搜索栏tab */
@@ -498,7 +498,7 @@
   top: 0;
   width: 22px;
   height: 15px;
-  background: url("../images/city-hot-icon.png") no-repeat;
+  background: url("../sz/img/city-hot-icon.png") no-repeat;
   background-size: cover;
 }
 .index-block {
@@ -537,7 +537,7 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  background: url(../images/del_icon.png) no-repeat center;
+  background: url(../sz/img/del_icon.png) no-repeat center;
   vertical-align: top;
   margin-left: 3px;
 }
@@ -597,11 +597,11 @@
   right: 15px;
   width: 28px;
   height: 28px;
-  background: url("../images/collect_icon.png") no-repeat center;
+  background: url("../sz/img/collect_icon.png") no-repeat center;
   z-index: 3000;
 }
 .index-block .content li .collect.active {
-  background: url("../images/collect_select_icon.png") no-repeat center;
+  background: url("../sz/img/collect_select_icon.png") no-repeat center;
 }
 .index-block .content li .info {
   margin-top: 17px;
@@ -642,10 +642,10 @@
   left: -1px;
   bottom: -1px;
   border-radius: 0 50px 0 12px;
-  background: url("../images/glass-bg.png") no-repeat 0 0;
+  background: url("../sz/img/glass-bg.png") no-repeat 0 0;
 }
 .index-block .content.homestay a.relave span.three {
-  background: url("../images/glass-bg.png") no-repeat 0 -60px;
+  background: url("../sz/img/glass-bg.png") no-repeat 0 -60px;
 }
 .index-block .content .more_btn {
   width: 144px;
@@ -726,7 +726,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url("../images/totop-icon.png") no-repeat -7px 0;
+  background: url("../sz/img/totop-icon.png") no-repeat -7px 0;
   border-bottom: 1px solid #767676;
 }
 .totop-bar .tool a.bor-none,
@@ -814,7 +814,7 @@
   margin-left: -960px;
 }
 .banner .bx-wrapper .bx-prev {
-  background: url("../images/slide-jiantou.png") no-repeat -61px -141px;
+  background: url("../sz/img/slide-jiantou.png") no-repeat -61px -141px;
   text-indent: -999999px;
   z-index: 999;
   position: absolute;
@@ -825,7 +825,7 @@
 .banner .bx-wrapper .bx-next {
   width: 59px;
   height: 59px;
-  background: url("../images/slide-jiantou.png") no-repeat -2px -141px;
+  background: url("../sz/img/slide-jiantou.png") no-repeat -2px -141px;
   text-indent: -999999px;
   z-index: 999;
   position: absolute;
@@ -833,10 +833,10 @@
   right: 60px;
 }
 .banner .bx-wrapper .bx-prev:hover {
-  background: url("../images/banner-hover-left.png") no-repeat center;
+  background: url("../sz/img/banner-hover-left.png") no-repeat center;
 }
 .banner .bx-wrapper .bx-next:hover {
-  background: url("../images/banner-hover-right.png") no-repeat center;
+  background: url("../sz/img/banner-hover-right.png") no-repeat center;
 }
 .bx-wrapper .bx-controls-direction a {
   width: 59px;
@@ -900,7 +900,7 @@
   box-shadow: none;
 }
 .bx-wrapper .bx-prev {
-  background: url("../images/slide-jiantou.png") no-repeat -61px -71px;
+  background: url("../sz/img/slide-jiantou.png") no-repeat -61px -71px;
   text-indent: -999999px;
   z-index: 999;
   position: absolute;
@@ -910,17 +910,17 @@
 .bx-wrapper .bx-next {
   width: 59px;
   height: 59px;
-  background: url("../images/slide-jiantou.png") no-repeat -2px -71px;
+  background: url("../sz/img/slide-jiantou.png") no-repeat -2px -71px;
   text-indent: -999999px;
   z-index: 999;
   position: absolute;
   right: -99px;
 }
 .bx-wrapper .bx-next:hover {
-  background: url("../images/slide-jiantou.png") no-repeat 0 0;
+  background: url("../sz/img/slide-jiantou.png") no-repeat 0 0;
 }
 .bx-wrapper .bx-prev:hover {
-  background: url("../images/slide-jiantou.png") no-repeat -61px 0;
+  background: url("../sz/img/slide-jiantou.png") no-repeat -61px 0;
 }
 .content .bx-wrapper .bx-viewport {
   box-shadow: none;
