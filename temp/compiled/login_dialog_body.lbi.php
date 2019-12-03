@@ -63,10 +63,10 @@
     	</div>        
     </div>
     <script type="text/javascript">
-	<?php $_from = $this->_var['user_lang']['passport_js']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'lang_0_71808100_1575335571');if (count($_from)):
-    foreach ($_from AS $this->_var['k'] => $this->_var['lang_0_71808100_1575335571']):
+	<?php $_from = $this->_var['user_lang']['passport_js']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'lang_0_89630600_1575361835');if (count($_from)):
+    foreach ($_from AS $this->_var['k'] => $this->_var['lang_0_89630600_1575361835']):
 ?>
-	var <?php echo $this->_var['k']; ?>="<?php echo $this->_var['lang_0_71808100_1575335571']; ?>";
+	var <?php echo $this->_var['k']; ?>="<?php echo $this->_var['lang_0_89630600_1575361835']; ?>";
     <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 		/* *
 		 * 会员登录

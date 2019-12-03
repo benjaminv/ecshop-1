@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:42:"D:/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575348506;s:8:"maketime";i:1575344906;}<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:42:"D:/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575365432;s:8:"maketime";i:1575361832;}<!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,6 +13,8 @@
     
     
     
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/css/style.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/css/iconfont.css">
     <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/mayi_base.css">
     <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/public.css">
     <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/jquery.bxslider.css">
@@ -21,7 +23,13 @@
     <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/index.css">
     <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/laxin.css">
     <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/chatStyle.css">
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script><script type="text/javascript" src="js/jquery.json.js"></script><script type="text/javascript" src="js/transport_jquery.js"></script><script type="text/javascript" src="js/common.js"></script>    
+    
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/css/purebox.css">
+    
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script><script type="text/javascript" src="js/jquery.json.js"></script><script type="text/javascript" src="js/transport_jquery.js"></script><script type="text/javascript" src="js/suggest.js"></script><script type="text/javascript" src="js/scroll_city.js"></script><script type="text/javascript" src="js/utils.js"></script><script type="text/javascript" src="js/warehouse.js"></script><script type="text/javascript" src="js/warehouse_area.js"></script><script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script><script type="text/javascript" src="js/jquery.yomi.js"></script><script type="text/javascript" src="js/cart_common.js"></script><script type="text/javascript" src="js/cart_quick_links.js"></script>    <script src="themes/ecmoban_dsc2017/js/dsc-common.js"></script>
+    <script src="themes/ecmoban_dsc2017/js/jquery.purebox.js?v=12312"></script>
+    
+    
 </head>
 <body>
     
@@ -414,11 +422,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="fr relave search-btn f24 c_white fw600 t-center cursorpt" id="tosearchlist"
-                    _mayi_rp="webindex|condition|button">搜索民宿</div>
+                <div class="fr relave search-btn f24 c_white fw600 t-center cursorpt" id="tosearchlist">搜索民宿</div>
             </div>
         </div>
-        
         
         
         <div class="index-block" style="margin-top: 0px;">
@@ -611,9 +617,10 @@
                 </div>
                 <div class="bx-controls bx-has-pager bx-has-controls-direction">
                     <div class="bx-pager"></div>
-                    <div class="bx-controls-direction"><a class="bx-prev"
-                            href="http://www.mayi.com/index.html">Prev</a><a class="bx-next"
-                            href="http://www.mayi.com/index.html">Next</a></div>
+                    <div class="bx-controls-direction">
+                        <a class="bx-prev" href="#">Prev</a>
+                        <a class="bx-next" href="#">Next</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -638,7 +645,7 @@
                             </div>
                             
                         </a>
-                        <div class="collect cursorpt " title="未收藏" ></div>
+                        <div class="collect cursorpt " title="未收藏" data-id="1"></div>
                         <div class="info clearfloat">
                             <a href="goods.php?id=1" target="_blank">
                                 <div class="fl c_gray_dark f20">
@@ -654,9 +661,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a href="goods.php?id=1" target="_blank">
-                                                            </a>
-                        </div>
+                                                    </div>
                     </li>
                                     </ul>
                 <a href="category.php?id=1&brand=1" target="_blank">
@@ -687,7 +692,7 @@
                             </div>
                             
                         </a>
-                        <div class="collect cursorpt " title="未收藏" ></div>
+                        <div class="collect cursorpt " title="未收藏" data-id="2"></div>
                         <div class="info clearfloat">
                             <a href="http://www.mayi.com/room/851936298" target="_blank">
                                 <div class="fl c_gray_dark f20">
@@ -703,10 +708,7 @@
                                     </p>
                                 </div>
                             </a>
-                            <a href="goods.php?id=2" target="_blank">
-                                <img class="headimg fr circle" src="" alt="头像">
-                            </a>
-                        </div>
+                                                    </div>
                     </li>
                                     </ul>
                 <a href="category.php?id=1&brand=2" target="_blank">
@@ -760,206 +762,6 @@
             </div>
         </div>
     </div>
-    
-    <div class="loginbox" id="loginboxdiv" name="loginboxdiv" style="display:none;">
-        <a class="login-colse" id="loginclose" name="loginclose" onclick="" href="javascript:void(0)"></a>
-        <div class="login-ways clearfloat">
-            <div class="fl phone-account">
-                <ul class="c322c27 clearfloat f18">
-                    <li class="phoneway_current" id="changeloginbyma">手机验证码登录</li>
-                    <li class="mayiway" id="changeloginbyup">帐号密码登录</li>
-                </ul>
-                <div class="login-phone-account">
-                    
-                    <div class="login-input" id="loginbymadiv" name="loginbymadiv">
-                        <input type="hidden" id="li_num" value="0">
-                        <input type="hidden" id="code_num" value="86">
-                        <div class="input">
-                            <span class="phone-icon"></span>
-                            <input class="dlargeinput" type="text" id="loginmobile" name="loginmobile" placeholder="手机号"
-                                value="" onafterpaste="mobileRepAndSetPos(this,/[^\d.]/g,&#39;&#39;)"
-                                onkeyup="mobileRepAndSetPos(this,/[^\d.]/g,&#39;&#39;)" maxlength="11">
-                            <div class="choice_phone_type">
-                                <i code="86">+86</i>
-                                <span class="UP_down choice_nation_open"></span>
-                            </div>
-                        </div>
-                        <div class="nation_list">
-                            <ul class="continent_list">
-                                <li class="">亚洲</li>
-                                <li class="">欧洲</li>
-                                <li class="">美洲</li>
-                                <li class="">大洋洲</li>
-                            </ul>
-                            <ul class="nation_tel_list">
-                                
-                                <li style="display: block;">
-                                    <a href="javascript:void(0);" value="86">中国大陆&nbsp;&nbsp;+86</a>
-                                    <a href="javascript:void(0);" value="82">韩国&nbsp;&nbsp;+82</a>
-                                    <a href="javascript:void(0);" value="60">马来西亚&nbsp;&nbsp;+60</a>
-                                    <a href="javascript:void(0);" value="81">日本&nbsp;&nbsp;+81</a>
-                                    <a href="javascript:void(0);" value="66">泰国&nbsp;&nbsp;+66</a>
-                                    <a href="javascript:void(0);" value="65">新加坡&nbsp;&nbsp;+65</a>
-                                    <a href="javascript:void(0);" value="91">印度&nbsp;&nbsp;+91</a>
-                                    <a href="javascript:void(0);" value="62">印度尼西亚&nbsp;&nbsp;+62</a>
-                                    <a href="javascript:void(0);" value="84">越南&nbsp;&nbsp;+84</a>
-                                    <a href="javascript:void(0);" value="853">中国澳门&nbsp;&nbsp;+853</a>
-                                    <a href="javascript:void(0);" value="852">中国香港&nbsp;&nbsp;+852</a>
-                                    <a href="javascript:void(0);" value="886">中国台湾&nbsp;&nbsp;+886</a>
-                                </li>
-                                <li style="display: none;">
-                                    <a href="javascript:void(0);" value="49">德国&nbsp;&nbsp;+49</a>
-                                    <a href="javascript:void(0);" value="7">俄罗斯&nbsp;&nbsp;+7</a>
-                                    <a href="javascript:void(0);" value="33">法国&nbsp;&nbsp;+33</a>
-                                    <a href="javascript:void(0);" value="380">乌克兰&nbsp;&nbsp;+380</a>
-                                    <a href="javascript:void(0);" value="34">西班牙&nbsp;&nbsp;+34</a>
-                                    <a href="javascript:void(0);" value="39">意大利&nbsp;&nbsp;+39</a>
-                                    <a href="javascript:void(0);" value="44">英国&nbsp;&nbsp;+44</a>
-                                </li>
-                                <li style="display: none;">
-                                    <a href="javascript:void(0);" value="55">巴西&nbsp;&nbsp;+55</a>
-                                    <a href="javascript:void(0);" value="1">加拿大&nbsp;&nbsp;+1</a>
-                                    <a href="javascript:void(0);" value="1">美国&nbsp;&nbsp;+1</a>
-                                </li>
-                                <li style="display: none;">
-                                    <a href="javascript:void(0);" value="61">澳大利亚&nbsp;&nbsp;+61</a>
-                                    <a href="javascript:void(0);" value="64">新西兰&nbsp;&nbsp;+64</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="largeinputbox small-top clearfix">
-                            <div class="dinput fl">
-                                <span class="verification-icon"></span>
-                                <input class="dsmallinput" type="text" id="imagecode" placeholder="图形验证码" value="">
-                            </div>
-                            <div class="yz-code fr">
-                                <img src="http://www.mayi.com/index.html" id="loginauthimage" title="点击刷新">
-                            </div>
-                        </div>
-                        <div class="largeinputbox small-top clearfix" id="maerrordiv">
-                            <div class="dinput fl" id="maerrordiv">
-                                <span class="password-icon"></span>
-                                <input class="dsmallinput" type="text" id="loginphonecode" name="loginphonecode"
-                                    placeholder="短信验证码" value="">
-                            </div>
-                            <div class="yz-code fr">
-                                <input class="sendnumber defaultsend" type="button" id="getloginphonecode"
-                                    name="getloginphonecode" value="获取验证码">
-                            </div>
-                        </div>
-                        <div class="logincheckbox large-top clearfix">
-                            <label class="fl">
-                                <input class="selectcheckbox" type="checkbox" name="rememberloginstate"
-                                    checked="checked" value="">自动登录
-                            </label>
-                        </div>
-                        <div class="logincheckbox large-top clearfix">
-                            <font>未注册的手机号将自动创建为蚂蚁短租帐户</font>
-                        </div>
-                        <div class="btn-wrap btnpdt20">
-                            <a href="javascript:void(0)" id="loginbymado">登录</a>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="login-input" id="loginbyupdiv" name="loginbyupdiv" style="display:none;">
-                        <input type="hidden" id="li_num_1" value="0">
-                        <input type="hidden" id="code_num_1" value="86">
-                        <div class="input">
-                            <span class="user-icon"></span>
-                            <input class="dlargeinput" type="text" id="loginnamein" name="loginnamein"
-                                placeholder="手机号/邮箱/账号" value="" autocomplete="off">
-                            <div class="choice_phone_type_1">
-                                <i tag="CN" code="86">+86</i>
-                                <span class="UP_down choice_nation_open"></span>
-                            </div>
-                        </div>
-                        <div class="nation_list_1">
-                            <ul class="continent_list_1">
-                                <li class="">亚洲</li>
-                                <li class="">欧洲</li>
-                                <li class="">美洲</li>
-                                <li class="">大洋洲</li>
-                            </ul>
-                            <ul class="nation_tel_list_1">
-                                
-                                <li style="display: block;">
-                                    <a href="javascript:void(0);" value="86">中国大陆&nbsp;&nbsp;+86</a>
-                                    <a href="javascript:void(0);" value="82">韩国&nbsp;&nbsp;+82</a>
-                                    <a href="javascript:void(0);" value="60">马来西亚&nbsp;&nbsp;+60</a>
-                                    <a href="javascript:void(0);" value="81">日本&nbsp;&nbsp;+81</a>
-                                    <a href="javascript:void(0);" value="66">泰国&nbsp;&nbsp;+66</a>
-                                    <a href="javascript:void(0);" value="65">新加坡&nbsp;&nbsp;+65</a>
-                                    <a href="javascript:void(0);" value="91">印度&nbsp;&nbsp;+91</a>
-                                    <a href="javascript:void(0);" value="62">印度尼西亚&nbsp;&nbsp;+62</a>
-                                    <a href="javascript:void(0);" value="84">越南&nbsp;&nbsp;+84</a>
-                                    <a href="javascript:void(0);" value="853">中国澳门&nbsp;&nbsp;+853</a>
-                                    <a href="javascript:void(0);" value="852">中国香港&nbsp;&nbsp;+852</a>
-                                    <a href="javascript:void(0);" value="886">中国台湾&nbsp;&nbsp;+886</a>
-                                </li>
-                                <li style="display: none;">
-                                    <a href="javascript:void(0);" value="49">德国&nbsp;&nbsp;+49</a>
-                                    <a href="javascript:void(0);" value="7">俄罗斯&nbsp;&nbsp;+7</a>
-                                    <a href="javascript:void(0);" value="33">法国&nbsp;&nbsp;+33</a>
-                                    <a href="javascript:void(0);" value="380">乌克兰&nbsp;&nbsp;+380</a>
-                                    <a href="javascript:void(0);" value="34">西班牙&nbsp;&nbsp;+34</a>
-                                    <a href="javascript:void(0);" value="39">意大利&nbsp;&nbsp;+39</a>
-                                    <a href="javascript:void(0);" value="44">英国&nbsp;&nbsp;+44</a>
-                                </li>
-                                <li style="display: none;">
-                                    <a href="javascript:void(0);" value="55">巴西&nbsp;&nbsp;+55</a>
-                                    <a href="javascript:void(0);" value="1">加拿大&nbsp;&nbsp;+1</a>
-                                    <a href="javascript:void(0);" value="1">美国&nbsp;&nbsp;+1</a>
-                                </li>
-                                <li style="display: none;">
-                                    <a href="javascript:void(0);" value="61">澳大利亚&nbsp;&nbsp;+61</a>
-                                    <a href="javascript:void(0);" value="64">新西兰&nbsp;&nbsp;+64</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="input small-top">
-                            <span class="password-icon"></span>
-                            <input class="dlargeinput" type="password" id="loginpassin" name="loginpassin"
-                                placeholder="密码" value="">
-                        </div>
-                        <div class="largeinputbox small-top clearfix" id="uperrordiv">
-                            <div class="dinput fl" id="yui_3_5_1_1_1434542056373_108">
-                                <span class="verification-icon"></span>
-                                <input type="text" class="dsmallinput" id="imagecode1" placeholder="图形验证码" value="">
-                            </div>
-                            <div class="yz-code fr">
-                                <img src="http://www.mayi.com/index.html" id="loginauthimage1" title="点击刷新">
-                            </div>
-                        </div>
-                        <div class="logincheckbox large-top clearfix">
-                            <label class="fl">
-                                <input class="selectcheckbox" type="checkbox" name="rememberpass" checked="checked"
-                                    value="">自动登录
-                            </label>
-                        </div>
-                        <div class="btn-wrap btnpdt20">
-                            <a href="javascript:void(0)" id="loginbyupdo" _mayi_rp="web|condition|loginc">登录</a>
-                        </div>
-                        <p class="otherwaytitle mt20">没有账号密码请 <a href="javascript:void(0)"
-                                id="changeloginbymwa">使用手机验证码登录</a></p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="fl t-center third-party">
-                <p class="f18 c322c27 mb20">其他登录方式</p>
-                <ul class="otherway c322c27">
-                    <li class="wxway" id="loginbywx">微信登录</li>
-                    <li class="sinaway" id="loginbysina">微博登录</li>
-                    <li class="qqway" id="loginbyqq">QQ登录</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    <!-- <div id="floatingLayer"-->
-    
-    <!-- <div id="" style="display:none"> 为不显示 -->
     
     <div id="floatingLayer">
         <div class="app-open" style="left: -100%; opacity: 0;">
@@ -1223,6 +1025,38 @@
     //收藏
     $(".collect").on('click',function(){
         var goods_id = $(this).attr('data-id');
+        $.ajax({
+            url:'user.php?act=collect',
+            type:'GET',
+            dataType:'json',
+            data:{id:goods_id},
+            success:function(res){
+                if(res.error !=2){
+                    
+                }else{
+                    // 登录弹框
+                    $.ajax({
+                        url:'get_ajax_content.php?act=get_login_dialog',
+                        type:'POST',
+                        dataType:'json',
+                        data:{back_act:'index.php'},
+                        success:function(re){
+                        
+                            $.pb({
+                                id:"loginDialogBody",
+                                title:'您尚未登录',
+                                width:380,
+                                height:430,
+                                content:re.content, 	//调取内容
+                                drag:false,
+                                foot:false
+                            });
+                            
+                        }
+                    })
+                }
+            }
+        })
     })
 </script>
 </html>

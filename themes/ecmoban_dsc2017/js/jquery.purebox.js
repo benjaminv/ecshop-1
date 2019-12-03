@@ -9,7 +9,7 @@
 	$doc = $(document),
 	$win = $(window),
 	ie = /msie/.test(navigator.userAgent.toLowerCase()),
-	ie6 = ('undefined' == typeof(document.body.style.maxHeight)),
+	ie6 = ('undefined' == typeof($("body").css('maxHeight'))),
 	max = Math.max,
 	min = Math.min,
 
