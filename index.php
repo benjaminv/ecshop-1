@@ -23,6 +23,11 @@ if(!function_exists('recommend_house')){
 		$res =  $db->getAll("SELECT g.goods_id,g.cat_id,g.goods_img,g.user_id,g.brand_id,g.goods_name,g.shop_price,g.goods_weight,g.goods_video,g.goods_tag FROM ".$GLOBALS['ecs']->table('goods')." as g WHERE ".$where." limit 0,3");
 		if(!empty($res)){
 			foreach($res as $k=>$re){
+				$re['favorite'] = 0;
+				if($_SESSION['user_id']){
+					$_is = $db->getOne("SELECT rec_id FROM ".$GLOBALS['ecs']->table('collect_goods')." where user_id = ".$_SESSION['user_id']." AND goods_id = ".$re['goods_id']." LIMIT 1");
+					$re['favorite'] = empty($_is)?0:1;
+				}
 				$re['silders'] = get_goods_gallery($re['goods_id'],6);
 				$re['store'] = get_shop_name($re['user_id'],3); 
 				$re['comments'] = get_comments_percent($re['goods_id']);

@@ -554,7 +554,6 @@
                     <h1 class="f28 c_gray_dark fw700">热门目的地,旅行资讯</h1>
                     <p class="f14 c_gray">
                         <span>灵魂和身体，总有一个在路上</span>
-                        <!--<span class="clear c_green fw600 cursorpt">清除足迹</span>-->
                     </p>
                 </div>
             </div>
@@ -662,7 +661,7 @@
                             </div>
                             
                         </a>
-                        <div class="collect cursorpt " title="未收藏" data-id="<?php echo $this->_var['goods']['goods_id']; ?>"></div>
+                        <div class="collect cursorpt <?php if ($this->_var['goods']['favorite'] == 1): ?>active<?php endif; ?>" title="未收藏" data-id="<?php echo $this->_var['goods']['goods_id']; ?>"></div>
                         <div class="info clearfloat">
                             <a href="goods.php?id=<?php echo $this->_var['goods']['goods_id']; ?>" target="_blank">
                                 <div class="fl c_gray_dark f20">
@@ -721,7 +720,7 @@
                             </div>
                             
                         </a>
-                        <div class="collect cursorpt " title="未收藏" data-id="<?php echo $this->_var['goods']['goods_id']; ?>"></div>
+                        <div class="collect cursorpt <?php if ($this->_var['goods']['favorite'] == 1): ?>active<?php endif; ?>" title="未收藏" data-id="<?php echo $this->_var['goods']['goods_id']; ?>"></div>
                         <div class="info clearfloat">
                             <a href="http://www.mayi.com/room/851936298" target="_blank">
                                 <div class="fl c_gray_dark f20">
