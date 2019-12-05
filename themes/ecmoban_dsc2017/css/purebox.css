@@ -301,7 +301,9 @@
 #loginDialogBody .login-box .tit{ padding-bottom:5px;}
 #loginDialogBody .form .lie{ overflow:hidden; margin-top:5px;}
 #loginDialogBody .form .lie .notpwd{ margin-top:0;}
+#loginDialogBody .form .lie .notpwd.red{ margin-top:0;color: red;}
 #loginDialogBody .form .lie .red:hover{ text-decoration:underline;}
+#loginDialogBody .form .btn{background: red;color: white;}
 /*未登录购物提示弹出登录窗口end*/
 
 /*发票*/

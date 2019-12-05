@@ -99,10 +99,12 @@
                     </li>
                     <li class="ml20 user-action">
                         {if $userinfo.username}
-                        <div class="login-btn t-center fw600 cursorpt " id="loginshow">
-                            {$userinfo.nick_name}
-                            <img src="{if $userinfo.user_picture}{$userinfo.user_picture}{else}themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/touxiang.jpg{/if}"/>
-                        </div>
+						<div class="login-info f0 ">
+							<p class="top-line"></p>
+							<a href="javascript:void(0);" style="border: none;"><img class="user-head circle" src="{if $userinfo.user_picture}{$userinfo.user_picture}{else}themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/touxiang.jpg{/if}" alt="头像" ></a>
+							<span class="f14 fw600 ver-t" style="color: white;">{$userinfo.nick_name}</span>
+							
+						</div>
                         {else}
                         <div class="login-btn t-center fw600 cursorpt " id="loginshow">登录/注册</div>
                         {/if}

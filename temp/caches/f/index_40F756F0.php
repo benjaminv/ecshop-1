@@ -1,11 +1,11 @@
-<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:77:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575528605;s:8:"maketime";i:1575525005;}<!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="Keywords" content="<?php echo $this->_var['keywords']; ?>" />
-    <meta name="Description" content="<?php echo $this->_var['description']; ?>" />
+    <meta name="Keywords" content="玖玖民宿" />
+    <meta name="Description" content="玖玖民宿" />
     
-    <title><?php echo $this->_var['page_title']; ?></title>
+    <title>玖玖民宿</title>
     
     
     
@@ -13,39 +13,37 @@
     
     
     
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/css/style.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/css/iconfont.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/mayi_base.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/public.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/jquery.bxslider.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/layer.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/new_calendar.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/index.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/laxin.css">
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/chatStyle.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/css/style.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/css/iconfont.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/mayi_base.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/public.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/jquery.bxslider.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/layer.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/new_calendar.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/index.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/laxin.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/sz/chatStyle.css">
     
-    <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/css/purebox.css">
+    <link rel="stylesheet" href="themes/ecmoban_dsc2017/css/purebox.css">
     
-    <?php echo $this->smarty_insert_scripts(array('files'=>'jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,suggest.js,scroll_city.js,utils.js,warehouse.js,warehouse_area.js,jquery.SuperSlide.2.1.1.js,jquery.yomi.js,cart_common.js,cart_quick_links.js')); ?>
-    <script src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/dsc-common.js"></script>
-    <script src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/jquery.purebox.js?v=12312"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script><script type="text/javascript" src="js/jquery.json.js"></script><script type="text/javascript" src="js/transport_jquery.js"></script><script type="text/javascript" src="js/suggest.js"></script><script type="text/javascript" src="js/scroll_city.js"></script><script type="text/javascript" src="js/utils.js"></script><script type="text/javascript" src="js/warehouse.js"></script><script type="text/javascript" src="js/warehouse_area.js"></script><script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script><script type="text/javascript" src="js/jquery.yomi.js"></script><script type="text/javascript" src="js/cart_common.js"></script><script type="text/javascript" src="js/cart_quick_links.js"></script>    <script src="themes/ecmoban_dsc2017/js/dsc-common.js"></script>
+    <script src="themes/ecmoban_dsc2017/js/jquery.purebox.js?v=12312"></script>
     
 </head>
-
 <body>
     
     <div class="header">
         <div class="nav index_nav line_h70">
             <div class="w1050 c_white clearfloat">
                 <div class="logo fl">
-                    <a href="<?php echo $this->_var['url_index']; ?>"><img src="<?php echo $this->_var['site_domain']; ?>themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/logo.gif" width="40" alt="logo"></a>
+                    <a href="index.php"><img src="themes/ecmoban_dsc2017/images/logo.gif" width="40" alt="logo"></a>
                 </div>
                 <ul class="fr nav-list clearfloat">
                     <li>
                         <p class="top-line"></p>
                         <span class="service fw600 f14">客服热线</span>
                         <ul class="hover-list radius-6 c_gray_dark t-center">
-                            <li><?php echo $this->_var['service_phone']; ?></li>
+                            <li>15955555555</li>
                         </ul>
                     </li>
                     <li>
@@ -55,14 +53,14 @@
                             <li class="clearfloat">
                                 <div class="fl">
                                     <p class="f18 c_gray_dark mb10">扫码下载APP</p>
-                                    <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/app.jpg"
+                                    <img src="themes/ecmoban_dsc2017/sz/img/app.jpg"
                                         width="112" alt="下载app">
                                     <p class="f14">注册立送500元大礼包</p>
                                 </div>
                                 <div class="fr">
                                     <div class="fl">
                                         <p class="f18 c_gray_dark mb10">扫码快速预订</p>
-                                        <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/JJ8GRMND8SDJCP267PTG7BW8S3AV5T.jpg"
+                                        <img src="themes/ecmoban_dsc2017/sz/img/JJ8GRMND8SDJCP267PTG7BW8S3AV5T.jpg"
                                             width="112" alt="微信小程序">
                                         <p class="f14">蚂蚁短租小程序</p>
                                     </div>
@@ -98,17 +96,8 @@
                         </ul>
                     </li>
                     <li class="ml20 user-action">
-                        <?php if ($this->_var['userinfo']['username']): ?>
-						<div class="login-info f0 ">
-							<p class="top-line"></p>
-							<a href="javascript:void(0);" style="border: none;"><img class="user-head circle" src="<?php if ($this->_var['userinfo']['user_picture']): ?><?php echo $this->_var['userinfo']['user_picture']; ?><?php else: ?>themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/touxiang.jpg<?php endif; ?>" alt="头像" ></a>
-							<span class="f14 fw600 ver-t" style="color: white;"><?php echo $this->_var['userinfo']['nick_name']; ?></span>
-							
-						</div>
-                        <?php else: ?>
-                        <div class="login-btn t-center fw600 cursorpt " id="loginshow">登录/注册</div>
-                        <?php endif; ?>
-                    </li>
+                                                <div class="login-btn t-center fw600 cursorpt " id="loginshow">登录/注册</div>
+                                            </li>
                 </ul>
             </div>
         </div>
@@ -116,27 +105,35 @@
             <div class="bx-wrapper" style="max-width: 100%;">
                 <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 560px;">
                     <ul id="banner" style="width: auto; position: relative;">
-                        <?php $_from = $this->_var['silders']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'silder');if (count($_from)):
-    foreach ($_from AS $this->_var['silder']):
-?>
-                        <li style="float: none; list-style: none; position: absolute; width: 1903px; z-index: 0; display: list-item;max-width: <?php echo $this->_var['silder']['ad_width']; ?>;max-height:<?php echo $this->_var['silder']['ad_height']; ?>;">
-                            <a href="<?php echo $this->_var['silder']['ad_link']; ?>" target="_blank">
-                                <img src="<?php echo $this->_var['silder']['ad_code']; ?>" alt="<?php echo $this->_var['silder']['ad_name']; ?>" width="<?php echo $this->_var['silder']['ad_width']; ?>" height="<?php echo $this->_var['silder']['ad_height']; ?>">
+                                                <li style="float: none; list-style: none; position: absolute; width: 1903px; z-index: 0; display: list-item;max-width: 1920;max-height:516;">
+                            <a href="affiche.php?ad_id=452&amp;uri=https%3A%2F%2Fwww.dscmall.cn%2F" target="_blank">
+                                <img src="data/afficheimg/1490233256986260628.jpg" alt="index_ad1" width="1920" height="516">
                             </a>
                         </li>
-                        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                    </ul>
+                                                <li style="float: none; list-style: none; position: absolute; width: 1903px; z-index: 0; display: list-item;max-width: 1920;max-height:516;">
+                            <a href="affiche.php?ad_id=453&amp;uri=https%3A%2F%2Fwww.dscmall.cn%2F" target="_blank">
+                                <img src="data/afficheimg/1490122707106036304.jpg" alt="index_ad2" width="1920" height="516">
+                            </a>
+                        </li>
+                                                <li style="float: none; list-style: none; position: absolute; width: 1903px; z-index: 0; display: list-item;max-width: 1920;max-height:516;">
+                            <a href="affiche.php?ad_id=454&amp;uri=https%3A%2F%2Fwww.dscmall.cn%2F" target="_blank">
+                                <img src="data/afficheimg/1490122697974513454.jpg" alt="index_ad3" width="1920" height="516">
+                            </a>
+                        </li>
+                                            </ul>
                 </div>
                 <div class="bx-controls bx-has-pager bx-has-controls-direction">
                     <div class="bx-pager bx-default-pager" id="silder-btn">
-                        <?php $_from = $this->_var['silders']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'item');if (count($_from)):
-    foreach ($_from AS $this->_var['k'] => $this->_var['item']):
-?>
-                        <div class="bx-pager-item">
-                            <a href="javascript:void(0)" data-slide-index="<?php echo $this->_var['k']; ?>" class="bx-pager-link"><?php echo $this->_var['k']; ?></a>
+                                                <div class="bx-pager-item">
+                            <a href="javascript:void(0)" data-slide-index="0" class="bx-pager-link">0</a>
                         </div>
-                        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                    </div>
+                                                <div class="bx-pager-item">
+                            <a href="javascript:void(0)" data-slide-index="1" class="bx-pager-link">1</a>
+                        </div>
+                                                <div class="bx-pager-item">
+                            <a href="javascript:void(0)" data-slide-index="2" class="bx-pager-link">2</a>
+                        </div>
+                                            </div>
                     <div class="bx-controls-direction" id="silder-change">
                         <a class="bx-prev" href="javascript:void(0)">Prev</a>
                         <a class="bx-next" href="javascript:void(0)">Next</a>
@@ -167,7 +164,6 @@
                         <div class="suggest_results search-modal has-words radius-12 c_gray_dark" id="suggest"
                              style="overflow: hidden; outline: none;">
                             <ul id="suggestul">
-
                             </ul>
                         </div>
                         <div class="error_tip_list search-modal radius-12" id="tip_searchcity"
@@ -405,7 +401,6 @@
                         <div class="chose-people cursorpt input-box">
                             <span class="f18 c_gray_dark fw700" id="countVal">不限</span>
                         </div>
-
                         <div id="ruzhunum" class="search-modal radius-12 c_gray_dark"
                             _mayi_rp="webindex|condition|peopleNum" tabindex="4"
                             style="overflow: hidden; outline: none;">
@@ -431,7 +426,7 @@
         
         <div class="index-block" style="margin-top: 0px;">
             <div class="header clearfloat">
-                <img class="fl" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/homestay.png">
+                <img class="fl" src="themes/ecmoban_dsc2017/sz/img/homestay.png">
                 <div class="fl">
                     <h1 class="f28 c_gray_dark fw700">
                         民宿,旅途中的家
@@ -444,61 +439,56 @@
             <div class="content clearfloat homestay">
                 
                 <div class="fl f0">
-                    <?php $_from = $this->_var['house_category']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'category');if (count($_from)):
-    foreach ($_from AS $this->_var['k'] => $this->_var['category']):
-?>
-                    <?php if ($this->_var['k'] <= 3): ?>
-                    <?php if ($this->_var['k'] == 1): ?>
-                    <a class="relave radius-12 w515" href="<?php echo $this->_var['category']['url']; ?>">
+                                                                                <a class="relave radius-12 w515" href="category.php?id=1">
                         <img class=" lazy" width="515" height="261"
-                            alt="<?php echo $this->_var['category']['name']; ?>" src="<?php echo $this->_var['category']['cat_icon']; ?>"
+                            alt="民居" src="images/cat_icon/15750844229000.jpg"
                             style="display: inline;">
-                        <span class="f20 c_gray_dark fw600"><?php echo $this->_var['category']['name']; ?></span>
+                        <span class="f20 c_gray_dark fw600">民居</span>
                     </a>
                     <br>
-                    <?php else: ?>
-                    <a class="relave radius-12 w248 mt20 <?php if ($this->_var['k'] % 2 == 0): ?>mr20<?php endif; ?>" href="<?php echo $this->_var['category']['url']; ?>">
+                                                                                                                        <a class="relave radius-12 w248 mt20 mr20" href="category.php?id=2">
                         <img class="lazy" height="180"
-                            width="248" alt="<?php echo $this->_var['category']['name']; ?>"
-                            src="<?php echo $this->_var['category']['cat_icon']; ?>"
+                            width="248" alt="客栈"
+                            src="images/cat_icon/15750844717043.jpg"
                             style="display: inline;">
-                        <span class="f20 c_gray_dark fw600 three"><?php echo $this->_var['category']['name']; ?></span>
+                        <span class="f20 c_gray_dark fw600 three">客栈</span>
                     </a>
-                    <?php endif; ?>
-                    <?php endif; ?>
-                    <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                </div>
+                                                                                                                        <a class="relave radius-12 w248 mt20 " href="category.php?id=3">
+                        <img class="lazy" height="180"
+                            width="248" alt="别墅"
+                            src="images/cat_icon/15750845221971.jpg"
+                            style="display: inline;">
+                        <span class="f20 c_gray_dark fw600 three">别墅</span>
+                    </a>
+                                                                                                                                                                                                    </div>
                 
                 <div class="fr f0">
-                    <?php $_from = $this->_var['house_category']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'category');if (count($_from)):
-    foreach ($_from AS $this->_var['k'] => $this->_var['category']):
-?>
-                    <?php if ($this->_var['k'] > 3 && $this->_var['k'] <= 6): ?>
-                    <?php if ($this->_var['k'] < 6): ?>
-                    <a class="relave radius-12 w248 <?php if ($this->_var['k'] % 2 == 0): ?>mr20<?php endif; ?>" href="<?php echo $this->_var['category']['url']; ?>">
+                                                                                                                                                                                                        <a class="relave radius-12 w248 mr20" href="category.php?id=4">
                         <img class="lazy" height="180"
-                            width="248" alt="<?php echo $this->_var['category']['name']; ?>" src="<?php echo $this->_var['category']['cat_icon']; ?>"
+                            width="248" alt="老洋房" src="images/cat_icon/15750845411717.jpg"
                             style="display: inline;">
-                        <span class="f20 c_gray_dark fw600 three"><?php echo $this->_var['category']['name']; ?></span>
+                        <span class="f20 c_gray_dark fw600 three">老洋房</span>
                     </a>
-                    <?php else: ?>
-                    <br>
-                    <a class="relave radius-12 w515 mt20" href="<?php echo $this->_var['category']['url']; ?>">
+                                                                                                                        <a class="relave radius-12 w248 " href="category.php?id=5">
+                        <img class="lazy" height="180"
+                            width="248" alt="海景房" src="images/cat_icon/15750845655481.jpg"
+                            style="display: inline;">
+                        <span class="f20 c_gray_dark fw600 three">海景房</span>
+                    </a>
+                                                                                                                        <br>
+                    <a class="relave radius-12 w515 mt20" href="category.php?id=6">
                         <img class="lazy" height="261" width="515"
-                            alt="<?php echo $this->_var['category']['name']; ?>" src="<?php echo $this->_var['category']['cat_icon']; ?>"
+                            alt="公寓" src="images/cat_icon/15750846184649.jpg"
                             style="display: inline;">
-                        <span class="f20 c_gray_dark fw600"><?php echo $this->_var['category']['name']; ?></span>
+                        <span class="f20 c_gray_dark fw600">公寓</span>
                     </a>
-                    <?php endif; ?>
-                    <?php endif; ?>
-                    <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                </div>
+                                                                            </div>
             </div>
         </div>
         
         <!-- <div class="index-block">
             <div class="header clearfloat">
-                <img class="fl" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/theme_recommend.png">
+                <img class="fl" src="themes/ecmoban_dsc2017/sz/img/theme_recommend.png">
                 <div class="fl">
                     <h1 class="f28 c_gray_dark fw700">旅行主题推荐</h1>
                     <p class="f14 c_gray">
@@ -512,7 +502,7 @@
                         _mayi_rp="webindex|lvxing2|jt">
                         <img class="lazy" width="515" height="380"
                             data-original="//staticnew.mayi.com/resourcesWeb/v201807/index_page_new/images/family.jpg"
-                            alt="家庭出游" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/family.jpg"
+                            alt="家庭出游" src="themes/ecmoban_dsc2017/sz/img/family.jpg"
                             style="display: inline;">
                     </a>
                 </div>
@@ -521,14 +511,14 @@
                         _mayi_rp="webindex|lvxing2|sl">
                         <img class="lazy" width="248" height="180"
                             data-original="//staticnew.mayi.com/resourcesWeb/v201807/index_page_new/images/business.jpg"
-                            alt="商旅出差" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/business.jpg"
+                            alt="商旅出差" src="themes/ecmoban_dsc2017/sz/img/business.jpg"
                             style="display: inline;">
                     </a>
                     <a class="inline-block radius-12 mb20" href="http://www.mayi.com/beijing"
                         _mayi_rp="webindex|lvxing2|jh">
                         <img class="lazy" width="248" height="180"
                             data-original="//staticnew.mayi.com/resourcesWeb/v201807/index_page_new/images/party.jpg"
-                            alt="聚会轰趴" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/party.jpg"
+                            alt="聚会轰趴" src="themes/ecmoban_dsc2017/sz/img/party.jpg"
                             style="display: inline;">
                     </a>
                     <br>
@@ -536,13 +526,13 @@
                         _mayi_rp="webindex|lvxing2|zzyz">
                         <img class="lazy" width="248" height="180"
                             data-original="//staticnew.mayi.com/resourcesWeb/v201807/index_page_new/images/weekmonth.jpg"
-                            alt="周租月租" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/weekmonth.jpg"
+                            alt="周租月租" src="themes/ecmoban_dsc2017/sz/img/weekmonth.jpg"
                             style="display: inline;">
                     </a>
                     <a class="inline-block radius-12" href="http://www.mayi.com/beijing" _mayi_rp="webindex|lvxing2|zk">
                         <img class="lazy" width="248" height="180"
                             data-original="//staticnew.mayi.com/resourcesWeb/v201807/index_page_new/images/discount.jpg"
-                            alt="折扣房源" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/discount.jpg"
+                            alt="折扣房源" src="themes/ecmoban_dsc2017/sz/img/discount.jpg"
                             style="display: inline;">
                     </a>
                 </div>
@@ -551,7 +541,7 @@
         
         <div class="index-block">
             <div class="header clearfloat">
-                <img class="fl" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/hotplace.png">
+                <img class="fl" src="themes/ecmoban_dsc2017/sz/img/hotplace.png">
                 <div class="fl">
                     <h1 class="f28 c_gray_dark fw700">热门目的地,旅行资讯</h1>
                     <p class="f14 c_gray">
@@ -560,29 +550,23 @@
                 </div>
             </div>
             <div class="content clearfloat">
-                <?php if ($this->_var['travels']): ?>
-                <?php $_from = $this->_var['travels']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'travel');if (count($_from)):
-    foreach ($_from AS $this->_var['travel']):
-?>
-                <div class="fl t-left  mr20">
+                                                <div class="fl t-left  mr20">
                     <div class="hot-place f0">
-                        <a class="inline-block radius-12 w158" href="article.php?id=<?php echo $this->_var['travel']['article_id']; ?>">
-                            <img class="lazy" width="158" height="220" alt="<?php echo $this->_var['travel']['keywords']; ?>" src="<?php echo $this->_var['travel']['file_url']; ?>" style="display: inline;">
+                        <a class="inline-block radius-12 w158" href="article.php?id=67">
+                            <img class="lazy" width="158" height="220" alt="" src="data/article/1575251012531604507.jpg" style="display: inline;">
                             <div class="info ">
-                                <p class="fw600 f18"><span class="f12 "><?php echo $this->_var['travel']['title']; ?></span></p>
+                                <p class="fw600 f18"><span class="f12 ">测试</span></p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                <?php endif; ?>
-            </div>
+                                            </div>
         </div>
         
         <div class="intro-icon clearfloat t-center">
             <dl>
                 <a href="#" target="_blank">
-                    <dt><img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/realroom.png" alt="真实房源">
+                    <dt><img src="themes/ecmoban_dsc2017/sz/img/realroom.png" alt="真实房源">
                     </dt>
                     <dd>
                         <p class="mt10 c_black f20">真实房源</p>
@@ -592,7 +576,7 @@
             </dl>
             <dl>
                 <a href="#" target="_blank">
-                    <dt><img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/happyin.png" alt="安心入住">
+                    <dt><img src="themes/ecmoban_dsc2017/sz/img/happyin.png" alt="安心入住">
                     </dt>
                     <dd>
                         <p class="mt10 c_black f20">安心入住</p>
@@ -602,17 +586,16 @@
             </dl>
             <dl>
                 <a href="#" target="_blank">
-                    <dt><img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/zhima.png" alt="芝麻信用"></dt>
+                    <dt><img src="themes/ecmoban_dsc2017/sz/img/zhima.png" alt="芝麻信用"></dt>
                     <dd>
                         <p class="mt10 c_black f20">芝麻信用</p>
                         <p class="mt5 c_gray f14">房东房客实名认证</p>
                     </dd>
                 </a>
             </dl>
-
             <dl>
                 <a href="#" target="_blank">
-                    <dt><img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/pro-service.png" alt="专业客服">
+                    <dt><img src="themes/ecmoban_dsc2017/sz/img/pro-service.png" alt="专业客服">
                     </dt>
                     <dd>
                         <p class="mt10 c_black f20">专业客服</p>
@@ -620,7 +603,6 @@
                     </dd>
                 </a>
             </dl>
-
         </div>
         
         <div class="advertisement">
@@ -641,7 +623,7 @@
         
         <div class="index-block">
             <div class="header clearfloat">
-                <img class="fl" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/haijingfang.png">
+                <img class="fl" src="themes/ecmoban_dsc2017/sz/img/haijingfang.png">
                 <div class="fl">
                     <h1 class="f28 c_gray_dark fw700">特色民宿推荐</h1>
                     <p class="f14 c_gray">
@@ -650,57 +632,45 @@
                 </div>
             </div>
             <div class="content">
-                <?php if ($this->_var['sgoods']): ?>
-                <ul id="haijingfang" class="clearfloat">
-                    <?php $_from = $this->_var['sgoods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
-    foreach ($_from AS $this->_var['goods']):
-?>
-                    <li>
-                        <a class="room_img" href="goods.php?id=<?php echo $this->_var['goods']['goods_id']; ?>" target="_blank">
-                            <img class="radius-12 lazy" src="<?php echo $this->_var['goods']['goods_img']; ?>">
+                                <ul id="haijingfang" class="clearfloat">
+                                        <li>
+                        <a class="room_img" href="goods.php?id=1" target="_blank">
+                            <img class="radius-12 lazy" src="images/201911/goods_img/0_G_1575069547627.jpg">
                             <div class="price">
-                                <span class="f22 fw600 ">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
+                                <span class="f22 fw600 ">￥360.00</span>
                             </div>
                             
                         </a>
-                        <div class="collect cursorpt <?php if ($this->_var['goods']['favorite'] == 1): ?>active<?php endif; ?>" title="未收藏" data-id="<?php echo $this->_var['goods']['goods_id']; ?>"></div>
+                        <div class="collect cursorpt " title="未收藏" data-id="1"></div>
                         <div class="info clearfloat">
-                            <a href="goods.php?id=<?php echo $this->_var['goods']['goods_id']; ?>" target="_blank">
+                            <a href="goods.php?id=1" target="_blank">
                                 <div class="fl c_gray_dark f20">
-                                    <h2 class="fw700 hidden-txt"><?php echo $this->_var['goods']['goods_name']; ?></h2>
+                                    <h2 class="fw700 hidden-txt">【精致生活】轻奢三居美宅/三亚站/千古情</h2>
                                     <p class="c_orange f14">
-                                        <span><?php echo $this->_var['goods']['comments']['score']; ?></span>分
+                                        <span>5</span>分
                                         ·
-                                        <span class="c_gray_dark mr10 ml5"><?php echo $this->_var['goods']['comments']['allmen']; ?>条评价</span>
+                                        <span class="c_gray_dark mr10 ml5">0条评价</span>
                                         <span class="f12 c_gray_light ver-t mr10">|</span>
-                                        <span class="c_gray_dark ver-t"><?php echo $this->_var['goods']['goods_weight']; ?>居</span><span
+                                        <span class="c_gray_dark ver-t">1居</span><span
                                             class="f12 c_gray_light ver-t ml10">|</span>
                                         <span class="c_gray_dark ml10">武汉</span>
                                     </p>
                                 </div>
                             </a>
-                            <?php if ($this->_var['goods']['store']['shop_logo']): ?>
-                            <a href="goods.php?id=<?php echo $this->_var['goods']['goods_id']; ?>" target="_blank">
-                                <img class="headimg fr circle" src="<?php echo $this->_var['goods']['store']['shop_logo']; ?>" alt="头像">
-                            </a>
-                            <?php endif; ?>
-                        </div>
+                                                    </div>
                     </li>
-                    <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                </ul>
-
-                <a href="category.php?id=<?php echo $this->_var['goods']['cat_id']; ?>&brand=<?php echo $this->_var['goods']['brand_id']; ?>" target="_blank">
+                                    </ul>
+                <a href="category.php?id=1&brand=1" target="_blank">
                     <div class="more_btn f14 c_gray_dark t-center cursorpt">
                         查看更多
                     </div>
                 </a>
-                <?php endif; ?>
-            </div>
+                            </div>
         </div>
         
         <div class="index-block">
             <div class="header clearfloat">
-                <img class="fl" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/preference.png">
+                <img class="fl" src="themes/ecmoban_dsc2017/sz/img/preference.png">
                 <div class="fl">
                     <h1 class="f28 c_gray_dark fw700">玖玖优质民宿</h1>
                     <p class="f14 c_gray">
@@ -709,51 +679,40 @@
                 </div>
             </div>
             <div class="content">
-                <?php if ($this->_var['hgoods']): ?>
-                <ul id="preference" class="clearfloat">
-                    <?php $_from = $this->_var['hgoods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
-    foreach ($_from AS $this->_var['goods']):
-?>
-                    <li>
-                        <a class="room_img" target="_blank" href="goods.php?id=<?php echo $this->_var['goods']['goods_id']; ?>">
-                            <img class="radius-12 lazy" src="<?php echo $this->_var['goods']['goods_img']; ?>">
+                                <ul id="preference" class="clearfloat">
+                                        <li>
+                        <a class="room_img" target="_blank" href="goods.php?id=2">
+                            <img class="radius-12 lazy" src="images/201912/goods_img/0_G_1575243908066.jpg">
                             <div class="price">
-                                <span class="f22 fw600 ">￥<?php echo $this->_var['goods']['shop_price']; ?></span>
+                                <span class="f22 fw600 ">￥321.00</span>
                             </div>
                             
                         </a>
-                        <div class="collect cursorpt <?php if ($this->_var['goods']['favorite'] == 1): ?>active<?php endif; ?>" title="未收藏" data-id="<?php echo $this->_var['goods']['goods_id']; ?>"></div>
+                        <div class="collect cursorpt " title="未收藏" data-id="2"></div>
                         <div class="info clearfloat">
                             <a href="http://www.mayi.com/room/851936298" target="_blank">
                                 <div class="fl c_gray_dark f20">
-                                    <h2 class="fw700 hidden-txt"><?php echo $this->_var['goods']['goods_name']; ?></h2>
+                                    <h2 class="fw700 hidden-txt">aaaaaa</h2>
                                     <p class="c_orange f14">
                                         <span>5.0</span>分
                                         ·
-                                        <span class="c_gray_dark mr10 ml5"><?php echo $this->_var['goods']['comments']['allmen']; ?>条评价</span>
+                                        <span class="c_gray_dark mr10 ml5">0条评价</span>
                                         <span class="f12 c_gray_light ver-t mr10">|</span>
-                                        <span class="c_gray_dark ver-t"><?php echo $this->_var['goods']['goods_weight']; ?>居</span><span
+                                        <span class="c_gray_dark ver-t">0居</span><span
                                             class="f12 c_gray_light ver-t ml10">|</span>
                                         <span class="c_gray_dark ml10">成都</span>
                                     </p>
                                 </div>
                             </a>
-                            <?php if ($this->_var['goods']['store']['shop_logo']): ?>
-                            <a href="goods.php?id=<?php echo $this->_var['goods']['goods_id']; ?>" target="_blank">
-                                <img class="headimg fr circle" src="" alt="头像">
-                            </a>
-                            <?php endif; ?>
-                        </div>
+                                                    </div>
                     </li>
-                    <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                </ul>
-                <a href="category.php?id=<?php echo $this->_var['goods']['cat_id']; ?>&brand=<?php echo $this->_var['goods']['brand_id']; ?>" target="_blank">
+                                    </ul>
+                <a href="category.php?id=1&brand=2" target="_blank">
                     <div class="more_btn f14 c_gray_dark t-center cursorpt">
                         查看更多
                     </div>
                 </a>
-                <?php endif; ?>
-            </div>
+                            </div>
         </div>
     </div>
     
@@ -764,19 +723,18 @@
             <p><a class="icon-ma pb10" href="http://www.mayi.com/activity/app50" title="二维码"></a></p>
             <!--<p><a class="icon-heart pb10" href="javascript:void(0);" title="收藏"></a></p>  -->
             <p><a class="icon-real pb10" href="http://www.mayi.com/supportplan" title="房客安心计划"></a></p>
-
             <ul class="hover-list radius-6 c_gray_dark t-center down-app">
                 <li class="clearfloat">
                     <div class="fl">
                         <p class="f18 c_gray_dark mb10">扫码下载APP</p>
-                        <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/app.jpg" width="112"
+                        <img src="themes/ecmoban_dsc2017/sz/img/app.jpg" width="112"
                             alt="下载app">
                         <p class="f14">注册立送500元大礼包</p>
                     </div>
                     <div class="fr">
                         <div class="fl">
                             <p class="f18 c_gray_dark mb10">扫码快速预订</p>
-                            <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/JJ8GRMND8SDJCP267PTG7BW8S3AV5T.jpg"
+                            <img src="themes/ecmoban_dsc2017/sz/img/JJ8GRMND8SDJCP267PTG7BW8S3AV5T.jpg"
                                 width="112" alt="微信小程序">
                             <p class="f14">蚂蚁短租小程序</p>
                         </div>
@@ -787,7 +745,6 @@
         <div class="totop mt10 radius-6 hidden" style="display: none;">
             <p><a class="icon-totop bor-none pb10" href="javascript:void(0);" title="返回顶部"></a></p>
         </div>
-
     </div>
     
     <div class="clear-modal">
@@ -808,7 +765,7 @@
             <div class="download_div w1000 clearfloat">
                 
                 <img class="download_app"
-                    src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/XXTXYA8RFP49U9HNPXYYGNUN4EMM2Y.jpg"
+                    src="themes/ecmoban_dsc2017/sz/img/XXTXYA8RFP49U9HNPXYYGNUN4EMM2Y.jpg"
                     alt="">
                 <div class="app_code">
                     <p>
@@ -817,12 +774,12 @@
                         立享优惠
                     </p>
                     <span style="display:block;padding:3px;background:#fff;width:90px;margin:0 auto;height: 90px;">
-                        <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/app.jpg" alt=""
+                        <img src="themes/ecmoban_dsc2017/sz/img/app.jpg" alt=""
                             style="width:100%;">
                     </span>
                 </div>
                 <div class="download_phone">
-                    <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/download_phone.png" alt="">
+                    <img src="themes/ecmoban_dsc2017/sz/img/download_phone.png" alt="">
                 </div>
                 <div class="app_code">
                     <p>
@@ -830,10 +787,10 @@
                         <br>
                         更多福利更多资讯
                     </p>
-                    <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/weixin_ma.png" alt="">
+                    <img src="themes/ecmoban_dsc2017/sz/img/weixin_ma.png" alt="">
                 </div>
                 <div class="btn-close">
-                    <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/btn-close.png" alt="">
+                    <img src="themes/ecmoban_dsc2017/sz/img/btn-close.png" alt="">
                 </div>
             </div>
         </div>
@@ -842,27 +799,27 @@
     <div id="" style="display:none">
         <a href="http://www.mayi.com/tp_warmwinter/">
             <div class="app-open" style="left: -100%; width: 100%; height: 152px; opacity: 0;">
-                <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/TYD5GQGUY4B2RL6FRNFW5VQG42EKZZ.jpg"
+                <img src="themes/ecmoban_dsc2017/sz/img/TYD5GQGUY4B2RL6FRNFW5VQG42EKZZ.jpg"
                     alt=""
                     style="position:absolute;top:0;left:50%;margin-left:-960px;width:1920px;height:170px;vertical-align:top;display:block;">
                 <div class="download_div w820">
                     <div class="btn-close r_80">
-                        <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/btn-close.png">
+                        <img src="themes/ecmoban_dsc2017/sz/img/btn-close.png">
                     </div>
                 </div>
             </div>
         </a>
         <div class="app-close" style="left: 0%;">
             <div class="background-img">
-                <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/FMBCEL94XASRULCA2K5EL6FS8U67UQ.jpg">
+                <img src="themes/ecmoban_dsc2017/sz/img/FMBCEL94XASRULCA2K5EL6FS8U67UQ.jpg">
             </div>
         </div>
     </div>
     <div class="share_tan" style="display: none">
         <div class="mask"></div>
         <div class="hongbao_img">
-            <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/close.png" alt="" class="hong_close">
-            <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/hongbao1.png" alt="" class="hongbao">
+            <img src="themes/ecmoban_dsc2017/sz/img/close.png" alt="" class="hong_close">
+            <img src="themes/ecmoban_dsc2017/sz/img/hongbao1.png" alt="" class="hongbao">
             <div id="qrcode" class="ewm_img"><canvas width="100" height="100"></canvas></div>
             <p class="text_para">扫码后，通过分享活动邀请好友注册蚂蚁短租，双方均可获得100元住宿基金！</p>
         </div>
@@ -871,43 +828,78 @@
     
     <div class="foot">
         <div class="w1050 pb20 clearfloat">
-
             <div class="footer pt30 over-hidden pb20">
                 <ul>
                     <li>
                         <h3 class="f16 mb10">联系我们</h3>
                         <p class="mb15">客户服务</p>
-                        <p class="f22"><?php echo $this->_var['service_phone']; ?></p>
-                        <p>Email：<?php echo $this->_var['service_email']; ?></p>
+                        <p class="f22">15955555555</p>
+                        <p>Email：360682078@qq.com</p>
                         <p class="mb10 mt25">商务合作</p>
-                        <p>QQ：<?php $_from = $this->_var['qq']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'q');if (count($_from)):
-    foreach ($_from AS $this->_var['q']):
-?><?php echo $this->_var['q']; ?><?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?></p>
-                        <p>Email：<?php echo $this->_var['email']; ?></p>
+                        <p>QQ：360682078</p>
+                        <p>Email：</p>
                     </li>
-                    <?php $_from = $this->_var['helps']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'help');$this->_foreach['no'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['no']['total'] > 0):
-    foreach ($_from AS $this->_var['help']):
-        $this->_foreach['no']['iteration']++;
-?>
-                    <?php if ($this->_foreach['no']['iteration'] < 6): ?>
-                    <li>
-                        <h3 class="f16 mb10"><?php echo $this->_var['help']['cat_name']; ?></h3>
-                        <?php $_from = $this->_var['help']['article']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'item');$this->_foreach['help_cat'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['help_cat']['total'] > 0):
-    foreach ($_from AS $this->_var['item']):
-        $this->_foreach['help_cat']['iteration']++;
-?>
-                        <?php if ($this->_foreach['help_cat']['iteration'] < 4): ?>
-                        <p>
-                            <a href="<?php echo $this->_var['item']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['item']['title']); ?>" target="_blank"><?php echo $this->_var['item']['short_title']; ?></a>
+                                                            <li>
+                        <h3 class="f16 mb10">配送与支付 </h3>
+                                                                        <p>
+                            <a href="article.php?id=55" title="上门自提" target="_blank">上门自提</a>
                         </p>
-                        <?php endif; ?>
-                        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                    </li>
-                    <?php endif; ?>
-                    <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                </ul>
+                                                                                                <p>
+                            <a href="article.php?id=17" title="支付方式说明" target="_blank">支付方式说明</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=16" title="配送支付智能查询 " target="_blank">配送支付智能查询</a>
+                        </p>
+                                                                                                                    </li>
+                                                                                <li>
+                        <h3 class="f16 mb10">新手上路 </h3>
+                                                                        <p>
+                            <a href="article.php?id=36" title="隐私声明" target="_blank">隐私声明</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=11" title="订购方式" target="_blank">订购方式</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=10" title="购物流程" target="_blank">购物流程</a>
+                        </p>
+                                                                                                                    </li>
+                                                                                <li>
+                        <h3 class="f16 mb10">联系我们 </h3>
+                                                                        <p>
+                            <a href="article.php?id=26" title="投诉与建议 " target="_blank">投诉与建议</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=25" title="选机咨询 " target="_blank">选机咨询</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=24" title="网站故障报告" target="_blank">网站故障报告</a>
+                        </p>
+                                                                    </li>
+                                                                                <li>
+                        <h3 class="f16 mb10">服务保证 </h3>
+                                                                        <p>
+                            <a href="article.php?id=23" title="产品质量保证 " target="_blank">产品质量保证</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=22" title="售后服务保证" target="_blank">售后服务保证</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=21" title="退换货原则" target="_blank">退换货原则</a>
+                        </p>
+                                                                    </li>
+                                                                                <li>
+                        <h3 class="f16 mb10">会员中心</h3>
+                                                                        <p>
+                            <a href="article.php?id=20" title="我的订单" target="_blank">我的订单</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=19" title="我的收藏" target="_blank">我的收藏</a>
+                        </p>
+                                                                                                <p>
+                            <a href="article.php?id=18" title="资金管理" target="_blank">资金管理</a>
+                        </p>
+                                                                    </li>
+                                                        </ul>
             </div>
             
             <div class="link_end">
@@ -930,45 +922,43 @@ if ($this->_foreach['help_cat']['total'] > 0):
                     </div>
                     
                     <div class="classify_box" style="display: none;">
-                        <?php if ($this->_var['navigator_list']['bottom']): ?>
-                        <ul class="clearfloat">
-                            <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['nav_bottom_list']['total'] > 0):
-    foreach ($_from AS $this->_var['nav']):
-        $this->_foreach['nav_bottom_list']['iteration']++;
-?>
-                            <li>
-                                <a <?php if ($this->_var['nav']['opennew'] == 1): ?>target="_blank"<?php endif; ?> title="<?php echo $this->_var['nav']['name']; ?>" href="<?php echo $this->_var['nav']['url']; ?>"><?php echo $this->_var['nav']['name']; ?></a>
+                                                <ul class="clearfloat">
+                                                        <li>
+                                <a  title="首页" href="index.php">首页</a>
                             </li>
-                            <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                        </ul>
-                        <?php endif; ?>
-                    </div>
+                                                        <li>
+                                <a  title="隐私保护" href="article.php?id=2">隐私保护</a>
+                            </li>
+                                                        <li>
+                                <a  title="联系我们" href="article.php?id=4">联系我们</a>
+                            </li>
+                                                        <li>
+                                <a  title="免责条款" href="article.php?id=1">免责条款</a>
+                            </li>
+                                                        <li>
+                                <a  title="公司简介" href="article.php?id=5">公司简介</a>
+                            </li>
+                                                        <li>
+                                <a target="_blank" title="商家入驻" href="merchants.php">商家入驻</a>
+                            </li>
+                                                        <li>
+                                <a  title="意见反馈" href="message.php">意见反馈</a>
+                            </li>
+                                                    </ul>
+                                            </div>
                     
                     
                     <div class="classify_box" style="display: none;">
                         <ul class="clearfloat">
-                            <?php if ($this->_var['img_links'] || $this->_var['txt_links']): ?>
-                            
-                            <?php $_from = $this->_var['img_links']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'link');if (count($_from)):
-    foreach ($_from AS $this->_var['link']):
-?>
-                            <li>
-                                <a target="_blank" href="<?php echo $this->_var['link']['url']; ?>" title="<?php echo $this->_var['link']['name']; ?>"><?php echo $this->_var['link']['name']; ?></a>
+                                                        
+                                                        
+                                                        <li>
+                                <a target="_blank" href="http://www.aliyun.com" title="友情链接二">友情链接二</a>
                             </li>
-                            <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                            
-                            <?php $_from = $this->_var['txt_links']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'link');$this->_foreach['nolink'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['nolink']['total'] > 0):
-    foreach ($_from AS $this->_var['link']):
-        $this->_foreach['nolink']['iteration']++;
-?>
-                            <li>
-                                <a target="_blank" href="<?php echo $this->_var['link']['url']; ?>" title="<?php echo $this->_var['link']['name']; ?>"><?php echo $this->_var['link']['name']; ?></a>
+                                                        <li>
+                                <a target="_blank" href="http://www.baidu.com" title="友情链接一">友情链接一</a>
                             </li>
-                            <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                            <?php endif; ?>
-                        </ul>
+                                                                                </ul>
                         <div class="footer_open" style="display: block;"></div>
                         <div class="footer_close" style="display: none;"></div>
                     </div>
@@ -976,29 +966,34 @@ if ($this->_foreach['nolink']['total'] > 0):
                 </div>
             </div>
             <div class="mt40">
-                <?php if ($this->_var['navigator_list']['bottom']): ?>
-                <p class="t-center f12 c777776">
-                    <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['nav_bottom_list']['total'] > 0):
-    foreach ($_from AS $this->_var['nav']):
-        $this->_foreach['nav_bottom_list']['iteration']++;
-?>
-                    <a  class="c777776" href="<?php echo $this->_var['nav']['url']; ?>" <?php if ($this->_var['nav']['opennew'] == 1): ?> target="_blank" <?php endif; ?> >&nbsp;&nbsp;<?php echo $this->_var['nav']['name']; ?></a>
+                                <p class="t-center f12 c777776">
+                                        <a  class="c777776" href="index.php"  >&nbsp;&nbsp;首页</a>
                     &nbsp;&nbsp;
-                    <?php if (! ($this->_foreach['nav_bottom_list']['iteration'] == $this->_foreach['nav_bottom_list']['total'])): ?>
-                    |
-                    <?php endif; ?>
-                    <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-                </p>
-                <?php endif; ?>
-                
-                <?php if ($this->_var['icp_number']): ?>
-                <p class="t-center f12 c777776">
-                    &copy;&nbsp;2015-<?php echo date('Y')?>&nbsp;<?php echo $GLOBALS['_CFG']['shop_name'];?>&nbsp;版权所有&nbsp;&nbsp;
-                    <a class="c777776" href="http://www.miibeian.gov.cn/" target="_blank"><?php echo $this->_var['lang']['icp_number']; ?>:<?php echo $this->_var['icp_number']; ?></a>
+                                        |
+                                                            <a  class="c777776" href="article.php?id=2"  >&nbsp;&nbsp;隐私保护</a>
+                    &nbsp;&nbsp;
+                                        |
+                                                            <a  class="c777776" href="article.php?id=4"  >&nbsp;&nbsp;联系我们</a>
+                    &nbsp;&nbsp;
+                                        |
+                                                            <a  class="c777776" href="article.php?id=1"  >&nbsp;&nbsp;免责条款</a>
+                    &nbsp;&nbsp;
+                                        |
+                                                            <a  class="c777776" href="article.php?id=5"  >&nbsp;&nbsp;公司简介</a>
+                    &nbsp;&nbsp;
+                                        |
+                                                            <a  class="c777776" href="merchants.php"  target="_blank"  >&nbsp;&nbsp;商家入驻</a>
+                    &nbsp;&nbsp;
+                                        |
+                                                            <a  class="c777776" href="message.php"  >&nbsp;&nbsp;意见反馈</a>
+                    &nbsp;&nbsp;
+                                                        </p>
+                                
+                                <p class="t-center f12 c777776">
+                    &copy;&nbsp;2015-2019&nbsp;玖玖民宿&nbsp;版权所有&nbsp;&nbsp;
+                    <a class="c777776" href="http://www.miibeian.gov.cn/" target="_blank">ICP备案证书号:15002903</a>
                 <p>
-                <?php endif; ?>
-            </div>
+                            </div>
         </div>
     </div>
 </body>
@@ -1022,7 +1017,6 @@ if ($this->_foreach['nav_bottom_list']['total'] > 0):
         $(".big_classify_box .classify_box").hide()
         $(".big_classify_box .classify_box").eq(index).show()
     },function(){
-
     })
     //收藏
     $(".collect").on('click',function(){
@@ -1056,7 +1050,6 @@ if ($this->_foreach['nav_bottom_list']['total'] > 0):
                             
                         }
                     })
-
                 }
             }
         })
@@ -1079,7 +1072,6 @@ if ($this->_foreach['nav_bottom_list']['total'] > 0):
         },
         get_current:function(){
             var e = $(this.ele),current=0,children = e.children('li'),_self = this;
-
             for(var i=0;i<children.length;i++){
                 
                 if($(children[i]).css('zIndex') == 50){
@@ -1116,5 +1108,4 @@ if ($this->_foreach['nav_bottom_list']['total'] > 0):
     })
     //end轮播
 </script>
-
 </html>

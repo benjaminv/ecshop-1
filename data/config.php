@@ -6,7 +6,7 @@ $db_host   = "localhost:3306";
 $db_name   = "ecshop";
 
 // database username
-$db_user   = "ecshop";
+$db_user   = "lixuan";
 
 // database password
 $db_pass   = "123456";
