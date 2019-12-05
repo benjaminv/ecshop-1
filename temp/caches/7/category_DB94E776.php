@@ -1,10 +1,10 @@
-<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:45:"D:/ecshop/themes/ecmoban_dsc2017/category.dwt";i:1;s:61:"D:/ecshop/themes/ecmoban_dsc2017/library/js_languages_new.lbi";i:2;s:65:"D:/ecshop/themes/ecmoban_dsc2017/library/page_header_category.lbi";i:3;s:67:"D:/ecshop/themes/ecmoban_dsc2017/library/category_recommend_hot.lbi";i:4;s:52:"D:/ecshop/themes/ecmoban_dsc2017/library/ur_here.lbi";i:5;s:63:"D:/ecshop/themes/ecmoban_dsc2017/library/category_screening.lbi";i:6;s:55:"D:/ecshop/themes/ecmoban_dsc2017/library/goods_list.lbi";i:7;s:61:"D:/ecshop/themes/ecmoban_dsc2017//library/category_filter.lbi";i:8;s:69:"D:/ecshop/themes/ecmoban_dsc2017//library/category_recommend_best.lbi";i:9;s:50:"D:/ecshop/themes/ecmoban_dsc2017/library/duibi.lbi";i:10;s:56:"D:/ecshop/themes/ecmoban_dsc2017/library/page_footer.lbi";}s:7:"expires";i:1575514285;s:8:"maketime";i:1575510685;}<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:80:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/category.dwt";i:1;s:96:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/library/js_languages_new.lbi";i:2;s:100:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/library/page_header_category.lbi";i:3;s:102:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/library/category_recommend_hot.lbi";i:4;s:87:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/library/ur_here.lbi";i:5;s:98:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/library/category_screening.lbi";i:6;s:90:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/library/goods_list.lbi";i:7;s:96:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017//library/category_filter.lbi";i:8;s:104:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017//library/category_recommend_best.lbi";i:9;s:85:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/library/duibi.lbi";i:10;s:91:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/library/page_footer.lbi";}s:7:"expires";i:1575528812;s:8:"maketime";i:1575525212;}<!doctype html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="Keywords" content="" />
 <meta name="Description" content="" />
-<title>民居_玖玖民宿</title>
+<title>客栈_玖玖民宿</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc2017/css/base.css" />
 <link rel="stylesheet" type="text/css" href="themes/ecmoban_dsc2017/css/style.css" />
@@ -124,13 +124,15 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                             </ul>
         </div>
     </div>
-</div>    	<div class="w w1390">
+</div>
+    
+	<div class="w w1390">
     	<div class="crumbs-nav">
 	<div class="crumbs-nav-main clearfix">
 				<div class="crumbs-nav-item">
 			<div class="menu-drop">
 				<div class="trigger bottom">
-					<a href="category.php?id=1"><span>民居</span></a>
+					<a href="category.php?id=2"><span>客栈</span></a>
 					<i class="iconfont icon-down"></i>
 				</div>
                 			</div>
@@ -141,7 +143,8 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
     <div class="container">
     	<div class="w w1390">
             <div class="selector">
-                <div class="right-extra" rewrite=0>
+                
+<div class="right-extra" rewrite=0>
     <div class="u_cloose">
         <dl>
             <dt>已选条件：</dt>
@@ -155,83 +158,12 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                 
             
                             </dd>
-            <dd class="give_up_all"><a href="category.php?id=1" class="ftx-05">全部撤销</a></dd>
+            <dd class="give_up_all"><a href="category.php?id=2" class="ftx-05">全部撤销</a></dd>
         </dl>
     </div>
 	<div class="goods_list">
 		<ul class="attr_father">
 			
-                        <li class="s-line">
-                <div class="s-l-wrap brand_img attr_list">
-                    <div class="s-l-tit brand_name_l">品牌：</div>
-                    <div class="s-l-value brand_select_more">
-                        <div class="all_a_z">
-                            <ul class="a_z">
-                                <li class="all_brand curr">所有品牌</li>
-                                                                <li data-key="A">A</li>
-                                                                <li data-key="B">B</li>
-                                                                <li data-key="C">C</li>
-                                                                <li data-key="D">D</li>
-                                                                <li data-key="E">E</li>
-                                                                <li data-key="F">F</li>
-                                                                <li data-key="G">G</li>
-                                                                <li data-key="H">H</li>
-                                                                <li data-key="I">I</li>
-                                                                <li data-key="J">J</li>
-                                                                <li data-key="K">K</li>
-                                                                <li data-key="L">L</li>
-                                                                <li data-key="M">M</li>
-                                                                <li data-key="N">N</li>
-                                                                <li data-key="O">O</li>
-                                                                <li data-key="P">P</li>
-                                                                <li data-key="Q">Q</li>
-                                                                <li data-key="R">R</li>
-                                                                <li data-key="S">S</li>
-                                                                <li data-key="T">T</li>
-                                                                <li data-key="U">U</li>
-                                                                <li data-key="V">V</li>
-                                                                <li data-key="W">W</li>
-                                                                <li data-key="X">X</li>
-                                                                <li data-key="Y">Y</li>
-                                                                <li data-key="Z">Z</li>
-                                                                <li class="other_brand">其他</li>
-                            </ul>
-                        </div>
-                        <div class="wrap_brand">  
-                            <div class="brand_div">
-                                                                <div class="brand_img_word" brand ="J">
-                                                                            <a href="category.php?id=1&amp;brand=1">
-                                        	<img src="data/brandlogo/1575245542800285801.jpg" alt="玖玖优质民宿" title="玖玖优质民宿"> 
-                                        	<span>玖玖优质民宿</span>
-                                        </a>
-                                                                    </div>
-                                                                <div class="brand_img_word" brand ="M">
-                                                                            <a href="category.php?id=1&amp;brand=2">
-                                        	<img src="data/brandlogo/1575245401107871989.jpg" alt="民宿推荐" title="民宿推荐"> 
-                                        	<span>民宿推荐</span>
-                                        </a>
-                                                                    </div>
-                                                            </div>
-                        </div>
-                        <div class="zimu_list">
-                            <ul class="get_more" >
-                                                                <li class="is_no" brand ="J" url_id="1"><span class="choose_ico"></span><a class="goods_brand_name" data-url="category.php?id=1&amp;brand=1">玖玖优质民宿</a></li>
-                                                                <li class="is_no" brand ="M" url_id="2"><span class="choose_ico"></span><a class="goods_brand_name" data-url="category.php?id=1&amp;brand=2">民宿推荐</a></li>
-                                                            </ul>
-                        </div>
-                        <div class="enter_yes_no">
-                            <div class="ct_auto">
-                                <span class="yes_bt botton disabled">确定</span>
-                                <span class="no_bt botton">关闭</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="s-l-opt sl-ext">
-                        <div class="choose_open s-l-more"><i class="iconfont icon-down"></i></div>
-                        <div class="choose_more s-l-multiple"><i class="iconfont icon-plus"></i>多选</div>
-                    </div>
-                </div>
-            </li>
                         
             
              
@@ -246,11 +178,11 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
             <div class="filter">
         <div class="filter-wrap">
     <div class="filter-sort">
-        <a href="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=goods_id&order=ASC#goods_list" class="curr">综合<i class="iconfont icon-arrow-down"></i></a>
-        <a href="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=sales_volume&order=DESC#goods_list" class="">销量<i class="iconfont icon-arrow-up"></i></a>
-        <a href="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=last_update&order=DESC#goods_list" class="">新品<i class="iconfont icon-arrow-up"></i></a>
-        <a href="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=comments_number&order=ASC#goods_list" class="">评论数<i class="iconfont icon-arrow-up"></i></a>
-        <a href="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=shop_price&order=ASC#goods_list" class="">价格<i class="iconfont icon-arrow-up"></i></a>
+        <a href="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=goods_id&order=ASC#goods_list" class="curr">综合<i class="iconfont icon-arrow-down"></i></a>
+        <a href="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=sales_volume&order=DESC#goods_list" class="">销量<i class="iconfont icon-arrow-up"></i></a>
+        <a href="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=last_update&order=DESC#goods_list" class="">新品<i class="iconfont icon-arrow-up"></i></a>
+        <a href="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=comments_number&order=ASC#goods_list" class="">评论数<i class="iconfont icon-arrow-up"></i></a>
+        <a href="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&page=1&sort=shop_price&order=ASC#goods_list" class="">价格<i class="iconfont icon-arrow-up"></i></a>
     </div>
     <div class="filter-range">
         <div class="fprice">
@@ -264,7 +196,7 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                 	<a class="ui-btn-s ui-btn-clear" href="javascript:void(0);" id="clear_price">清空</a>
 					<a href="javascript:void(0);" class="ui-btn-s ui-btn-s-primary ui-btn-submit">确定</a>
                 </div>
-                                <input type="hidden" name="category" value="1" />
+                                <input type="hidden" name="category" value="2" />
                 <input type="hidden" name="display" value="grid" id="display" />
                 <input type="hidden" name="brand" value="" />
                 <input type="hidden" name="ubrand" value="0" />
@@ -279,20 +211,20 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                 <div class="checkbox_item ">
                     <input type="checkbox" name="fk-type" class="ui-checkbox" value="" id="store-checkbox-011" >
                     <label class="ui-label" for="store-checkbox-011">包邮</label>
-                    <i id="input-i1" rev="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=1&self=0&have=0&sort=goods_id&order=DESC#goods_list"></i>
-                    <i id="input-i2" rev="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=0&have=0&sort=goods_id&order=DESC#goods_list"></i>
+                    <i id="input-i1" rev="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=1&self=0&have=0&sort=goods_id&order=DESC#goods_list"></i>
+                    <i id="input-i2" rev="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=0&have=0&sort=goods_id&order=DESC#goods_list"></i>
                 </div>
                 <div class="checkbox_item ">
                     <input type="checkbox" name="fk-type" class="ui-checkbox" value="" id="store-checkbox-012" >
                     <label class="ui-label" for="store-checkbox-012">自营商品</label>
-                    <i id="input-i1" rev="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=1&have=0&sort=goods_id&order=DESC#goods_list"></i>
-                    <i id="input-i2" rev="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=0&have=0&sort=goods_id&order=DESC#goods_list"></i>
+                    <i id="input-i1" rev="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=1&have=0&sort=goods_id&order=DESC#goods_list"></i>
+                    <i id="input-i2" rev="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=0&have=0&sort=goods_id&order=DESC#goods_list"></i>
                 </div>
                 <div class="checkbox_item ">
                     <input type="checkbox" name="fk-type" class="ui-checkbox" value="" id="store-checkbox-013" >
                     <label class="ui-label" for="store-checkbox-013">仅显示有货</label>
-                    <i id="input-i1" rev="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=0&have=1&sort=goods_id&order=DESC#goods_list"></i>
-                    <i id="input-i2" rev="category.php?category=1&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=0&have=0&sort=goods_id&order=DESC#goods_list"></i>
+                    <i id="input-i1" rev="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=0&have=1&sort=goods_id&order=DESC#goods_list"></i>
+                    <i id="input-i2" rev="category.php?category=2&display=grid&brand=&ubrand=0&price_min=0&price_max=0&filter_attr=0&ship=0&self=0&have=0&sort=goods_id&order=DESC#goods_list"></i>
                 </div>
             </div>
         </div>
@@ -314,193 +246,15 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
 </div>    </div>
 <div class="g-view w">
     <div class="goods-list goods-list-w1390" ectype="gMain">
-                <div class="gl-warp gl-warp-large">
-        	            <form name="compareForm" action="compare.php" method="post" onSubmit="return compareGoods(this);" class="goodslistForm" data-state="0">
-                        <div class="goods-list-warp">
-                <ul ectype="items">
-                                                                                <li class="gl-item">
-                        <div class="gl-i-wrap">
-                            <div class="p-img"><a href="goods.php?id=2" target="_blank"><img src="images/201912/thumb_img/0_thumb_G_1575243908111.jpg" /></a></div>
-                                                        <div class="sider">
-                                <a href="javascript:void(0);" class="sider-prev"><i class="iconfont icon-left"></i></a>
-                                <ul>
-                                                                                                            <li  class="curr"><img src="images/201912/thumb_img/0_thumb_P_1575243908152.jpg" width="26" height="26" /></li>
-                                                                                                        </ul>
-                                <a href="javascript:void(0);" class="sider-next"><i class="iconfont icon-right"></i></a>
-                            </div>
-                                                        <div class="p-lie">
-                                <div class="p-price">
-                                                                            <em>¥</em>321.00                                                                    </div>
-                                <div class="p-num">已售<em>0</em>件</div>
-                            </div>
-                            <div class="p-name"><a href="goods.php?id=2" title="aaaaaa" target="_blank">aaaaaa</a></div>
-                            <div class="p-store">
-                                                                <a href="javascript:;" title="WEBSC" class="store">WEBSC</a>
-                                                                
-                                                                <a href="javascript:;" id="IM" onclick="openWin(this)" ru_id="0" class="p-kefu p-c-violet"><i class="iconfont icon-kefu"></i></a>
-                                                                
-                            </div>
-                                                        <div class="p-activity">
-                                                                                                                                                                                                <span class="tag tac-sr">
-                                    <i class="i-left"></i>
-                                    自营                                    <i class="i-right"></i>
-                                </span>
-                                                            </div>
-                                                        <div class="p-operate">
-                                <a href="javascript:void(0);" id="compareLink">
-                                    <input id="2" type="checkbox" name="duibi" class="ui-checkbox" onClick="Compare.add(this, 2,'aaaaaa','0', 'images/201912/thumb_img/0_thumb_G_1575243908111.jpg', '<em>¥</em>321.00', '<em>¥</em>385.20')">
-                                    <label class="ui-label" for="2">对比</label>
-                                </a>
-                                <a href="javascript:collect(2);" class="choose-btn-coll"><i class="iconfont icon-zan-alt"></i>收藏</a>
-                                                                                                        <a href="javascript:void(0);" onClick="javascript:addToCart(2,0,event,this,'flyItem');" rev="images/201912/thumb_img/0_thumb_G_1575243908111.jpg" data-dialog="addCart_dialog" data-divid="addCartLog" data-title="请选择属性" class="addcart">
-                                        <i class="iconfont icon-carts"></i>加入购物车                                    </a>
-                                                                                                </div>
-                            
-                                                    </div>
-                    </li>
-                                         
-                                                                                <li class="gl-item">
-                        <div class="gl-i-wrap">
-                            <div class="p-img"><a href="goods.php?id=1" target="_blank"><img src="images/201911/thumb_img/0_thumb_G_1575069547663.jpg" /></a></div>
-                                                        <div class="sider">
-                                <a href="javascript:void(0);" class="sider-prev"><i class="iconfont icon-left"></i></a>
-                                <ul>
-                                                                                                            <li  class="curr"><img src="images/201911/thumb_img/0_thumb_P_1575069547254.jpg" width="26" height="26" /></li>
-                                                                                                                                                <li ><img src="images/201911/thumb_img/_thumb_P_1575069744621.jpg" width="26" height="26" /></li>
-                                                                                                                                                <li ><img src="images/201911/thumb_img/_thumb_P_1575069744387.jpg" width="26" height="26" /></li>
-                                                                                                                                                <li ><img src="images/201911/thumb_img/_thumb_P_1575069744089.jpg" width="26" height="26" /></li>
-                                                                                                        </ul>
-                                <a href="javascript:void(0);" class="sider-next"><i class="iconfont icon-right"></i></a>
-                            </div>
-                                                        <div class="p-lie">
-                                <div class="p-price">
-                                                                            <em>¥</em>360.00                                                                    </div>
-                                <div class="p-num">已售<em>0</em>件</div>
-                            </div>
-                            <div class="p-name"><a href="goods.php?id=1" title="【精致生活】轻奢三居美宅/三亚站/千古情" target="_blank">【精致生活】轻奢三居美宅/三亚站/千古情</a></div>
-                            <div class="p-store">
-                                                                <a href="javascript:;" title="WEBSC" class="store">WEBSC</a>
-                                                                
-                                                                <a href="javascript:;" id="IM" onclick="openWin(this)" ru_id="0" class="p-kefu p-c-violet"><i class="iconfont icon-kefu"></i></a>
-                                                                
-                            </div>
-                                                        <div class="p-activity">
-                                                                                                                                                                                                <span class="tag tac-sr">
-                                    <i class="i-left"></i>
-                                    自营                                    <i class="i-right"></i>
-                                </span>
-                                                            </div>
-                                                        <div class="p-operate">
-                                <a href="javascript:void(0);" id="compareLink">
-                                    <input id="1" type="checkbox" name="duibi" class="ui-checkbox" onClick="Compare.add(this, 1,'【精致生活】轻奢三居美宅/三亚站/千古情','0', 'images/201911/thumb_img/0_thumb_G_1575069547663.jpg', '<em>¥</em>360.00', '<em>¥</em>635.00')">
-                                    <label class="ui-label" for="1">对比</label>
-                                </a>
-                                <a href="javascript:collect(1);" class="choose-btn-coll selected"><i class="iconfont icon-zan-alts"></i>收藏</a>
-                                                                                                        <a href="javascript:void(0);" onClick="javascript:addToCart(1,0,event,this,'flyItem');" rev="images/201911/thumb_img/0_thumb_G_1575069547663.jpg" data-dialog="addCart_dialog" data-divid="addCartLog" data-title="请选择属性" class="addcart">
-                                        <i class="iconfont icon-carts"></i>加入购物车                                    </a>
-                                                                                                </div>
-                            
-                                                    </div>
-                    </li>
-                                         
-                     
-                </ul>
-            </div>            
-                        </form>
-                        <div id="flyItem" class="fly_item"><img src="" width="40" height="40"></div>
-        </div>
-        <div class="gl-warp gl-warp-samll">
-        	            <form name="compareForm_cat" id="compareForm_cat" action="compare.php" method="post" onSubmit="return compareGoods(this);" class="goodslistForm" data-state="0">
-                        <div class="goods-list-warp">
-            <ul ectype="items">
-                                                <li class="gl-h-item ">
-                    <div class="gl-i-wrap">
-                        <div class="col col-1">
-                            <div class="p-img"><a href="goods.php?id=2" target="_blank"><img src="images/201912/thumb_img/0_thumb_G_1575243908111.jpg" /></a></div>
-                            <div class="p-right">
-                                <div class="p-name"><a href="goods.php?id=2" title="aaaaaa" target="_blank">aaaaaa</a></div>
-                                <div class="p-lie">
-                                    <div class="p-num">销量：0</div>
-                                    <div class="p-comm">评价：0</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-2">
-                            <div class="p-store">
-                                                        <a href="javascript:;" title="WEBSC" class="store">WEBSC</a>
-                                                        
-                                                        <a href="javascript:;" id="IM" onclick="openWin(this)" ru_id="0" class="p-kefu"><i class="iconfont icon-kefu"></i></a>
-                                                        
-                            </div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="p-price">
-                                <div class="shop-price">
-                                                                            <em>¥</em>321.00                                                                    </div>
-                                <div class="original-price"><em>¥</em>385.20</div>
-                            </div>
-                        </div>
-                        <div class="col col-4">
-                            <div class="p-operate">
-                                <a href="javascript:void(0);" id="compareLink">
-                                <input id="duibi_2" type="checkbox" name="duibi" class="ui-checkbox" onClick="Compare.add(this, 2,'aaaaaa','0', 'images/201912/thumb_img/0_thumb_G_1575243908111.jpg', '<em>¥</em>321.00', '<em>¥</em>385.20')">
-                                <label class="ui-label" for="duibi_2">对比</label>
-                            </a>
-                            <a href="javascript:collect(2);" class="choose-btn-coll"><i class="iconfont icon-zan-alt"></i>收藏</a>
-                                                                                            <a href="javascript:void(0);" onClick="javascript:addToCart(2,0,event,this,'flyItem2');" rev="images/201912/thumb_img/0_thumb_G_1575243908111.jpg" data-dialog="addCart_dialog" data-id="" data-divid="addCartLog" data-url="" data-title="请选择属性" class="addcart">
-                                    <i class="iconfont icon-carts"></i>加入购物车                                </a>
-                                                                                        </div>
-                        </div>
-                    </div>
-                </li>
-                                                                <li class="gl-h-item item_bg">
-                    <div class="gl-i-wrap">
-                        <div class="col col-1">
-                            <div class="p-img"><a href="goods.php?id=1" target="_blank"><img src="images/201911/thumb_img/0_thumb_G_1575069547663.jpg" /></a></div>
-                            <div class="p-right">
-                                <div class="p-name"><a href="goods.php?id=1" title="【精致生活】轻奢三居美宅/三亚站/千古情" target="_blank">【精致生活】轻奢三居美宅/三亚站/千古情</a></div>
-                                <div class="p-lie">
-                                    <div class="p-num">销量：0</div>
-                                    <div class="p-comm">评价：0</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-2">
-                            <div class="p-store">
-                                                        <a href="javascript:;" title="WEBSC" class="store">WEBSC</a>
-                                                        
-                                                        <a href="javascript:;" id="IM" onclick="openWin(this)" ru_id="0" class="p-kefu"><i class="iconfont icon-kefu"></i></a>
-                                                        
-                            </div>
-                        </div>
-                        <div class="col col-3">
-                            <div class="p-price">
-                                <div class="shop-price">
-                                                                            <em>¥</em>360.00                                                                    </div>
-                                <div class="original-price"><em>¥</em>635.00</div>
-                            </div>
-                        </div>
-                        <div class="col col-4">
-                            <div class="p-operate">
-                                <a href="javascript:void(0);" id="compareLink">
-                                <input id="duibi_1" type="checkbox" name="duibi" class="ui-checkbox" onClick="Compare.add(this, 1,'【精致生活】轻奢三居美宅/三亚站/千古情','0', 'images/201911/thumb_img/0_thumb_G_1575069547663.jpg', '<em>¥</em>360.00', '<em>¥</em>635.00')">
-                                <label class="ui-label" for="duibi_1">对比</label>
-                            </a>
-                            <a href="javascript:collect(1);" class="choose-btn-coll selected"><i class="iconfont icon-zan-alts"></i>收藏</a>
-                                                                                            <a href="javascript:void(0);" onClick="javascript:addToCart(1,0,event,this,'flyItem2');" rev="images/201911/thumb_img/0_thumb_G_1575069547663.jpg" data-dialog="addCart_dialog" data-id="" data-divid="addCartLog" data-url="" data-title="请选择属性" class="addcart">
-                                    <i class="iconfont icon-carts"></i>加入购物车                                </a>
-                                                                                        </div>
-                        </div>
-                    </div>
-                </li>
-                                 
-            </ul>
+                <div class="no_records">
+            <i class="no_icon_two"></i>
+            <div class="no_info no_info_line">
+                <h3>抱歉，没有找到符合条件的数据</h3>
+                <div class="no_btn">
+                    <a href="index.php" class="btn sc-redBg-btn">返回首页</a>
+                </div>
             </div>
-                        </form>
-                        <div id="flyItem2" class="fly_item2"><img src="" width="40" height="40"></div>
         </div>
-        <input type="hidden" value="2" id="region_id" name="region_id">
-        <input type="hidden" value="22" id="area_id" name="area_id">
                 
                     
             
@@ -519,7 +273,8 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
         </div>
     </div>
     554fcae493e564ee0dc75bdf2ebf94causer_menu_position|a:1:{s:4:"name";s:18:"user_menu_position";}554fcae493e564ee0dc75bdf2ebf94ca    	 
-	<div class="duibi_box" id="slideTxtBox">
+	
+<div class="duibi_box" id="slideTxtBox">
     <div class="parWarp">
         <div class="parTit">对比栏</div>
         <div class="parBd">
@@ -550,7 +305,8 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
             </div>
         </div>
     </div>
-</div>    
+</div>
+    
     <div class="footer-new">
     <div class="footer-new-top">
     	<div class="w w1200">
@@ -707,7 +463,7 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
         <input type="hidden" name="seller_kf_IM" value="" rev="" ru_id="0" />
         <input type="hidden" name="seller_kf_qq" value="360682078" />
         <input type="hidden" name="seller_kf_tel" value="15955555555" />
-        <input type="hidden" name="user_id" ectype="user_id" value="179" />
+        <input type="hidden" name="user_id" ectype="user_id" value="0" />
     </div>
 </div>
 <script type="text/javascript" src="js/suggest.js"></script><script type="text/javascript" src="js/scroll_city.js"></script><script type="text/javascript" src="js/utils.js"></script>

@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:42:"D:/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575515688;s:8:"maketime";i:1575512088;}<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:77:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575528557;s:8:"maketime";i:1575524957;}<!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -96,9 +96,12 @@
                         </ul>
                     </li>
                     <li class="ml20 user-action">
-                                                <div class="login-btn t-center fw600 cursorpt " id="loginshow">
-                            21170044-729584                            <img src="themes/ecmoban_dsc2017/images/touxiang.jpg"/>
-                        </div>
+                        						<div class="login-info f0 ">
+							<p class="top-line"></p>
+							<a href="javascript:void(0);" style="border: none;"><img class="user-head circle" src="themes/ecmoban_dsc2017/images/touxiang.jpg" alt="头像" ></a>
+							<span class="f14 fw600 ver-t" style="color: white;">26855469-875976</span>
+							
+						</div>
                                             </li>
                 </ul>
             </div>
@@ -548,7 +551,6 @@
                     <h1 class="f28 c_gray_dark fw700">热门目的地,旅行资讯</h1>
                     <p class="f14 c_gray">
                         <span>灵魂和身体，总有一个在路上</span>
-                        <!--<span class="clear c_green fw600 cursorpt">清除足迹</span>-->
                     </p>
                 </div>
             </div>
@@ -644,7 +646,7 @@
                             </div>
                             
                         </a>
-                        <div class="collect cursorpt " title="未收藏" data-id="1"></div>
+                        <div class="collect cursorpt active" title="未收藏" data-id="1"></div>
                         <div class="info clearfloat">
                             <a href="goods.php?id=1" target="_blank">
                                 <div class="fl c_gray_dark f20">
@@ -691,7 +693,7 @@
                             </div>
                             
                         </a>
-                        <div class="collect cursorpt " title="未收藏" data-id="2"></div>
+                        <div class="collect cursorpt active" title="未收藏" data-id="2"></div>
                         <div class="info clearfloat">
                             <a href="http://www.mayi.com/room/851936298" target="_blank">
                                 <div class="fl c_gray_dark f20">

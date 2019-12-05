@@ -99,10 +99,12 @@
                     </li>
                     <li class="ml20 user-action">
                         {if $userinfo.username}
-                        <div class="login-btn t-center fw600 cursorpt " id="loginshow">
-                            {$userinfo.nick_name}
-                            <img src="{if $userinfo.user_picture}{$userinfo.user_picture}{else}themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/touxiang.jpg{/if}"/>
-                        </div>
+						<div class="login-info f0 ">
+							<p class="top-line"></p>
+							<a href="javascript:void(0);" style="border: none;"><img class="user-head circle" src="{if $userinfo.user_picture}{$userinfo.user_picture}{else}themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/touxiang.jpg{/if}" alt="头像" ></a>
+							<span class="f14 fw600 ver-t" style="color: white;">{$userinfo.nick_name}</span>
+							
+						</div>
                         {else}
                         <div class="login-btn t-center fw600 cursorpt " id="loginshow">登录/注册</div>
                         {/if}
@@ -546,7 +548,6 @@
                     <h1 class="f28 c_gray_dark fw700">热门目的地,旅行资讯</h1>
                     <p class="f14 c_gray">
                         <span>灵魂和身体，总有一个在路上</span>
-                        <!--<span class="clear c_green fw600 cursorpt">清除足迹</span>-->
                     </p>
                 </div>
             </div>
@@ -650,7 +651,7 @@
                             </div>
                             <!-- 优选 -->
                         </a>
-                        <div class="collect cursorpt " title="未收藏" data-id="{$goods.goods_id}"></div>
+                        <div class="collect cursorpt {if $goods.favorite == 1}active{/if}" title="未收藏" data-id="{$goods.goods_id}"></div>
                         <div class="info clearfloat">
                             <a href="goods.php?id={$goods.goods_id}" target="_blank">
                                 <div class="fl c_gray_dark f20">
@@ -707,7 +708,7 @@
                             </div>
                             <!-- 优选 -->
                         </a>
-                        <div class="collect cursorpt " title="未收藏" data-id="{$goods.goods_id}"></div>
+                        <div class="collect cursorpt {if $goods.favorite == 1}active{/if}" title="未收藏" data-id="{$goods.goods_id}"></div>
                         <div class="info clearfloat">
                             <a href="http://www.mayi.com/room/851936298" target="_blank">
                                 <div class="fl c_gray_dark f20">
