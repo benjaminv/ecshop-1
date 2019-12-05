@@ -93,6 +93,7 @@ if(!function_exists('silders')){
 	}
 }
 
+
 /* end */
 
 if (isset($_GET['code']) && !empty($_GET['code'])) {
@@ -306,10 +307,14 @@ else {
 	**Date:2019/11/30
 	**Time:13:46
 	*/
-
+	//分类
 	$house_category = get_category_tree_leve_one();
 
 	$smarty->assign('house_category',$house_category);
+	//用户
+	$user_id = isset($_SESSION['user_id']) && !empty($_SESSION['user_id']) ? $_SESSION['user_id'] : 0;
+	$info = get_user_default($user_id);
+	$smarty->assign('userinfo',$info);
 	//旅行资讯
 	$travels = travel_infomation();
 	$smarty->assign('travels',$travels);
@@ -324,7 +329,7 @@ else {
 	$smarty->assign('hgoods',$hgoods);
 	// var_dump($smarty->get_template_vars());
 	// var_dump($smarty);die;
-	// var_dump($index_ad);die;
+	// var_dump($_SESSION);die;
 	//轮播
 	$silders = silders();
 	$smarty->assign('silders',$silders);

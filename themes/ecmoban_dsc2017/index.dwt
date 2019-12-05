@@ -98,7 +98,14 @@
                         </ul>
                     </li>
                     <li class="ml20 user-action">
+                        {if $userinfo.username}
+                        <div class="login-btn t-center fw600 cursorpt " id="loginshow">
+                            {$userinfo.nick_name}
+                            <img src="{if $userinfo.user_picture}{$userinfo.user_picture}{else}themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/touxiang.jpg{/if}"/>
+                        </div>
+                        {else}
                         <div class="login-btn t-center fw600 cursorpt " id="loginshow">登录/注册</div>
+                        {/if}
                     </li>
                 </ul>
             </div>

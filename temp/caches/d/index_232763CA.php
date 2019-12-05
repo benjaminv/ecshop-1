@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:42:"D:/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575459354;s:8:"maketime";i:1575455754;}<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:42:"D:/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575515688;s:8:"maketime";i:1575512088;}<!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -96,8 +96,10 @@
                         </ul>
                     </li>
                     <li class="ml20 user-action">
-                        <div class="login-btn t-center fw600 cursorpt " id="loginshow">登录/注册</div>
-                    </li>
+                                                <div class="login-btn t-center fw600 cursorpt " id="loginshow">
+                            21170044-729584                            <img src="themes/ecmoban_dsc2017/images/touxiang.jpg"/>
+                        </div>
+                                            </li>
                 </ul>
             </div>
         </div>

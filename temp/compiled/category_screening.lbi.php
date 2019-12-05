@@ -73,10 +73,10 @@
                         <div class="all_a_z">
                             <ul class="a_z">
                                 <li class="all_brand curr"><?php echo $this->_var['lang']['all_brand']; ?></li>
-                                <?php $_from = $this->_var['letter']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'letter_0_57599700_1575452118');if (count($_from)):
-    foreach ($_from AS $this->_var['key'] => $this->_var['letter_0_57599700_1575452118']):
+                                <?php $_from = $this->_var['letter']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'letter_0_56379400_1575510685');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['letter_0_56379400_1575510685']):
 ?>
-                                <li data-key="<?php echo $this->_var['letter_0_57599700_1575452118']; ?>"><?php echo $this->_var['letter_0_57599700_1575452118']; ?></li>
+                                <li data-key="<?php echo $this->_var['letter_0_56379400_1575510685']; ?>"><?php echo $this->_var['letter_0_56379400_1575510685']; ?></li>
                                 <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
                                 <li class="other_brand"><?php echo $this->_var['lang']['Other']; ?></li>
                             </ul>
@@ -186,15 +186,15 @@
             <?php endif; ?> 
             
 
-            <?php $_from = $this->_var['filter_attr_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'filter_attr_0_57599700_1575452118');if (count($_from)):
-    foreach ($_from AS $this->_var['filter_attr_0_57599700_1575452118']):
+            <?php $_from = $this->_var['filter_attr_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'filter_attr_0_56379400_1575510685');if (count($_from)):
+    foreach ($_from AS $this->_var['filter_attr_0_56379400_1575510685']):
 ?>
             <li class="s-line same_li">
             	<dl class="s-l-wrap attr_list">
-                    <div class="s-l-tit filter_attr_name"><?php echo htmlspecialchars($this->_var['filter_attr_0_57599700_1575452118']['filter_attr_name']); ?>：</div>
+                    <div class="s-l-tit filter_attr_name"><?php echo htmlspecialchars($this->_var['filter_attr_0_56379400_1575510685']['filter_attr_name']); ?>：</div>
                     <div class="s-l-value attr_son">
                         <div class="item_list">
-                            <?php $_from = $this->_var['filter_attr_0_57599700_1575452118']['attr_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'attr');if (count($_from)):
+                            <?php $_from = $this->_var['filter_attr_0_56379400_1575510685']['attr_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'attr');if (count($_from)):
     foreach ($_from AS $this->_var['attr']):
 ?>
                             <?php if ($this->_var['attr']['selected']): ?>

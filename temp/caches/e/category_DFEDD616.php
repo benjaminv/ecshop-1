@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:45:"D:/ecshop/themes/ecmoban_dsc2017/category.dwt";i:1;s:61:"D:/ecshop/themes/ecmoban_dsc2017/library/js_languages_new.lbi";i:2;s:65:"D:/ecshop/themes/ecmoban_dsc2017/library/page_header_category.lbi";i:3;s:67:"D:/ecshop/themes/ecmoban_dsc2017/library/category_recommend_hot.lbi";i:4;s:52:"D:/ecshop/themes/ecmoban_dsc2017/library/ur_here.lbi";i:5;s:63:"D:/ecshop/themes/ecmoban_dsc2017/library/category_screening.lbi";i:6;s:55:"D:/ecshop/themes/ecmoban_dsc2017/library/goods_list.lbi";i:7;s:61:"D:/ecshop/themes/ecmoban_dsc2017//library/category_filter.lbi";i:8;s:69:"D:/ecshop/themes/ecmoban_dsc2017//library/category_recommend_best.lbi";i:9;s:50:"D:/ecshop/themes/ecmoban_dsc2017/library/duibi.lbi";i:10;s:56:"D:/ecshop/themes/ecmoban_dsc2017/library/page_footer.lbi";}s:7:"expires";i:1575455718;s:8:"maketime";i:1575452118;}<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:45:"D:/ecshop/themes/ecmoban_dsc2017/category.dwt";i:1;s:61:"D:/ecshop/themes/ecmoban_dsc2017/library/js_languages_new.lbi";i:2;s:65:"D:/ecshop/themes/ecmoban_dsc2017/library/page_header_category.lbi";i:3;s:67:"D:/ecshop/themes/ecmoban_dsc2017/library/category_recommend_hot.lbi";i:4;s:52:"D:/ecshop/themes/ecmoban_dsc2017/library/ur_here.lbi";i:5;s:63:"D:/ecshop/themes/ecmoban_dsc2017/library/category_screening.lbi";i:6;s:55:"D:/ecshop/themes/ecmoban_dsc2017/library/goods_list.lbi";i:7;s:61:"D:/ecshop/themes/ecmoban_dsc2017//library/category_filter.lbi";i:8;s:69:"D:/ecshop/themes/ecmoban_dsc2017//library/category_recommend_best.lbi";i:9;s:50:"D:/ecshop/themes/ecmoban_dsc2017/library/duibi.lbi";i:10;s:56:"D:/ecshop/themes/ecmoban_dsc2017/library/page_footer.lbi";}s:7:"expires";i:1575514285;s:8:"maketime";i:1575510685;}<!doctype html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -395,7 +395,7 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                                     <input id="1" type="checkbox" name="duibi" class="ui-checkbox" onClick="Compare.add(this, 1,'【精致生活】轻奢三居美宅/三亚站/千古情','0', 'images/201911/thumb_img/0_thumb_G_1575069547663.jpg', '<em>¥</em>360.00', '<em>¥</em>635.00')">
                                     <label class="ui-label" for="1">对比</label>
                                 </a>
-                                <a href="javascript:collect(1);" class="choose-btn-coll"><i class="iconfont icon-zan-alt"></i>收藏</a>
+                                <a href="javascript:collect(1);" class="choose-btn-coll selected"><i class="iconfont icon-zan-alts"></i>收藏</a>
                                                                                                         <a href="javascript:void(0);" onClick="javascript:addToCart(1,0,event,this,'flyItem');" rev="images/201911/thumb_img/0_thumb_G_1575069547663.jpg" data-dialog="addCart_dialog" data-divid="addCartLog" data-title="请选择属性" class="addcart">
                                         <i class="iconfont icon-carts"></i>加入购物车                                    </a>
                                                                                                 </div>
@@ -486,7 +486,7 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
                                 <input id="duibi_1" type="checkbox" name="duibi" class="ui-checkbox" onClick="Compare.add(this, 1,'【精致生活】轻奢三居美宅/三亚站/千古情','0', 'images/201911/thumb_img/0_thumb_G_1575069547663.jpg', '<em>¥</em>360.00', '<em>¥</em>635.00')">
                                 <label class="ui-label" for="duibi_1">对比</label>
                             </a>
-                            <a href="javascript:collect(1);" class="choose-btn-coll"><i class="iconfont icon-zan-alt"></i>收藏</a>
+                            <a href="javascript:collect(1);" class="choose-btn-coll selected"><i class="iconfont icon-zan-alts"></i>收藏</a>
                                                                                             <a href="javascript:void(0);" onClick="javascript:addToCart(1,0,event,this,'flyItem2');" rev="images/201911/thumb_img/0_thumb_G_1575069547663.jpg" data-dialog="addCart_dialog" data-id="" data-divid="addCartLog" data-url="" data-title="请选择属性" class="addcart">
                                     <i class="iconfont icon-carts"></i>加入购物车                                </a>
                                                                                         </div>
@@ -707,7 +707,7 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
         <input type="hidden" name="seller_kf_IM" value="" rev="" ru_id="0" />
         <input type="hidden" name="seller_kf_qq" value="360682078" />
         <input type="hidden" name="seller_kf_tel" value="15955555555" />
-        <input type="hidden" name="user_id" ectype="user_id" value="157" />
+        <input type="hidden" name="user_id" ectype="user_id" value="179" />
     </div>
 </div>
 <script type="text/javascript" src="js/suggest.js"></script><script type="text/javascript" src="js/scroll_city.js"></script><script type="text/javascript" src="js/utils.js"></script>

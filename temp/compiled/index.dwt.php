@@ -98,7 +98,14 @@
                         </ul>
                     </li>
                     <li class="ml20 user-action">
+                        <?php if ($this->_var['userinfo']['username']): ?>
+                        <div class="login-btn t-center fw600 cursorpt " id="loginshow">
+                            <?php echo $this->_var['userinfo']['nick_name']; ?>
+                            <img src="<?php if ($this->_var['userinfo']['user_picture']): ?><?php echo $this->_var['userinfo']['user_picture']; ?><?php else: ?>themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/touxiang.jpg<?php endif; ?>"/>
+                        </div>
+                        <?php else: ?>
                         <div class="login-btn t-center fw600 cursorpt " id="loginshow">登录/注册</div>
+                        <?php endif; ?>
                     </li>
                 </ul>
             </div>
