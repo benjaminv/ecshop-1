@@ -42,6 +42,57 @@ if(!function_exists('travel_infomation')){
 		return $res;
 	} 
 }
+//轮播图
+if(!function_exists('silders')){
+	function silders(){
+		$db = $GLOBALS['db'];
+		$time = gmtime();
+		$silders_sql = 'SELECT ap.ad_width, ap.ad_height, ad.ad_id, ad.ad_name, ad.ad_code, ad.ad_bg_code, ad.ad_link, ad.link_man, ad.link_color, ad.b_title, ad.s_title, ad.start_time, ad.end_time, ad.ad_type, ad.goods_name FROM ' . $GLOBALS['ecs']->table('ad_position') . ' AS ap ' . ' LEFT JOIN ' . $GLOBALS['ecs']->table('ad') . ' AS ad ON ad.position_id = ap.position_id ' . ' WHERE ' .''. (' ad.media_type=0 AND \'' . $time . '\' > ad.start_time AND \'' . $time . '\' < ad.end_time and ad.enabled=1 AND ad.ad_name LIKE \'index_ad%\' AND theme = \'' ) . $GLOBALS['_CFG']['template'] . '\' ORDER BY ad_name,ad.ad_id ASC';
+		$silders = $db->getAll($silders_sql);
+		if(!empty($silders)){
+			foreach($silders as $k=>$silder){
+				if ($silder['ad_code']) {
+					if (strpos($silder['ad_code'], 'http://') === false && strpos($silder['ad_code'], 'https://') === false) {
+						$silder['ad_code'] = DATA_DIR . '/afficheimg/' . $silder['ad_code'];
+						$silder['ad_code'] = get_image_path(0, $silder['ad_code']);
+					} else {
+						$silder['ad_code'] = str_replace('../', '', $silder['ad_code']);
+						$silder['ad_code'] = get_image_path(0, $silder['ad_code']);
+					}
+				}
+
+				if ($silder['ad_bg_code']) {
+					if (strpos($silder['ad_bg_code'], 'http://') === false && strpos($silder['ad_bg_code'], 'https://') === false) {
+						$silder['ad_bg_code'] = DATA_DIR . '/afficheimg/' . $silder['ad_bg_code'];
+						$silder['ad_bg_code'] = get_image_path(0, $silder['ad_bg_code']);
+					} else {
+						$silder['ad_bg_code'] = str_replace('../', '', $silder['ad_bg_code']);
+						$silder['ad_bg_code'] = get_image_path(0, $silder['ad_bg_code']);
+					}
+				}
+
+				if ($silder['goods_name'] && $silder['ad_type']) {
+					$silder['goods_info'] = get_goods_ad_promote($silder['goods_name'], 0, 0, 0);
+					if (strpos($silder['ad_link'], 'http://') !== false || strpos($silder['ad_link'], 'https://') !== false) {
+						$silder['ad_link'] = '';
+					}
+		
+					if (empty($silder['ad_link'])) {
+						$silder['ad_link'] = $silder['goods_info']['url'];
+					}
+				}
+				else if ($silder['ad_link']) {
+					$silder['ad_link'] = 'affiche.php?ad_id=' . $silder['ad_id'] . '&amp;uri=' . urlencode($silder['ad_link']);
+				}
+
+				$silders[$k] = $silder;
+			}
+		}
+
+		return $silders;
+	}
+}
+
 /* end */
 
 if (isset($_GET['code']) && !empty($_GET['code'])) {
@@ -272,7 +323,11 @@ else {
 	$hgoods = recommend_house(0,$notbrand);
 	$smarty->assign('hgoods',$hgoods);
 	// var_dump($smarty->get_template_vars());
-	// var_dump($GLOBALS['_CFG']);
+	// var_dump($smarty);die;
+	// var_dump($index_ad);die;
+	//轮播
+	$silders = silders();
+	$smarty->assign('silders',$silders);
 	/*-end-*/
 	if(empty($_GET['sz'])){
 		$smarty->display('index.dwt', $cache_id);

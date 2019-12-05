@@ -25,12 +25,10 @@
     <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/chatStyle.css">
     
     <link rel="stylesheet" href="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/css/purebox.css">
-
     
     <?php echo $this->smarty_insert_scripts(array('files'=>'jquery-1.9.1.min.js,jquery.json.js,transport_jquery.js,suggest.js,scroll_city.js,utils.js,warehouse.js,warehouse_area.js,jquery.SuperSlide.2.1.1.js,jquery.yomi.js,cart_common.js,cart_quick_links.js')); ?>
     <script src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/dsc-common.js"></script>
     <script src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/jquery.purebox.js?v=12312"></script>
-    
     
 </head>
 
@@ -109,40 +107,30 @@
             <div class="bx-wrapper" style="max-width: 100%;">
                 <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 560px;">
                     <ul id="banner" style="width: auto; position: relative;">
-                        <li
-                            style="float: none; list-style: none; position: absolute; width: 1903px; z-index: 50; display: list-item;">
-                            <a href="#" target=""
-                                _mayi_rp="webindex|banner|851895184">
-                                <img src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/9GTZMMG2W5Y3JVCL9JCSRX7QWQT6WG.jpg"
-                                    alt="banner2">
-                                <div class="w1050">
-                                    <div class="room-info clearfloat w1050">
-                                        <img class="fr circle ml15"
-                                            src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/sz/img/4EGXGTMT66LWSQEHQ7SAQKZA6AXHTE.jpg_35x35c.jpg"
-                                            alt="头像">
-                                        <div class="fr">
-                                            <p class="local t-right"><span
-                                                    class="radius-6 f14 c_gray_dark fw600">大理</span></p>
-                                            <p class="c_white f14 fw600">大理古城幽兰尚居 花朝双床房</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <?php $_from = $this->_var['silders']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'silder');if (count($_from)):
+    foreach ($_from AS $this->_var['silder']):
+?>
+                        <li style="float: none; list-style: none; position: absolute; width: 1903px; z-index: 0; display: list-item;max-width: <?php echo $this->_var['silder']['ad_width']; ?>;max-height:<?php echo $this->_var['silder']['ad_height']; ?>;">
+                            <a href="<?php echo $this->_var['silder']['ad_link']; ?>" target="_blank">
+                                <img src="<?php echo $this->_var['silder']['ad_code']; ?>" alt="<?php echo $this->_var['silder']['ad_name']; ?>" width="<?php echo $this->_var['silder']['ad_width']; ?>" height="<?php echo $this->_var['silder']['ad_height']; ?>">
                             </a>
                         </li>
+                        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
                     </ul>
                 </div>
                 <div class="bx-controls bx-has-pager bx-has-controls-direction">
-                    <div class="bx-pager bx-default-pager">
-                        <div class="bx-pager-item"><a href="#" data-slide-index="0"
-                                class="bx-pager-link">1</a></div>
-                        <div class="bx-pager-item"><a href="#" data-slide-index="1"
-                                class="bx-pager-link active">2</a></div>
-                        <div class="bx-pager-item"><a href="#" data-slide-index="2"
-                                class="bx-pager-link">3</a></div>
+                    <div class="bx-pager bx-default-pager" id="silder-btn">
+                        <?php $_from = $this->_var['silders']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'item');if (count($_from)):
+    foreach ($_from AS $this->_var['k'] => $this->_var['item']):
+?>
+                        <div class="bx-pager-item">
+                            <a href="javascript:void(0)" data-slide-index="<?php echo $this->_var['k']; ?>" class="bx-pager-link"><?php echo $this->_var['k']; ?></a>
+                        </div>
+                        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
                     </div>
-                    <div class="bx-controls-direction">
-                        <a class="bx-prev" href="#">Prev</a>
-                        <a class="bx-next" href="#">Next</a>
+                    <div class="bx-controls-direction" id="silder-change">
+                        <a class="bx-prev" href="javascript:void(0)">Prev</a>
+                        <a class="bx-next" href="javascript:void(0)">Next</a>
                     </div>
                 </div>
             </div>
@@ -1065,6 +1053,60 @@ if ($this->_foreach['nav_bottom_list']['total'] > 0):
             }
         })
     })
+    //轮播
+    var silder = {
+        ele:'#banner',
+        isauto:true,
+        time:5000,
+        current:0,
+        init:function(ele){
+            var e = $(ele) || $(this.ele),_self=this;
+            _self.change(0);
+            if(_self.isauto){
+                setInterval(function(){
+                    _self.next();
+                },_self.time);
+            }
+            return _self;
+        },
+        get_current:function(){
+            var e = $(this.ele),current=0,children = e.children('li'),_self = this;
+
+            for(var i=0;i<children.length;i++){
+                
+                if($(children[i]).css('zIndex') == 50){
+                    current = i;
+                    break;
+                }
+            }
+            _self.current = current;
+            return current;
+        },
+        next:function(){
+            var current = this.get_current() +1;
+            this.change(current);
+        },
+        prev:function(){
+            var current = this.get_current() - 1;
+            this.change(current);
+        },
+        change:function(current){
+            var children = $(this.ele).children('li'),btn = $("#silder-btn .bx-pager-item");
+            current = current > children.length -1 ? 0 :(current < 0 ? children.length-1 :current);
+            btn.eq(current).siblings('.bx-pager-item').children('a').removeClass('active');
+            children.eq(current).siblings('li').css({'zIndex':0}).hide();
+            btn.eq(current).children('a').addClass('active');
+            children.eq(current).css('zIndex',50).fadeIn(1000);
+        }
+    }
+    var s = silder.init();
+    $("#silder-change .bx-prev").on('click',function(){
+        s.prev()
+    })
+    $("#silder-change .bx-next").on('click',function(){
+        s.next()
+    })
+    //end轮播
 </script>
 
 </html>

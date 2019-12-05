@@ -74,7 +74,6 @@ function get_adslist($ru_id)
 	$sql = 'SELECT ad.*, COUNT(o.order_id) AS ad_stats, p.position_name, p.user_id ' . 'FROM ' . $GLOBALS['ecs']->table('ad') . 'AS ad ' . 'LEFT JOIN ' . $GLOBALS['ecs']->table('ad_position') . ' AS p ON p.position_id = ad.position_id ' . 'LEFT JOIN ' . $GLOBALS['ecs']->table('order_info') . (' AS o ON o.from_ad = ad.ad_id ' . $where . ' ' . $end_where . ' ') . 'GROUP BY ad.ad_id ' . 'ORDER by ' . $filter['sort_by'] . ' ' . $filter['sort_order'];
 	$res = $GLOBALS['db']->selectLimit($sql, $filter['page_size'], $filter['start']);
 	$idx = 0;
-
 	while ($rows = $GLOBALS['db']->fetchRow($res)) {
 		$rows['type'] = $rows['media_type'] == 0 ? $GLOBALS['_LANG']['ad_img'] : '';
 		$rows['type'] .= $rows['media_type'] == 1 ? $GLOBALS['_LANG']['ad_flash'] : '';

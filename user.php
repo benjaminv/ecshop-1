@@ -903,6 +903,7 @@ else if ($action == 'act_register') {
 	if ($_CFG['shop_reg_closed']) {
 		$smarty->assign('action', 'register');
 		$smarty->display('user_passport.dwt');
+		exit();
 	}
 	else {
 		include_once ROOT_PATH . 'includes/lib_passport.php';
@@ -956,7 +957,7 @@ else if ($action == 'act_register') {
 		if (isset($_POST['mobile_code']) && !empty($other['mobile_code']) && $other['mobile_code'] != $_SESSION['sms_mobile_code']) {
 			show_message($_LANG['msg_mobile_code_not_correct'], $_LANG['sign_up'], 'user.php?act=register', 'error');
 		}
-
+		
 		if (register($username, $password, $email, $other, $register_mode) !== false) {
 			$sql = 'SELECT id FROM ' . $ecs->table('reg_fields') . ' WHERE type = 0 AND display = 1 ORDER BY dis_order, id';
 			$fields_arr = $db->getAll($sql);
@@ -990,13 +991,15 @@ else if ($action == 'act_register') {
 			$ucdata = empty($user->ucdata) ? '' : $user->ucdata;
 			if (!$register_mode && $_CFG['user_login_register'] == 1) {
 				header('Location:user.php?act=user_email_verify');
+				
 			}
 			else {
-				header('Location:user.php');
+				header('Location:user.php?act=login');
 			}
 		}
 		else {
-			$err->show($_LANG['sign_up'], 'user.php?act=register');
+			$err->show($_LANG['sign_up'], 'user.php?act=login');
+			exit();
 		}
 	}
 }
@@ -2023,7 +2026,6 @@ else if ($action == 'act_login') {
 			recalculate_price();
 			$sql = 'SELECT nick_name, is_validated FROM ' . $GLOBALS['ecs']->table('users') . ' WHERE user_id = \'' . $_SESSION['user_id'] . '\' LIMIT 1';
 			$info = $db->getRow($sql);
-
 			if (empty($info['nick_name'])) {
 				$nick_name = rand(1, 99999999) . '-' . rand(1, 999999);
 				$update_data['nick_name'] = $nick_name;
