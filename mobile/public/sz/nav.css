@@ -1,0 +1,58 @@
+@charset "UTF-8";
+#top-more-wraper .more_pop ul.more_ul {
+  width: 4.13333333rem;
+  text-align: left;
+  padding: 0;
+}
+#top-more-wraper .menu-icon {
+  display: inline-block;
+  width: 0.64rem;
+  height: 0.64rem;
+  background-image: url(../images/icons-nav.png);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: 11.82666667rem 2.18666667rem;
+  vertical-align: middle;
+  margin: 0 0.37333333rem 0 0.8rem;
+}
+#top-more-wraper .index-icon {
+  background-position: -6.26666667rem -0.82666667rem;
+}
+#top-more-wraper .order-icon {
+  background-position: -7.38666667rem -0.82666667rem;
+}
+#top-more-wraper .discount-icon {
+  background-position: -8.4rem -0.8rem;
+}
+#top-more-wraper .collection-icon {
+  background-position: -9.52rem -0.82666667rem;
+}
+#top-more-wraper .footprint-icon {
+  background-position: -10.72rem -0.82666667rem;
+}
+#top-more-wraper .red-dot-top {
+  right: -0.13333333rem;
+  top: -0.06666667rem;
+}
+.red-dot {
+  min-width: 0.42666667rem;
+  height: 0.42666667rem;
+  background: #FF3F3F;
+  box-sizing: border-box;
+  color: white;
+  font-size: 0.26666667rem;
+  text-align: center;
+  line-height: 0.42666667rem;
+  border-radius: 50%;
+  right: 0.4rem;
+  top: 0.13333333rem;
+  vertical-align: middle;
+}
+.red-dot-detail {
+  right: -0.04rem;
+  top: 0.1rem;
+}
+.publicHeader #top-more-wraper {
+  top: 0.8rem;
+}
+/*# sourceMappingURL=nav.css.map */

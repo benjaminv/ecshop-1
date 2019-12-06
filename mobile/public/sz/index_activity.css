@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*夏日促销活动 2018-07-27  add by zhangzengkai*/
+.summer-activity .activityMain{
+    width:10rem;
+    height:3.73333rem;
+}
+.summer-activity .activityMain img{
+    width:10rem;
+}
+.activity-rules{
+    width:1.68rem;
+    height:0.68rem;
+    right:0;
+    bottom:0.27rem;
+    z-index:200;
+}
+.summer-activity .activity-close{
+    width:0.96rem;
+    height:0.96rem;
+    top:0.19rem;
+    right:.16rem;
+    z-index:200;
+}
+.activityRules{
+    color:#484848;
+    padding: 0.53rem 0.4rem ;
+}
+.layui-m-layersection .rule-main{
+    margin-top: 0.3rem;
+    line-height: .55rem;
+}
+.layui-m-layersection .rule-main div{
+    margin-bottom: 0.2rem;
+}
+#twoHundredRules section div{
+    margin-top: 0.2rem;
+}
+.activity-style{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:90;
+    background: #FFFFFF;
+}

@@ -1,140 +1,1755 @@
 <!DOCTYPE html>
-<html>
+<html data-dpr="3" style="font-size: 124.2px;">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" content="{$description}"/>
-    <meta name="keywords" content="{$keywords}"/>
-    <title>{$page_title}</title>
-    <link rel=stylesheet href="//at.alicdn.com/t/font_u366719ytlat6gvi.css" media="screen" title="no title">
-    <link rel=stylesheet href="//at.alicdn.com/t/font_lkv63qpdlo8khuxr.css" media="screen" title="no title">
-    <link href="__ROOT__/public/css/app.css?v=<?=date('Ymd')?>" rel=stylesheet>
-    <script>
-        window.ROOT_URL = '__ROOT__/';
-        window.PC_URL = '__PC__/';
-        //首页app下载连接
-        window.APP_DOWNLOAD_URL = '';
-        window.shopInfo = {ruid: 0, authority: 1};
-    </script>
-    <script src="https://cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.min.js"></script>
-    <script src="//3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
-    <script type="text/javascript" src="__STATIC__/js/jquery-1.9.1.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    {include file="jssdk"}
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="mobile-agent" content="format=html5;url=http://www.mayi.com/">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-itunes-app" content="app-id=494520120">
+    <title>{$page_title}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
 
     <style>
-        /*首页广告*/
-        .index-bg {
-            background: rgba(0, 0, 0, 0.6);
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: 1000;
-        }
-
-        .index-img {
-            position: fixed;
-            left: 10%;
-            right: 10%;
-            top: 50%;
-            z-index: 1001;
-        }
-
-        .index-img img {
-            width: 100%;
-        }
-
-        .index-bg span {
+        .back-left {
+            width: 0.66666667rem;
+            height: 0.66666667rem;
+            background: url("/duanzu/resourcesWap/common/images/icons.png") 0 -10.54666667rem no-repeat;
+            background-size: 11.66666667rem 14.76rem;
             position: absolute;
-            bottom: 1.6rem;
-            left: 50%;
-            margin-left: -1rem;
-            color: #fff;
-            background: rgba(255, 255, 255, 0.3);
-            width: 2rem;
-            height: 2rem;
-            line-height: 2rem;
-            font-size: 1.8rem;
-            display: block;
-            text-align: center;
-            border-radius: 100%;
-            z-index: 1002;
+            top: 0.33333333rem;
+            left: 0.53333333rem;
         }
     </style>
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/sz/mayi_base.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/sz/public.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/sz/datepacker.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/sz/index_new.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/sz/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/sz/city_select.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/sz/index_activity.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/sz/nav.css">
+    <meta name="viewport" content="initial-scale=0.3333333333333333, maximum-scale=0.3333333333333333,minimum-scale=0.3333333333333333, user-scalable=no">
+    <script src="__STATIC__/js/jquery-1.9.1.min.js"></script>
 </head>
-<body>
-<div id="app"></div>
 
-<script type="text/javascript" src="__ROOT__/public/js/manifest.js?v=<?=date('Ymd')?>"></script>
-<script type="text/javascript" src="__ROOT__/public/js/vendor.js?v=<?=date('Ymd')?>"></script>
-<script type="text/javascript" src="__ROOT__/public/js/app.js?v=<?=date('Ymd')?>"></script>
-
-<!--广告-->
-{if $popup_ads !=1}
-<div class="index-bg">
-    <span class="j-icon">×</span>
-    <a href="{$ad_link}">
-    <div class="index-img">
-        <img src="{$popup_ads}" id="index-img">
+<body class="font_28" style="font-size: 42px;">
+    <!-- 头部公用样式 -->
+    <div id="index-publicHeader" class="publicHeader">
+        <img src="__STATIC__/themes/ecmoban_dsc2017/images/logo.gif" class="logoImg">
+        <a href="tel:400-028-6868" class="telNum" id="tel_server">
+            <img src="__PUBLIC__/sz/TelIcon_03.png" alt="">
+        </a>
+        <div class="more_wraper">
+            <img src="__PUBLIC__/sz/more1_03.png" alt="">
+        </div>
+        <div id="top-more-wraper">
+            <div class="more_pop">
+                <span class="moreChunk"></span>
+                <ul class="more_ul">
+                    <li class="menu_action mindex"><span
+                            class="menu-icon index-icon"></span>首页</li>
+                    <li class="menu_action morder relave"><span
+                            class="menu-icon order-icon"></span>我的订单<b class="red-dot inline-block asote"
+                            style="display: none;"></b></li>
+                    <li class="menu_action mticket"><span
+                            class="menu-icon discount-icon"></span>优惠券</li>
+                    <li class="menu_action mlike"> <span
+                            class="menu-icon collection-icon"></span>我的收藏</li>
+                    <li class="menu_action mhistory">
+                        <span class="menu-icon footprint-icon"></span>
+                        浏览记录
+                    </li>
+                </ul>
+            </div>
+            <div class="trans_mask"></div>
+        </div>
     </div>
-    </a>
-</div>
-{/if}
-<p class="hide" style="text-align:right; display:none;">{C('shop.stats_code')}</p>
-<script>
-    window.onload = function () {
-        /*页面向上滚动js*/
-        $(".filter-top").click(function () {
-            $("html,body").animate({
-                scrollTop: 0
-            }, 200);
-        });
+    <div id="indexPage" class="indexHomePage">
+        <!-- 头部轮播图 -->
+        <header class="carousel ">
+            {foreach $silders as $k=>$silder}
+            <div class="carouselImgBox">
+                <a href="{$silder.ad_link}">
+                    <img src="{$silder.ad_code}">
+                </a>
+            </div>
+            {/foreach}
+        </header>
+        <!-- 搜索目的地 -->
+        <div class="index_floor section">
+            <div class="search_calendar">
+                <div class="search-form-box border-bottom relave inputSearchBox">
+                    <div class="choice_city">
+                        <span class="cityname c_black">北京</span>
+                    </div>
+                    <div class="search_nearby" id="search_nearby"></div>
+                    <span class="mapIcon"></span>
+                    <span class="rightACC_T"></span>
+                </div>
+            </div>
+            <div class="subparent" onclick="search();">搜索民宿</div>
+            <ul class="dynamicUl">
+                <span class="fl">搜索中</span>
+                <span class="fl">&nbsp;&nbsp;</span>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!--主题分类-->
+        <div class="themeList">
+            <ul class="clearfloat themeUl">
+                {foreach $cates as $cate}
+                <li>
+                    <a href="{$cate['url']}">
+                        <img src="__STATIC__/{$cate['cate_icon']}" alt="{$cate['name']}">
+                    </a>
+                </li>
+                {/foreach}
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <!--热门玩法-->
+        <div class="layout">
+            <div class="enter_main">
+                <div class="enter_head">
+                    <a href="#" class="more_head_text block">
+                        <span class="title font_40 c_black">旅行资讯</span>
+                        <span class="c_green font_28 fr lookMore">更多<i></i></span>
+                    </a>
+                </div>
+                <!--更多热门玩法-->
+                <div class="main_content">
+                    <div class="more_play" id="morePlay">
+                        <div class="swiper-container swiper-container-horizontal pad_left_40 mt15">
+                            {foreach $travel_information as $info}
+                            <div class="swiper-wrapper"
+                                style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                <div class="swiper-slide relave swiper-slide-active"
+                                    style="width: 6.67rem; margin-right: 30px;">
+                                    <div class="more_play_content">
+                                        <a href="#" class="play_img">
+                                            <img class="lazy"
+                                                src="__STATIC__/{$info['file_url']}">
+                                            <div class="more_play_text font_34">{$info.title}</div>
+                                            <div class="more_play_info font_24">
+                                                <span class="time">{date('Y-m-d',$info['add_time'])} </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {/foreach}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 特色 -->
+        <div class="qualityHouse clearfix pad_bot_60">
+            <div class=" font_40 mar_b_40 c_black">特色民宿</div>
+            {foreach $sgoods as $goods}
+            <div class="optimizationHouse">
+                <div class="collectBox {if $goods['favorite'] == 1}collectColor{/if}"></div>
+                <div class="houseImgBox clearfix">
+                    <img src="__STATIC__/{$goods.goods_img}" class="fl">
+                    <div class="priceBox">
+                        <span class="priceIcon">￥</span>
+                        <span class="newPrice">{$goods['shop_price']}</span>
+                        <span class="transverseLine"></span>
+                    </div>
+                </div>
+                <div class="houseIntroduce">
+                    <p class="houseIntroduceTittle">{$goods['goods_name']}</p>
+                    <div class="addressEvaluate">
+                        <span class="mapIconPic icon_after">&nbsp;北京</span>
+                        <span class="icon_after">{$goods['goods_weight']}居</span>
 
-        $(window).scroll(function () {
-            var prevTop = 0,
-                currTop = 0;
-            currTop = $(window).scrollTop();
-            win_height = $(window).height() * 2;
-            if (currTop >= win_height) {
-                $(".filter-top").stop(true, true).fadeIn(200);
-            } else {
-                $(".filter-top").stop(true, true).fadeOut(200);
-            }
-            //prevTop = currTop; //IE下有BUG，所以用以下方式
-            setTimeout(function () {
-                prevTop = currTop
-            }, 0);
-        });
+                        <span class="icon_after">{$goods['comments']['allmen']}评价</span>
+                        <span>{sprintf('%.1f',$goods['comments']['score'])}</span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            {/foreach}
+            <div class="more_quality_link">
+                <a href="javaScript:void(0);">更多民宿</a>
+            </div>
+        </div>
 
-        /*点击关闭顶部层*/
-        $(".ect-header-banner i.icon-guanbi").click(function () {
-            $(".app-down").hide();
-        });
-    }
+        <!--说走就走-东南亚-->
+        <div class="qualityHouse clearfix spring_goodPlace">
+            <div class=" font_40 mar_b_40 c_black">玖玖优质民宿</div>
+            {foreach $hgoods as $goods}
+            <div class="optimizationHouse">
+                <div class="collectBox  {if $goods['favorite'] == 1}collectColor{/if}"></div>
+                <div class="houseImgBox clearfix">
+                    <img src="__STATIC__/{$goods.goods_img}" class="fl">
+                    <div class="priceBox">
+                        <span class="priceIcon">￥</span>
+                        <span class="newPrice">{$goods['shop_price']}</span>
+                        <span class="transverseLine"></span>
+                    </div>
+                </div>
+                <div class="houseIntroduce">
+                    <p class="houseIntroduceTittle">{$goods['goods_name']}</p>
+                    <div class="addressEvaluate">
+                        <span class="mapIconPic icon_after">&nbsp;北京</span>
+                        <span class="icon_after">{$goods['goods_weight']}居</span>
 
-    //点击后关闭
-    $(".j-icon,.index-bg").click(function () {
-        $(".index-bg").hide();
-    })
+                        <span class="icon_after">{$goods['comments']['allmen']}评价</span>
+                        <span>{sprintf('%.1f',$goods['comments']['score'])}</span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            {/foreach}
+        </div>
+    </div>
+    <!-- 蒙层 -->
+    <div class="menumask"></div>
 
-    function index_top() {
-        var top = $("#index-img").outerHeight(true) / 2;
-        $(".index-img").css("marginTop", -top);
-    }
+    <!--右侧回到顶部-->
+    <div class="right" id="top_div" style="display: none;">
+        <img src="__PUBLIC__/sz/2.png">
+    </div>
+    <!--搜索弹层-->
+    <div class="search_tan searchLayer indexHomePage" style="display: none;">
+        <!--弹框-->
+        <div class="tk" style="display:none">
+            <div class="text-tk">
+                <b>定位失败，默认跳转到当前城市列表页</b>
+                <div class="bom">
+                    <a class="left-btn" onclick="closetk();">取消</a>
+                    <a class="right-btn">手动设置</a>
+                </div>
+            </div>
+        </div>
+        <!--弹框结束-->
+        <header class="city_select_tit_new hgt_90 w_full pad_40 relave  font_26">
+            <!--  <a href="javascript:void(0);" class="back-left"></a> -->
+            <div class="relave w_full inline-block">
+                <i class="search_icon asote"></i>
+                <input id="search-form-input" class="search_ipt b_gary radius w_full search-form-input" name=""
+                    type="text" placeholder="搜索目的地" value="">
+                <label class="del" id="search_city_del"></label>
+            </div>
+            <span id="search_clear" class="icon_clear font_26 search_clear" style="">取消</span>
+        </header>
 
-    index_top();
-    $(window).resize(function () {
-        index_top()
-    });
-    // 5秒关闭弹窗广告
-    setTimeout(function () {
-        $(".index-bg").hide();
-    }, 5000);
-</script>
+        <section class="suggest_cnt search_spread hidden" id="suggest_cnt">
+            <ul class="suggest pad_40"></ul>
+        </section>
+        <section class="suggest_no b_gary search_spread hidden" id="suggest_no">
+            <img class="suggest_no_img" src="__PUBLIC__/sz/fiter_none.png" alt="">
+            <h4 class="font_28 t-center">
+                很抱歉！未找到与“<span class="keyword" id="search_keyword"></span>”相关的结果， 请重新输入！
+            </h4>
+        </section>
+        <ul class="rightnav font_20 c_green" id="rightnav">
+            <li class="nav_hot"><a href="http://m.mayi.com/#select_hot_div">热门</a></li>
+            <li class="mar_top_10 nav_letter"><a href="http://m.mayi.com/#A">A</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#B">B</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#C">C</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#D">D</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#E">E</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#F">F</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#G">G</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#H">H</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#J">J</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#K">K</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#L">L</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#M">M</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#N">N</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#P">P</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#Q">Q</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#R">R</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#S">S</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#T">T</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#W">W</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#X">X</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#Y">Y</a></li>
+            <li class="nav_letter"><a href="http://m.mayi.com/#Z">Z</a></li>
+        </ul>
+        <section class="search_box_new  font_28" id="search_box">
+            <div class="search_tab_block font_28">
+                <ul class="search_tab clearfloat">
+                    <li id="city_inland" class="city_inland active" _mayi_rp="wapindex|searchtab|cityinland">国内·港澳台</li>
+                    <li id="city_overseas" class="city_overseas" _mayi_rp="wapindex|searchtab|cityoverseas">海外 <span
+                            class="hot-icon"></span></li>
+                </ul>
+            </div>
+            <div class="search_near c_gray_dark pad_bot_20 pad_40 font_28 current_place hidden" id="select_nearby_div">
+            </div>
+            <!--热门城市-->
+            <div class="hot_city mar_top_30 pad_40" id="select_hot_div"><strong
+                    class="font_30 c_black bold block hgt_40 mar_b_10">热门城市</strong>
+                <ul class="hot_city_ul relave clearfloat c_gray_dark">
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E5%8C%97%E4%BA%AC&#39;,&#39;beijing&#39;)"><a
+                            cityurl="/beijing/">北京</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E4%B8%8A%E6%B5%B7&#39;,&#39;shanghai&#39;)"><a
+                            cityurl="/shanghai/">上海</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E4%B8%89%E4%BA%9A&#39;,&#39;sanya&#39;)"><a
+                            cityurl="/sanya/">三亚</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E6%88%90%E9%83%BD&#39;,&#39;chengdu&#39;)"><a
+                            cityurl="/chengdu/">成都</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E9%9D%92%E5%B2%9B&#39;,&#39;qingdao&#39;)"><a
+                            cityurl="/qingdao/">青岛</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E5%B9%BF%E5%B7%9E&#39;,&#39;guangzhou&#39;)">
+                        <a cityurl="/guangzhou/">广州</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E6%9D%AD%E5%B7%9E&#39;,&#39;hangzhou&#39;)"><a
+                            cityurl="/hangzhou/">杭州</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E5%A4%A7%E8%BF%9E&#39;,&#39;dalian&#39;)"><a
+                            cityurl="/dalian/">大连</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E8%8B%8F%E5%B7%9E&#39;,&#39;suzhou&#39;)"><a
+                            cityurl="/suzhou/">苏州</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E9%A6%99%E6%B8%AF&#39;,&#39;xianggang&#39;)">
+                        <a cityurl="/xianggang/">香港</a></li>
+                    <li class="fl radius t-center"
+                        onclick="setInfo(&#39;%E7%A7%A6%E7%9A%87%E5%B2%9B&#39;,&#39;qinhuangdao&#39;)"><a
+                            cityurl="/qinhuangdao/">秦皇岛</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E8%A5%BF%E5%AE%89&#39;,&#39;xian&#39;)"><a
+                            cityurl="/xian/">西安</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E5%A8%81%E6%B5%B7&#39;,&#39;weihai&#39;)"><a
+                            cityurl="/weihai/">威海</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E6%B7%B1%E5%9C%B3&#39;,&#39;shenzhen&#39;)"><a
+                            cityurl="/shenzhen/">深圳</a></li>
+                    <li class="fl radius t-center"
+                        onclick="setInfo(&#39;%E5%93%88%E5%B0%94%E6%BB%A8&#39;,&#39;haerbin&#39;)"><a
+                            cityurl="/haerbin/">哈尔滨</a></li>
+                    <li class="fl radius t-center" onclick="setInfo(&#39;%E6%98%86%E6%98%8E&#39;,&#39;kunming&#39;)"><a
+                            cityurl="/kunming/">昆明</a></li>
+                </ul>
+            </div>
+            <!--全部城市-->
+            <div class="all_city_list relave clearfloat font_28 mar_top_30" id="select_all_div"><strong
+                    class="font_30 c_black bold block hgt_40 mar_b_30 pad_left_40">国内城市</strong>
+                <div class="city_letter hgt_50" id="A">A</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="anshan" onclick="setInfo(&#39;鞍山&#39;,&#39;anshan&#39;)"><a
+                            cityurl="/anshan/">鞍山</a></li>
+                    <li class="point_choose" city="anyang" onclick="setInfo(&#39;安阳&#39;,&#39;anyang&#39;)"><a
+                            cityurl="/anyang/">安阳</a></li>
+                    <li class="point_choose" city="alashan" onclick="setInfo(&#39;阿拉善&#39;,&#39;alashan&#39;)"><a
+                            cityurl="/alashan/">阿拉善</a></li>
+                    <li class="point_choose" city="aomen" onclick="setInfo(&#39;澳门&#39;,&#39;aomen&#39;)"><a
+                            cityurl="/aomen/">澳门</a></li>
+                    <li class="point_choose" city="anshun" onclick="setInfo(&#39;安顺&#39;,&#39;anshun&#39;)"><a
+                            cityurl="/anshun/">安顺</a></li>
+                    <li class="point_choose" city="anqing" onclick="setInfo(&#39;安庆&#39;,&#39;anqing&#39;)"><a
+                            cityurl="/anqing/">安庆</a></li>
+                    <li class="point_choose" city="ankang" onclick="setInfo(&#39;安康&#39;,&#39;ankang&#39;)"><a
+                            cityurl="/ankang/">安康</a></li>
+                    <li class="point_choose" city="aletai" onclick="setInfo(&#39;阿勒泰&#39;,&#39;aletai&#39;)"><a
+                            cityurl="/aletai/">阿勒泰</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="B">B</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="beijing" onclick="setInfo(&#39;北京&#39;,&#39;beijing&#39;)"><a
+                            cityurl="/beijing/">北京</a></li>
+                    <li class="point_choose" city="beihai" onclick="setInfo(&#39;北海&#39;,&#39;beihai&#39;)"><a
+                            cityurl="/beihai/">北海</a></li>
+                    <li class="point_choose" city="qinhuangdao_beidaihe"
+                        onclick="setInfo(&#39;北戴河&#39;,&#39;qinhuangdao_beidaihe&#39;)"><a
+                            cityurl="/qinhuangdao_beidaihe/">北戴河</a></li>
+                    <li class="point_choose" city="baoding" onclick="setInfo(&#39;保定&#39;,&#39;baoding&#39;)"><a
+                            cityurl="/baoding/">保定</a></li>
+                    <li class="point_choose" city="benxi" onclick="setInfo(&#39;本溪&#39;,&#39;benxi&#39;)"><a
+                            cityurl="/benxi/">本溪</a></li>
+                    <li class="point_choose" city="baotou" onclick="setInfo(&#39;包头&#39;,&#39;baotou&#39;)"><a
+                            cityurl="/baotou/">包头</a></li>
+                    <li class="point_choose" city="baishan" onclick="setInfo(&#39;白山&#39;,&#39;baishan&#39;)"><a
+                            cityurl="/baishan/">白山</a></li>
+                    <li class="point_choose" city="baoji" onclick="setInfo(&#39;宝鸡&#39;,&#39;baoji&#39;)"><a
+                            cityurl="/baoji/">宝鸡</a></li>
+                    <li class="point_choose" city="bengbu" onclick="setInfo(&#39;蚌埠&#39;,&#39;bengbu&#39;)"><a
+                            cityurl="/bengbu/">蚌埠</a></li>
+                    <li class="point_choose" city="qionghai_boao"
+                        onclick="setInfo(&#39;博鳌&#39;,&#39;qionghai_boao&#39;)"><a cityurl="/qionghai_boao/">博鳌</a></li>
+                    <li class="point_choose" city="baoshan" onclick="setInfo(&#39;保山&#39;,&#39;baoshan&#39;)"><a
+                            cityurl="/baoshan/">保山</a></li>
+                    <li class="point_choose" city="baise" onclick="setInfo(&#39;百色&#39;,&#39;baise&#39;)"><a
+                            cityurl="/baise/">百色</a></li>
+                    <li class="point_choose" city="bayinguoleng"
+                        onclick="setInfo(&#39;巴音郭楞&#39;,&#39;bayinguoleng&#39;)"><a cityurl="/bayinguoleng/">巴音郭楞</a>
+                    </li>
+                    <li class="point_choose" city="boertala" onclick="setInfo(&#39;博尔塔拉&#39;,&#39;boertala&#39;)"><a
+                            cityurl="/boertala/">博尔塔拉</a></li>
+                    <li class="point_choose" city="baoting" onclick="setInfo(&#39;保亭&#39;,&#39;baoting&#39;)"><a
+                            cityurl="/baoting/">保亭</a></li>
+                    <li class="point_choose" city="baisha" onclick="setInfo(&#39;白沙&#39;,&#39;baisha&#39;)"><a
+                            cityurl="/baisha/">白沙</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="C">C</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="chengdu" onclick="setInfo(&#39;成都&#39;,&#39;chengdu&#39;)"><a
+                            cityurl="/chengdu/">成都</a></li>
+                    <li class="point_choose" city="chongqing" onclick="setInfo(&#39;重庆&#39;,&#39;chongqing&#39;)"><a
+                            cityurl="/chongqing/">重庆</a></li>
+                    <li class="point_choose" city="changsha" onclick="setInfo(&#39;长沙&#39;,&#39;changsha&#39;)"><a
+                            cityurl="/changsha/">长沙</a></li>
+                    <li class="point_choose" city="changchun" onclick="setInfo(&#39;长春&#39;,&#39;changchun&#39;)"><a
+                            cityurl="/changchun/">长春</a></li>
+                    <li class="point_choose" city="chengde" onclick="setInfo(&#39;承德&#39;,&#39;chengde&#39;)"><a
+                            cityurl="/chengde/">承德</a></li>
+                    <li class="point_choose" city="changzhou" onclick="setInfo(&#39;常州&#39;,&#39;changzhou&#39;)"><a
+                            cityurl="/changzhou/">常州</a></li>
+                    <li class="point_choose" city="baishan" onclick="setInfo(&#39;长白山&#39;,&#39;baishan&#39;)"><a
+                            cityurl="/baishan/">长白山</a></li>
+                    <li class="point_choose" city="chifeng" onclick="setInfo(&#39;赤峰&#39;,&#39;chifeng&#39;)"><a
+                            cityurl="/chifeng/">赤峰</a></li>
+                    <li class="point_choose" city="cangzhou" onclick="setInfo(&#39;沧州&#39;,&#39;cangzhou&#39;)"><a
+                            cityurl="/cangzhou/">沧州</a></li>
+                    <li class="point_choose" city="chenzhou" onclick="setInfo(&#39;郴州&#39;,&#39;chenzhou&#39;)"><a
+                            cityurl="/chenzhou/">郴州</a></li>
+                    <li class="point_choose" city="changzhi" onclick="setInfo(&#39;长治&#39;,&#39;changzhi&#39;)"><a
+                            cityurl="/changzhi/">长治</a></li>
+                    <li class="point_choose" city="chaozhou" onclick="setInfo(&#39;潮州&#39;,&#39;chaozhou&#39;)"><a
+                            cityurl="/chaozhou/">潮州</a></li>
+                    <li class="point_choose" city="changde" onclick="setInfo(&#39;常德&#39;,&#39;changde&#39;)"><a
+                            cityurl="/changde/">常德</a></li>
+                    <li class="point_choose" city="chuzhou" onclick="setInfo(&#39;滁州&#39;,&#39;chuzhou&#39;)"><a
+                            cityurl="/chuzhou/">滁州</a></li>
+                    <li class="point_choose" city="chizhou" onclick="setInfo(&#39;池州&#39;,&#39;chizhou&#39;)"><a
+                            cityurl="/chizhou/">池州</a></li>
+                    <li class="point_choose" city="changji" onclick="setInfo(&#39;昌吉&#39;,&#39;changji&#39;)"><a
+                            cityurl="/changji/">昌吉</a></li>
+                    <li class="point_choose" city="changjiang" onclick="setInfo(&#39;昌江&#39;,&#39;changjiang&#39;)"><a
+                            cityurl="/changjiang/">昌江</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="D">D</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="dalian" onclick="setInfo(&#39;大连&#39;,&#39;dalian&#39;)"><a
+                            cityurl="/dalian/">大连</a></li>
+                    <li class="point_choose" city="huludao_dongdaihe"
+                        onclick="setInfo(&#39;东戴河&#39;,&#39;huludao_dongdaihe&#39;)"><a
+                            cityurl="/huludao_dongdaihe/">东戴河</a></li>
+                    <li class="point_choose" city="dandong" onclick="setInfo(&#39;丹东&#39;,&#39;dandong&#39;)"><a
+                            cityurl="/dandong/">丹东</a></li>
+                    <li class="point_choose" city="dali" onclick="setInfo(&#39;大理&#39;,&#39;dali&#39;)"><a
+                            cityurl="/dali/">大理</a></li>
+                    <li class="point_choose" city="dongguan" onclick="setInfo(&#39;东莞&#39;,&#39;dongguan&#39;)"><a
+                            cityurl="/dongguan/">东莞</a></li>
+                    <li class="point_choose" city="datong" onclick="setInfo(&#39;大同&#39;,&#39;datong&#39;)"><a
+                            cityurl="/datong/">大同</a></li>
+                    <li class="point_choose" city="dezhou" onclick="setInfo(&#39;德州&#39;,&#39;dezhou&#39;)"><a
+                            cityurl="/dezhou/">德州</a></li>
+                    <li class="point_choose" city="deyang" onclick="setInfo(&#39;德阳&#39;,&#39;deyang&#39;)"><a
+                            cityurl="/deyang/">德阳</a></li>
+                    <li class="point_choose" city="jiuquan_dunhuang"
+                        onclick="setInfo(&#39;敦煌&#39;,&#39;jiuquan_dunhuang&#39;)"><a
+                            cityurl="/jiuquan_dunhuang/">敦煌</a></li>
+                    <li class="point_choose" city="dongying" onclick="setInfo(&#39;东营&#39;,&#39;dongying&#39;)"><a
+                            cityurl="/dongying/">东营</a></li>
+                    <li class="point_choose" city="diqing" onclick="setInfo(&#39;迪庆&#39;,&#39;diqing&#39;)"><a
+                            cityurl="/diqing/">迪庆</a></li>
+                    <li class="point_choose" city="chengdu_dujiangyan"
+                        onclick="setInfo(&#39;都江堰&#39;,&#39;chengdu_dujiangyan&#39;)"><a
+                            cityurl="/chengdu_dujiangyan/">都江堰</a></li>
+                    <li class="point_choose" city="dongfang" onclick="setInfo(&#39;东方&#39;,&#39;dongfang&#39;)"><a
+                            cityurl="/dongfang/">东方</a></li>
+                    <li class="point_choose" city="dehong" onclick="setInfo(&#39;德宏&#39;,&#39;dehong&#39;)"><a
+                            cityurl="/dehong/">德宏</a></li>
+                    <li class="point_choose" city="dingxi" onclick="setInfo(&#39;定西&#39;,&#39;dingxi&#39;)"><a
+                            cityurl="/dingxi/">定西</a></li>
+                    <li class="point_choose" city="danzhou" onclick="setInfo(&#39;儋州&#39;,&#39;danzhou&#39;)"><a
+                            cityurl="/danzhou/">儋州</a></li>
+                    <li class="point_choose" city="daxinganling"
+                        onclick="setInfo(&#39;大兴安岭&#39;,&#39;daxinganling&#39;)"><a cityurl="/daxinganling/">大兴安岭</a>
+                    </li>
+                </ul>
+                <div class="city_letter hgt_50" id="E">E</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="dali_erhai" onclick="setInfo(&#39;洱海&#39;,&#39;dali_erhai&#39;)"><a
+                            cityurl="/dali_erhai/">洱海</a></li>
+                    <li class="point_choose" city="leshan_emeishan"
+                        onclick="setInfo(&#39;峨眉山&#39;,&#39;leshan_emeishan&#39;)"><a
+                            cityurl="/leshan_emeishan/">峨眉山</a></li>
+                    <li class="point_choose" city="enshi" onclick="setInfo(&#39;恩施&#39;,&#39;enshi&#39;)"><a
+                            cityurl="/enshi/">恩施</a></li>
+                    <li class="point_choose" city="eerduosi" onclick="setInfo(&#39;鄂尔多斯&#39;,&#39;eerduosi&#39;)"><a
+                            cityurl="/eerduosi/">鄂尔多斯</a></li>
+                    <li class="point_choose" city="ezhou" onclick="setInfo(&#39;鄂州&#39;,&#39;ezhou&#39;)"><a
+                            cityurl="/ezhou/">鄂州</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="F">F</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="fuzhou" onclick="setInfo(&#39;福州&#39;,&#39;fuzhou&#39;)"><a
+                            cityurl="/fuzhou/">福州</a></li>
+                    <li class="point_choose" city="foshan" onclick="setInfo(&#39;佛山&#39;,&#39;foshan&#39;)"><a
+                            cityurl="/foshan/">佛山</a></li>
+                    <li class="point_choose" city="fangchenggang"
+                        onclick="setInfo(&#39;防城港&#39;,&#39;fangchenggang&#39;)"><a cityurl="/fangchenggang/">防城港</a>
+                    </li>
+                    <li class="point_choose" city="xiangxi_fenghuang"
+                        onclick="setInfo(&#39;凤凰&#39;,&#39;xiangxi_fenghuang&#39;)"><a
+                            cityurl="/xiangxi_fenghuang/">凤凰</a></li>
+                    <li class="point_choose" city="fushun" onclick="setInfo(&#39;抚顺&#39;,&#39;fushun&#39;)"><a
+                            cityurl="/fushun/">抚顺</a></li>
+                    <li class="point_choose" city="fuyang" onclick="setInfo(&#39;阜阳&#39;,&#39;fuyang&#39;)"><a
+                            cityurl="/fuyang/">阜阳</a></li>
+                    <li class="point_choose" city="jxfuzhou" onclick="setInfo(&#39;抚州&#39;,&#39;jxfuzhou&#39;)"><a
+                            cityurl="/jxfuzhou/">抚州</a></li>
+                    <li class="point_choose" city="fuxin" onclick="setInfo(&#39;阜新&#39;,&#39;fuxin&#39;)"><a
+                            cityurl="/fuxin/">阜新</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="G">G</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="guangzhou" onclick="setInfo(&#39;广州&#39;,&#39;guangzhou&#39;)"><a
+                            cityurl="/guangzhou/">广州</a></li>
+                    <li class="point_choose" city="guiyang" onclick="setInfo(&#39;贵阳&#39;,&#39;guiyang&#39;)"><a
+                            cityurl="/guiyang/">贵阳</a></li>
+                    <li class="point_choose" city="gaoxiong" onclick="setInfo(&#39;高雄&#39;,&#39;gaoxiong&#39;)"><a
+                            cityurl="/gaoxiong/">高雄</a></li>
+                    <li class="point_choose" city="guilin" onclick="setInfo(&#39;桂林&#39;,&#39;guilin&#39;)"><a
+                            cityurl="/guilin/">桂林</a></li>
+                    <li class="point_choose" city="ganzhou" onclick="setInfo(&#39;赣州&#39;,&#39;ganzhou&#39;)"><a
+                            cityurl="/ganzhou/">赣州</a></li>
+                    <li class="point_choose" city="ganzi" onclick="setInfo(&#39;甘孜&#39;,&#39;ganzi&#39;)"><a
+                            cityurl="/ganzi/">甘孜</a></li>
+                    <li class="point_choose" city="guangyuan" onclick="setInfo(&#39;广元&#39;,&#39;guangyuan&#39;)"><a
+                            cityurl="/guangyuan/">广元</a></li>
+                    <li class="point_choose" city="guigang" onclick="setInfo(&#39;贵港&#39;,&#39;guigang&#39;)"><a
+                            cityurl="/guigang/">贵港</a></li>
+                    <li class="point_choose" city="xiamen_gulangyu"
+                        onclick="setInfo(&#39;鼓浪屿&#39;,&#39;xiamen_gulangyu&#39;)"><a
+                            cityurl="/xiamen_gulangyu/">鼓浪屿</a></li>
+                    <li class="point_choose" city="gannan" onclick="setInfo(&#39;甘南&#39;,&#39;gannan&#39;)"><a
+                            cityurl="/gannan/">甘南</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="H">H</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="hangzhou" onclick="setInfo(&#39;杭州&#39;,&#39;hangzhou&#39;)"><a
+                            cityurl="/hangzhou/">杭州</a></li>
+                    <li class="point_choose" city="haerbin" onclick="setInfo(&#39;哈尔滨&#39;,&#39;haerbin&#39;)"><a
+                            cityurl="/haerbin/">哈尔滨</a></li>
+                    <li class="point_choose" city="haikou" onclick="setInfo(&#39;海口&#39;,&#39;haikou&#39;)"><a
+                            cityurl="/haikou/">海口</a></li>
+                    <li class="point_choose" city="huludao" onclick="setInfo(&#39;葫芦岛&#39;,&#39;huludao&#39;)"><a
+                            cityurl="/huludao/">葫芦岛</a></li>
+                    <li class="point_choose" city="hefei" onclick="setInfo(&#39;合肥&#39;,&#39;hefei&#39;)"><a
+                            cityurl="/hefei/">合肥</a></li>
+                    <li class="point_choose" city="huizhou" onclick="setInfo(&#39;惠州&#39;,&#39;huizhou&#39;)"><a
+                            cityurl="/huizhou/">惠州</a></li>
+                    <li class="point_choose" city="hualian" onclick="setInfo(&#39;花莲&#39;,&#39;hualian&#39;)"><a
+                            cityurl="/hualian/">花莲</a></li>
+                    <li class="point_choose" city="huzhou" onclick="setInfo(&#39;湖州&#39;,&#39;huzhou&#39;)"><a
+                            cityurl="/huzhou/">湖州</a></li>
+                    <li class="point_choose" city="huzhou" onclick="setInfo(&#39;莫干山&#39;,&#39;huzhou&#39;)"><a
+                            cityurl="/huzhou/">莫干山</a></li>
+                    <li class="point_choose" city="huhehaote" onclick="setInfo(&#39;呼和浩特&#39;,&#39;huhehaote&#39;)"><a
+                            cityurl="/huhehaote/">呼和浩特</a></li>
+                    <li class="point_choose" city="huangshan" onclick="setInfo(&#39;黄山&#39;,&#39;huangshan&#39;)"><a
+                            cityurl="/huangshan/">黄山</a></li>
+                    <li class="point_choose" city="hulunbeier" onclick="setInfo(&#39;呼伦贝尔&#39;,&#39;hulunbeier&#39;)"><a
+                            cityurl="/hulunbeier/">呼伦贝尔</a></li>
+                    <li class="point_choose" city="jinhua" onclick="setInfo(&#39;横店&#39;,&#39;jinhua&#39;)"><a
+                            cityurl="/jinhua/">横店</a></li>
+                    <li class="point_choose" city="handan" onclick="setInfo(&#39;邯郸&#39;,&#39;handan&#39;)"><a
+                            cityurl="/handan/">邯郸</a></li>
+                    <li class="point_choose" city="hengshui" onclick="setInfo(&#39;衡水&#39;,&#39;hengshui&#39;)"><a
+                            cityurl="/hengshui/">衡水</a></li>
+                    <li class="point_choose" city="huaian" onclick="setInfo(&#39;淮安&#39;,&#39;huaian&#39;)"><a
+                            cityurl="/huaian/">淮安</a></li>
+                    <li class="point_choose" city="hengyang" onclick="setInfo(&#39;衡阳&#39;,&#39;hengyang&#39;)"><a
+                            cityurl="/hengyang/">衡阳</a></li>
+                    <li class="point_choose" city="heihe" onclick="setInfo(&#39;黑河&#39;,&#39;heihe&#39;)"><a
+                            cityurl="/heihe/">黑河</a></li>
+                    <li class="point_choose" city="hanzhong" onclick="setInfo(&#39;汉中&#39;,&#39;hanzhong&#39;)"><a
+                            cityurl="/hanzhong/">汉中</a></li>
+                    <li class="point_choose" city="heze" onclick="setInfo(&#39;菏泽&#39;,&#39;heze&#39;)"><a
+                            cityurl="/heze/">菏泽</a></li>
+                    <li class="point_choose" city="honghe" onclick="setInfo(&#39;红河&#39;,&#39;honghe&#39;)"><a
+                            cityurl="/honghe/">红河</a></li>
+                    <li class="point_choose" city="heyuan" onclick="setInfo(&#39;河源&#39;,&#39;heyuan&#39;)"><a
+                            cityurl="/heyuan/">河源</a></li>
+                    <li class="point_choose" city="aba_songpan" onclick="setInfo(&#39;黄龙&#39;,&#39;aba_songpan&#39;)"><a
+                            cityurl="/aba_songpan/">黄龙</a></li>
+                    <li class="point_choose" city="haixi" onclick="setInfo(&#39;海西&#39;,&#39;haixi&#39;)"><a
+                            cityurl="/haixi/">海西</a></li>
+                    <li class="point_choose" city="haibei" onclick="setInfo(&#39;海北&#39;,&#39;haibei&#39;)"><a
+                            cityurl="/haibei/">海北</a></li>
+                    <li class="point_choose" city="hezhou" onclick="setInfo(&#39;贺州&#39;,&#39;hezhou&#39;)"><a
+                            cityurl="/hezhou/">贺州</a></li>
+                    <li class="point_choose" city="huaibei" onclick="setInfo(&#39;淮北&#39;,&#39;huaibei&#39;)"><a
+                            cityurl="/huaibei/">淮北</a></li>
+                    <li class="point_choose" city="huaihua" onclick="setInfo(&#39;怀化&#39;,&#39;huaihua&#39;)"><a
+                            cityurl="/huaihua/">怀化</a></li>
+                    <li class="point_choose" city="hechi" onclick="setInfo(&#39;河池&#39;,&#39;hechi&#39;)"><a
+                            cityurl="/hechi/">河池</a></li>
+                    <li class="point_choose" city="huangshi" onclick="setInfo(&#39;黄石&#39;,&#39;huangshi&#39;)"><a
+                            cityurl="/huangshi/">黄石</a></li>
+                    <li class="point_choose" city="hailaer" onclick="setInfo(&#39;海拉尔&#39;,&#39;hailaer&#39;)"><a
+                            cityurl="/hailaer/">海拉尔</a></li>
+                    <li class="point_choose" city="huainan" onclick="setInfo(&#39;淮南&#39;,&#39;huainan&#39;)"><a
+                            cityurl="/huainan/">淮南</a></li>
+                    <li class="point_choose" city="haidong" onclick="setInfo(&#39;海东&#39;,&#39;haidong&#39;)"><a
+                            cityurl="/haidong/">海东</a></li>
+                    <li class="point_choose" city="hegang" onclick="setInfo(&#39;鹤岗&#39;,&#39;hegang&#39;)"><a
+                            cityurl="/hegang/">鹤岗</a></li>
+                    <li class="point_choose" city="hetian" onclick="setInfo(&#39;和田&#39;,&#39;hetian&#39;)"><a
+                            cityurl="/hetian/">和田</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="J">J</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="jinan" onclick="setInfo(&#39;济南&#39;,&#39;jinan&#39;)"><a
+                            cityurl="/jinan/">济南</a></li>
+                    <li class="point_choose" city="jilong" onclick="setInfo(&#39;基隆&#39;,&#39;jilong&#39;)"><a
+                            cityurl="/jilong/">基隆</a></li>
+                    <li class="point_choose" city="jiayi" onclick="setInfo(&#39;嘉义&#39;,&#39;jiayi&#39;)"><a
+                            cityurl="/jiayi/">嘉义</a></li>
+                    <li class="point_choose" city="jinmen" onclick="setInfo(&#39;金门&#39;,&#39;jinmen&#39;)"><a
+                            cityurl="/jinmen/">金门</a></li>
+                    <li class="point_choose" city="jiaxing" onclick="setInfo(&#39;嘉兴&#39;,&#39;jiaxing&#39;)"><a
+                            cityurl="/jiaxing/">嘉兴</a></li>
+                    <li class="point_choose" city="jinzhou" onclick="setInfo(&#39;锦州&#39;,&#39;jinzhou&#39;)"><a
+                            cityurl="/jinzhou/">锦州</a></li>
+                    <li class="point_choose" city="jilinshi" onclick="setInfo(&#39;吉林&#39;,&#39;jilinshi&#39;)"><a
+                            cityurl="/jilinshi/">吉林</a></li>
+                    <li class="point_choose" city="jining" onclick="setInfo(&#39;济宁&#39;,&#39;jining&#39;)"><a
+                            cityurl="/jining/">济宁</a></li>
+                    <li class="point_choose" city="jiujiang" onclick="setInfo(&#39;九江&#39;,&#39;jiujiang&#39;)"><a
+                            cityurl="/jiujiang/">九江</a></li>
+                    <li class="point_choose" city="jiangmen" onclick="setInfo(&#39;江门&#39;,&#39;jiangmen&#39;)"><a
+                            cityurl="/jiangmen/">江门</a></li>
+                    <li class="point_choose" city="jiaozuo" onclick="setInfo(&#39;焦作&#39;,&#39;jiaozuo&#39;)"><a
+                            cityurl="/jiaozuo/">焦作</a></li>
+                    <li class="point_choose" city="jingdezhen" onclick="setInfo(&#39;景德镇&#39;,&#39;jingdezhen&#39;)"><a
+                            cityurl="/jingdezhen/">景德镇</a></li>
+                    <li class="point_choose" city="jiamusi" onclick="setInfo(&#39;佳木斯&#39;,&#39;jiamusi&#39;)"><a
+                            cityurl="/jiamusi/">佳木斯</a></li>
+                    <li class="point_choose" city="jingzhou" onclick="setInfo(&#39;荆州&#39;,&#39;jingzhou&#39;)"><a
+                            cityurl="/jingzhou/">荆州</a></li>
+                    <li class="point_choose" city="jiayuguan" onclick="setInfo(&#39;嘉峪关&#39;,&#39;jiayuguan&#39;)"><a
+                            cityurl="/jiayuguan/">嘉峪关</a></li>
+                    <li class="point_choose" city="aba_jiuzhaigou"
+                        onclick="setInfo(&#39;九寨沟&#39;,&#39;aba_jiuzhaigou&#39;)"><a cityurl="/aba_jiuzhaigou/">九寨沟</a>
+                    </li>
+                    <li class="point_choose" city="jincheng" onclick="setInfo(&#39;晋城&#39;,&#39;jincheng&#39;)"><a
+                            cityurl="/jincheng/">晋城</a></li>
+                    <li class="point_choose" city="jian" onclick="setInfo(&#39;吉安&#39;,&#39;jian&#39;)"><a
+                            cityurl="/jian/">吉安</a></li>
+                    <li class="point_choose" city="jieyang" onclick="setInfo(&#39;揭阳&#39;,&#39;jieyang&#39;)"><a
+                            cityurl="/jieyang/">揭阳</a></li>
+                    <li class="point_choose" city="jixi" onclick="setInfo(&#39;鸡西&#39;,&#39;jixi&#39;)"><a
+                            cityurl="/jixi/">鸡西</a></li>
+                    <li class="point_choose" city="jiyuan" onclick="setInfo(&#39;济源&#39;,&#39;jiyuan&#39;)"><a
+                            cityurl="/jiyuan/">济源</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="K">K</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="kunming" onclick="setInfo(&#39;昆明&#39;,&#39;kunming&#39;)"><a
+                            cityurl="/kunming/">昆明</a></li>
+                    <li class="point_choose" city="kaifeng" onclick="setInfo(&#39;开封&#39;,&#39;kaifeng&#39;)"><a
+                            cityurl="/kaifeng/">开封</a></li>
+                    <li class="point_choose" city="kelamayi" onclick="setInfo(&#39;克拉玛依&#39;,&#39;kelamayi&#39;)"><a
+                            cityurl="/kelamayi/">克拉玛依</a></li>
+                    <li class="point_choose" city="kuerle" onclick="setInfo(&#39;库尔勒&#39;,&#39;kuerle&#39;)"><a
+                            cityurl="/kuerle/">库尔勒</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="L">L</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="lijiang" onclick="setInfo(&#39;丽江&#39;,&#39;lijiang&#39;)"><a
+                            cityurl="/lijiang/">丽江</a></li>
+                    <li class="point_choose" city="lingao" onclick="setInfo(&#39;临高&#39;,&#39;lingao&#39;)"><a
+                            cityurl="/lingao/">临高</a></li>
+                    <li class="point_choose" city="lanzhou" onclick="setInfo(&#39;兰州&#39;,&#39;lanzhou&#39;)"><a
+                            cityurl="/lanzhou/">兰州</a></li>
+                    <li class="point_choose" city="luoyang" onclick="setInfo(&#39;洛阳&#39;,&#39;luoyang&#39;)"><a
+                            cityurl="/luoyang/">洛阳</a></li>
+                    <li class="point_choose" city="linyi" onclick="setInfo(&#39;临沂&#39;,&#39;linyi&#39;)"><a
+                            cityurl="/linyi/">临沂</a></li>
+                    <li class="point_choose" city="leshan" onclick="setInfo(&#39;乐山&#39;,&#39;leshan&#39;)"><a
+                            cityurl="/leshan/">乐山</a></li>
+                    <li class="point_choose" city="langfang" onclick="setInfo(&#39;廊坊&#39;,&#39;langfang&#39;)"><a
+                            cityurl="/langfang/">廊坊</a></li>
+                    <li class="point_choose" city="lianyungang" onclick="setInfo(&#39;连云港&#39;,&#39;lianyungang&#39;)">
+                        <a cityurl="/lianyungang/">连云港</a></li>
+                    <li class="point_choose" city="liuzhou" onclick="setInfo(&#39;柳州&#39;,&#39;liuzhou&#39;)"><a
+                            cityurl="/liuzhou/">柳州</a></li>
+                    <li class="point_choose" city="jiujiang_lushan"
+                        onclick="setInfo(&#39;庐山&#39;,&#39;jiujiang_lushan&#39;)"><a cityurl="/jiujiang_lushan/">庐山</a>
+                    </li>
+                    <li class="point_choose" city="liangshan" onclick="setInfo(&#39;凉山&#39;,&#39;liangshan&#39;)"><a
+                            cityurl="/liangshan/">凉山</a></li>
+                    <li class="point_choose" city="liaocheng" onclick="setInfo(&#39;聊城&#39;,&#39;liaocheng&#39;)"><a
+                            cityurl="/liaocheng/">聊城</a></li>
+                    <li class="point_choose" city="lasa" onclick="setInfo(&#39;拉萨&#39;,&#39;lasa&#39;)"><a
+                            cityurl="/lasa/">拉萨</a></li>
+                    <li class="point_choose" city="linfen" onclick="setInfo(&#39;临汾&#39;,&#39;linfen&#39;)"><a
+                            cityurl="/linfen/">临汾</a></li>
+                    <li class="point_choose" city="lishui" onclick="setInfo(&#39;丽水&#39;,&#39;lishui&#39;)"><a
+                            cityurl="/lishui/">丽水</a></li>
+                    <li class="point_choose" city="liupanshui" onclick="setInfo(&#39;六盘水&#39;,&#39;liupanshui&#39;)"><a
+                            cityurl="/liupanshui/">六盘水</a></li>
+                    <li class="point_choose" city="luzhou" onclick="setInfo(&#39;泸州&#39;,&#39;luzhou&#39;)"><a
+                            cityurl="/luzhou/">泸州</a></li>
+                    <li class="point_choose" city="longyan" onclick="setInfo(&#39;龙岩&#39;,&#39;longyan&#39;)"><a
+                            cityurl="/longyan/">龙岩</a></li>
+                    <li class="point_choose" city="lvliang" onclick="setInfo(&#39;吕梁&#39;,&#39;lvliang&#39;)"><a
+                            cityurl="/lvliang/">吕梁</a></li>
+                    <li class="point_choose" city="lingshui" onclick="setInfo(&#39;陵水&#39;,&#39;lingshui&#39;)"><a
+                            cityurl="/lingshui/">陵水</a></li>
+                    <li class="point_choose" city="liaoyuan" onclick="setInfo(&#39;辽源&#39;,&#39;liaoyuan&#39;)"><a
+                            cityurl="/liaoyuan/">辽源</a></li>
+                    <li class="point_choose" city="longnan" onclick="setInfo(&#39;陇南&#39;,&#39;longnan&#39;)"><a
+                            cityurl="/longnan/">陇南</a></li>
+                    <li class="point_choose" city="linzhi" onclick="setInfo(&#39;林芝&#39;,&#39;linzhi&#39;)"><a
+                            cityurl="/linzhi/">林芝</a></li>
+                    <li class="point_choose" city="linxia" onclick="setInfo(&#39;临夏&#39;,&#39;linxia&#39;)"><a
+                            cityurl="/linxia/">临夏</a></li>
+                    <li class="point_choose" city="ledong" onclick="setInfo(&#39;乐东&#39;,&#39;ledong&#39;)"><a
+                            cityurl="/ledong/">乐东</a></li>
+                    <li class="point_choose" city="lincang" onclick="setInfo(&#39;临沧&#39;,&#39;lincang&#39;)"><a
+                            cityurl="/lincang/">临沧</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="M">M</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="miaoli" onclick="setInfo(&#39;苗栗&#39;,&#39;miaoli&#39;)"><a
+                            cityurl="/miaoli/">苗栗</a></li>
+                    <li class="point_choose" city="mazu" onclick="setInfo(&#39;马祖&#39;,&#39;mazu&#39;)"><a
+                            cityurl="/mazu/">马祖</a></li>
+                    <li class="point_choose" city="mianyang" onclick="setInfo(&#39;绵阳&#39;,&#39;mianyang&#39;)"><a
+                            cityurl="/mianyang/">绵阳</a></li>
+                    <li class="point_choose" city="maoming" onclick="setInfo(&#39;茂名&#39;,&#39;maoming&#39;)"><a
+                            cityurl="/maoming/">茂名</a></li>
+                    <li class="point_choose" city="meizhou" onclick="setInfo(&#39;梅州&#39;,&#39;meizhou&#39;)"><a
+                            cityurl="/meizhou/">梅州</a></li>
+                    <li class="point_choose" city="meishan" onclick="setInfo(&#39;眉山&#39;,&#39;meishan&#39;)"><a
+                            cityurl="/meishan/">眉山</a></li>
+                    <li class="point_choose" city="maanshan" onclick="setInfo(&#39;马鞍山&#39;,&#39;maanshan&#39;)"><a
+                            cityurl="/maanshan/">马鞍山</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="N">N</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="nanjing" onclick="setInfo(&#39;南京&#39;,&#39;nanjing&#39;)"><a
+                            cityurl="/nanjing/">南京</a></li>
+                    <li class="point_choose" city="qinhuangdao_funing"
+                        onclick="setInfo(&#39;南戴河&#39;,&#39;qinhuangdao_funing&#39;)"><a
+                            cityurl="/qinhuangdao_funing/">南戴河</a></li>
+                    <li class="point_choose" city="nantou" onclick="setInfo(&#39;南投&#39;,&#39;nantou&#39;)"><a
+                            cityurl="/nantou/">南投</a></li>
+                    <li class="point_choose" city="ningbo" onclick="setInfo(&#39;宁波&#39;,&#39;ningbo&#39;)"><a
+                            cityurl="/ningbo/">宁波</a></li>
+                    <li class="point_choose" city="nanning" onclick="setInfo(&#39;南宁&#39;,&#39;nanning&#39;)"><a
+                            cityurl="/nanning/">南宁</a></li>
+                    <li class="point_choose" city="nanchang" onclick="setInfo(&#39;南昌&#39;,&#39;nanchang&#39;)"><a
+                            cityurl="/nanchang/">南昌</a></li>
+                    <li class="point_choose" city="nantong" onclick="setInfo(&#39;南通&#39;,&#39;nantong&#39;)"><a
+                            cityurl="/nantong/">南通</a></li>
+                    <li class="point_choose" city="nanyang" onclick="setInfo(&#39;南阳&#39;,&#39;nanyang&#39;)"><a
+                            cityurl="/nanyang/">南阳</a></li>
+                    <li class="point_choose" city="nanchong" onclick="setInfo(&#39;南充&#39;,&#39;nanchong&#39;)"><a
+                            cityurl="/nanchong/">南充</a></li>
+                    <li class="point_choose" city="nanping" onclick="setInfo(&#39;南平&#39;,&#39;nanping&#39;)"><a
+                            cityurl="/nanping/">南平</a></li>
+                    <li class="point_choose" city="ningde" onclick="setInfo(&#39;宁德&#39;,&#39;ningde&#39;)"><a
+                            cityurl="/ningde/">宁德</a></li>
+                    <li class="point_choose" city="neijiang" onclick="setInfo(&#39;内江&#39;,&#39;neijiang&#39;)"><a
+                            cityurl="/neijiang/">内江</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="P">P</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="penghu" onclick="setInfo(&#39;澎湖&#39;,&#39;penghu&#39;)"><a
+                            cityurl="/penghu/">澎湖</a></li>
+                    <li class="point_choose" city="zhoushan_putuo"
+                        onclick="setInfo(&#39;普陀山&#39;,&#39;zhoushan_putuo&#39;)"><a cityurl="/zhoushan_putuo/">普陀山</a>
+                    </li>
+                    <li class="point_choose" city="pingdongkending"
+                        onclick="setInfo(&#39;屏东（垦丁）&#39;,&#39;pingdongkending&#39;)"><a
+                            cityurl="/pingdongkending/">屏东（垦丁）</a></li>
+                    <li class="point_choose" city="panjin" onclick="setInfo(&#39;盘锦&#39;,&#39;panjin&#39;)"><a
+                            cityurl="/panjin/">盘锦</a></li>
+                    <li class="point_choose" city="jinzhong_pingyao"
+                        onclick="setInfo(&#39;平遥&#39;,&#39;jinzhong_pingyao&#39;)"><a
+                            cityurl="/jinzhong_pingyao/">平遥</a></li>
+                    <li class="point_choose" city="putian" onclick="setInfo(&#39;莆田&#39;,&#39;putian&#39;)"><a
+                            cityurl="/putian/">莆田</a></li>
+                    <li class="point_choose" city="pingdingshan"
+                        onclick="setInfo(&#39;平顶山&#39;,&#39;pingdingshan&#39;)"><a cityurl="/pingdingshan/">平顶山</a></li>
+                    <li class="point_choose" city="yantai_penglai"
+                        onclick="setInfo(&#39;蓬莱&#39;,&#39;yantai_penglai&#39;)"><a cityurl="/yantai_penglai/">蓬莱</a>
+                    </li>
+                    <li class="point_choose" city="panzhihua" onclick="setInfo(&#39;攀枝花&#39;,&#39;panzhihua&#39;)"><a
+                            cityurl="/panzhihua/">攀枝花</a></li>
+                    <li class="point_choose" city="puer" onclick="setInfo(&#39;普洱&#39;,&#39;puer&#39;)"><a
+                            cityurl="/puer/">普洱</a></li>
+                    <li class="point_choose" city="pingxiang" onclick="setInfo(&#39;萍乡&#39;,&#39;pingxiang&#39;)"><a
+                            cityurl="/pingxiang/">萍乡</a></li>
+                    <li class="point_choose" city="pingliang" onclick="setInfo(&#39;平凉&#39;,&#39;pingliang&#39;)"><a
+                            cityurl="/pingliang/">平凉</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="Q">Q</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="qingdao" onclick="setInfo(&#39;青岛&#39;,&#39;qingdao&#39;)"><a
+                            cityurl="/qingdao/">青岛</a></li>
+                    <li class="point_choose" city="qinhuangdao" onclick="setInfo(&#39;秦皇岛&#39;,&#39;qinhuangdao&#39;)">
+                        <a cityurl="/qinhuangdao/">秦皇岛</a></li>
+                    <li class="point_choose" city="hangzhou_chunan"
+                        onclick="setInfo(&#39;千岛湖&#39;,&#39;hangzhou_chunan&#39;)"><a
+                            cityurl="/hangzhou_chunan/">千岛湖</a></li>
+                    <li class="point_choose" city="quanzhou" onclick="setInfo(&#39;泉州&#39;,&#39;quanzhou&#39;)"><a
+                            cityurl="/quanzhou/">泉州</a></li>
+                    <li class="point_choose" city="qingyuan" onclick="setInfo(&#39;清远&#39;,&#39;qingyuan&#39;)"><a
+                            cityurl="/qingyuan/">清远</a></li>
+                    <li class="point_choose" city="qiandongnan" onclick="setInfo(&#39;黔东南&#39;,&#39;qiandongnan&#39;)">
+                        <a cityurl="/qiandongnan/">黔东南</a></li>
+                    <li class="point_choose" city="qiqihaer" onclick="setInfo(&#39;齐齐哈尔&#39;,&#39;qiqihaer&#39;)"><a
+                            cityurl="/qiqihaer/">齐齐哈尔</a></li>
+                    <li class="point_choose" city="quzhou" onclick="setInfo(&#39;衢州&#39;,&#39;quzhou&#39;)"><a
+                            cityurl="/quzhou/">衢州</a></li>
+                    <li class="point_choose" city="qiannan" onclick="setInfo(&#39;黔南&#39;,&#39;qiannan&#39;)"><a
+                            cityurl="/qiannan/">黔南</a></li>
+                    <li class="point_choose" city="qianxinan" onclick="setInfo(&#39;黔西南&#39;,&#39;qianxinan&#39;)"><a
+                            cityurl="/qianxinan/">黔西南</a></li>
+                    <li class="point_choose" city="qujing" onclick="setInfo(&#39;曲靖&#39;,&#39;qujing&#39;)"><a
+                            cityurl="/qujing/">曲靖</a></li>
+                    <li class="point_choose" city="qinzhou" onclick="setInfo(&#39;钦州&#39;,&#39;qinzhou&#39;)"><a
+                            cityurl="/qinzhou/">钦州</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="R">R</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="rizhao" onclick="setInfo(&#39;日照&#39;,&#39;rizhao&#39;)"><a
+                            cityurl="/rizhao/">日照</a></li>
+                    <li class="point_choose" city="rikaze" onclick="setInfo(&#39;日喀则&#39;,&#39;rikaze&#39;)"><a
+                            cityurl="/rikaze/">日喀则</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="S">S</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="shanghai" onclick="setInfo(&#39;上海&#39;,&#39;shanghai&#39;)"><a
+                            cityurl="/shanghai/">上海</a></li>
+                    <li class="point_choose" city="sanya" onclick="setInfo(&#39;三亚&#39;,&#39;sanya&#39;)"><a
+                            cityurl="/sanya/">三亚</a></li>
+                    <li class="point_choose" city="suzhou" onclick="setInfo(&#39;苏州&#39;,&#39;suzhou&#39;)"><a
+                            cityurl="/suzhou/">苏州</a></li>
+                    <li class="point_choose" city="shenzhen" onclick="setInfo(&#39;深圳&#39;,&#39;shenzhen&#39;)"><a
+                            cityurl="/shenzhen/">深圳</a></li>
+                    <li class="point_choose" city="shenyang" onclick="setInfo(&#39;沈阳&#39;,&#39;shenyang&#39;)"><a
+                            cityurl="/shenyang/">沈阳</a></li>
+                    <li class="point_choose" city="shijiazhuang"
+                        onclick="setInfo(&#39;石家庄&#39;,&#39;shijiazhuang&#39;)"><a cityurl="/shijiazhuang/">石家庄</a></li>
+                    <li class="point_choose" city="shanghai_dishinileyuan"
+                        onclick="setInfo(&#39;上海迪士尼&#39;,&#39;shanghai_dishinileyuan&#39;)"><a
+                            cityurl="/shanghai_dishinileyuan/">上海迪士尼</a></li>
+                    <li class="point_choose" city="shaoxing" onclick="setInfo(&#39;绍兴&#39;,&#39;shaoxing&#39;)"><a
+                            cityurl="/shaoxing/">绍兴</a></li>
+                    <li class="point_choose" city="shantou" onclick="setInfo(&#39;汕头&#39;,&#39;shantou&#39;)"><a
+                            cityurl="/shantou/">汕头</a></li>
+                    <li class="point_choose" city="shangrao" onclick="setInfo(&#39;上饶&#39;,&#39;shangrao&#39;)"><a
+                            cityurl="/shangrao/">上饶</a></li>
+                    <li class="point_choose" city="shaoguan" onclick="setInfo(&#39;韶关&#39;,&#39;shaoguan&#39;)"><a
+                            cityurl="/shaoguan/">韶关</a></li>
+                    <li class="point_choose" city="siping" onclick="setInfo(&#39;四平&#39;,&#39;siping&#39;)"><a
+                            cityurl="/siping/">四平</a></li>
+                    <li class="point_choose" city="sanming" onclick="setInfo(&#39;三明&#39;,&#39;sanming&#39;)"><a
+                            cityurl="/sanming/">三明</a></li>
+                    <li class="point_choose" city="songyuan" onclick="setInfo(&#39;松原&#39;,&#39;songyuan&#39;)"><a
+                            cityurl="/songyuan/">松原</a></li>
+                    <li class="point_choose" city="shiyan" onclick="setInfo(&#39;十堰&#39;,&#39;shiyan&#39;)"><a
+                            cityurl="/shiyan/">十堰</a></li>
+                    <li class="point_choose" city="shennongjia" onclick="setInfo(&#39;神农架&#39;,&#39;shennongjia&#39;)">
+                        <a cityurl="/shennongjia/">神农架</a></li>
+                    <li class="point_choose" city="suining" onclick="setInfo(&#39;遂宁&#39;,&#39;suining&#39;)"><a
+                            cityurl="/suining/">遂宁</a></li>
+                    <li class="point_choose" city="shihezi" onclick="setInfo(&#39;石河子&#39;,&#39;shihezi&#39;)"><a
+                            cityurl="/shihezi/">石河子</a></li>
+                    <li class="point_choose" city="suihua" onclick="setInfo(&#39;绥化&#39;,&#39;suihua&#39;)"><a
+                            cityurl="/suihua/">绥化</a></li>
+                    <li class="point_choose" city="shangluo" onclick="setInfo(&#39;商洛&#39;,&#39;shangluo&#39;)"><a
+                            cityurl="/shangluo/">商洛</a></li>
+                    <li class="point_choose" city="suizhou" onclick="setInfo(&#39;随州&#39;,&#39;suizhou&#39;)"><a
+                            cityurl="/suizhou/">随州</a></li>
+                    <li class="point_choose" city="sansha" onclick="setInfo(&#39;三沙&#39;,&#39;sansha&#39;)"><a
+                            cityurl="/sansha/">三沙</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="T">T</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="tianjin" onclick="setInfo(&#39;天津&#39;,&#39;tianjin&#39;)"><a
+                            cityurl="/tianjin/">天津</a></li>
+                    <li class="point_choose" city="sanya_tianya"
+                        onclick="setInfo(&#39;天涯海角&#39;,&#39;sanya_tianya&#39;)"><a cityurl="/sanya_tianya/">天涯海角</a>
+                    </li>
+                    <li class="point_choose" city="suzhou_wujiang"
+                        onclick="setInfo(&#39;同里&#39;,&#39;suzhou_wujiang&#39;)"><a cityurl="/suzhou_wujiang/">同里</a>
+                    </li>
+                    <li class="point_choose" city="taidong" onclick="setInfo(&#39;台东&#39;,&#39;taidong&#39;)"><a
+                            cityurl="/taidong/">台东</a></li>
+                    <li class="point_choose" city="tainan" onclick="setInfo(&#39;台南&#39;,&#39;tainan&#39;)"><a
+                            cityurl="/tainan/">台南</a></li>
+                    <li class="point_choose" city="taizhong" onclick="setInfo(&#39;台中&#39;,&#39;taizhong&#39;)"><a
+                            cityurl="/taizhong/">台中</a></li>
+                    <li class="point_choose" city="taoyuan" onclick="setInfo(&#39;桃园&#39;,&#39;taoyuan&#39;)"><a
+                            cityurl="/taoyuan/">桃园</a></li>
+                    <li class="point_choose" city="taiyuan" onclick="setInfo(&#39;太原&#39;,&#39;taiyuan&#39;)"><a
+                            cityurl="/taiyuan/">太原</a></li>
+                    <li class="point_choose" city="taibei" onclick="setInfo(&#39;台北&#39;,&#39;taibei&#39;)"><a
+                            cityurl="/taibei/">台北</a></li>
+                    <li class="point_choose" city="tangshan" onclick="setInfo(&#39;唐山&#39;,&#39;tangshan&#39;)"><a
+                            cityurl="/tangshan/">唐山</a></li>
+                    <li class="point_choose" city="taian" onclick="setInfo(&#39;泰安&#39;,&#39;taian&#39;)"><a
+                            cityurl="/taian/">泰安</a></li>
+                    <li class="point_choose" city="taian" onclick="setInfo(&#39;泰山&#39;,&#39;taian&#39;)"><a
+                            cityurl="/taian/">泰山</a></li>
+                    <li class="point_choose" city="zjtaizhou" onclick="setInfo(&#39;台州&#39;,&#39;zjtaizhou&#39;)"><a
+                            cityurl="/zjtaizhou/">台州</a></li>
+                    <li class="point_choose" city="tonghua" onclick="setInfo(&#39;通化&#39;,&#39;tonghua&#39;)"><a
+                            cityurl="/tonghua/">通化</a></li>
+                    <li class="point_choose" city="jstaizhou" onclick="setInfo(&#39;泰州&#39;,&#39;jstaizhou&#39;)"><a
+                            cityurl="/jstaizhou/">泰州</a></li>
+                    <li class="point_choose" city="tianshui" onclick="setInfo(&#39;天水&#39;,&#39;tianshui&#39;)"><a
+                            cityurl="/tianshui/">天水</a></li>
+                    <li class="point_choose" city="tongliao" onclick="setInfo(&#39;通辽&#39;,&#39;tongliao&#39;)"><a
+                            cityurl="/tongliao/">通辽</a></li>
+                    <li class="point_choose" city="tulufan" onclick="setInfo(&#39;吐鲁番&#39;,&#39;tulufan&#39;)"><a
+                            cityurl="/tulufan/">吐鲁番</a></li>
+                    <li class="point_choose" city="tacheng" onclick="setInfo(&#39;塔城&#39;,&#39;tacheng&#39;)"><a
+                            cityurl="/tacheng/">塔城</a></li>
+                    <li class="point_choose" city="tunchang" onclick="setInfo(&#39;屯昌&#39;,&#39;tunchang&#39;)"><a
+                            cityurl="/tunchang/">屯昌</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="W">W</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="weihai" onclick="setInfo(&#39;威海&#39;,&#39;weihai&#39;)"><a
+                            cityurl="/weihai/">威海</a></li>
+                    <li class="point_choose" city="wuhan" onclick="setInfo(&#39;武汉&#39;,&#39;wuhan&#39;)"><a
+                            cityurl="/wuhan/">武汉</a></li>
+                    <li class="point_choose" city="wenzhou" onclick="setInfo(&#39;温州&#39;,&#39;wenzhou&#39;)"><a
+                            cityurl="/wenzhou/">温州</a></li>
+                    <li class="point_choose" city="wuxi" onclick="setInfo(&#39;无锡&#39;,&#39;wuxi&#39;)"><a
+                            cityurl="/wuxi/">无锡</a></li>
+                    <li class="point_choose" city="wulumuqi" onclick="setInfo(&#39;乌鲁木齐&#39;,&#39;wulumuqi&#39;)"><a
+                            cityurl="/wulumuqi/">乌鲁木齐</a></li>
+                    <li class="point_choose" city="weifang" onclick="setInfo(&#39;潍坊&#39;,&#39;weifang&#39;)"><a
+                            cityurl="/weifang/">潍坊</a></li>
+                    <li class="point_choose" city="nanping_wuyishan"
+                        onclick="setInfo(&#39;武夷山&#39;,&#39;nanping_wuyishan&#39;)"><a
+                            cityurl="/nanping_wuyishan/">武夷山</a></li>
+                    <li class="point_choose" city="wuhu" onclick="setInfo(&#39;芜湖&#39;,&#39;wuhu&#39;)"><a
+                            cityurl="/wuhu/">芜湖</a></li>
+                    <li class="point_choose" city="wenchang" onclick="setInfo(&#39;文昌&#39;,&#39;wenchang&#39;)"><a
+                            cityurl="/wenchang/">文昌</a></li>
+                    <li class="point_choose" city="wuzhou" onclick="setInfo(&#39;梧州&#39;,&#39;wuzhou&#39;)"><a
+                            cityurl="/wuzhou/">梧州</a></li>
+                    <li class="point_choose" city="weinan" onclick="setInfo(&#39;渭南&#39;,&#39;weinan&#39;)"><a
+                            cityurl="/weinan/">渭南</a></li>
+                    <li class="point_choose" city="wenshan" onclick="setInfo(&#39;文山&#39;,&#39;wenshan&#39;)"><a
+                            cityurl="/wenshan/">文山</a></li>
+                    <li class="point_choose" city="wanning" onclick="setInfo(&#39;万宁&#39;,&#39;wanning&#39;)"><a
+                            cityurl="/wanning/">万宁</a></li>
+                    <li class="point_choose" city="wuwei" onclick="setInfo(&#39;武威&#39;,&#39;wuwei&#39;)"><a
+                            cityurl="/wuwei/">武威</a></li>
+                    <li class="point_choose" city="wuzhishan" onclick="setInfo(&#39;五指山&#39;,&#39;wuzhishan&#39;)"><a
+                            cityurl="/wuzhishan/">五指山</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="X">X</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="xianggang" onclick="setInfo(&#39;香港&#39;,&#39;xianggang&#39;)"><a
+                            cityurl="/xianggang/">香港</a></li>
+                    <li class="point_choose" city="xian" onclick="setInfo(&#39;西安&#39;,&#39;xian&#39;)"><a
+                            cityurl="/xian/">西安</a></li>
+                    <li class="point_choose" city="xiamen" onclick="setInfo(&#39;厦门&#39;,&#39;xiamen&#39;)"><a
+                            cityurl="/xiamen/">厦门</a></li>
+                    <li class="point_choose" city="hangzhou_xihu"
+                        onclick="setInfo(&#39;西湖&#39;,&#39;hangzhou_xihu&#39;)"><a cityurl="/hangzhou_xihu/">西湖</a></li>
+                    <li class="point_choose" city="xinbei" onclick="setInfo(&#39;新北&#39;,&#39;xinbei&#39;)"><a
+                            cityurl="/xinbei/">新北</a></li>
+                    <li class="point_choose" city="xinzhu" onclick="setInfo(&#39;新竹&#39;,&#39;xinzhu&#39;)"><a
+                            cityurl="/xinzhu/">新竹</a></li>
+                    <li class="point_choose" city="jiaxing_jiashan"
+                        onclick="setInfo(&#39;西塘&#39;,&#39;jiaxing_jiashan&#39;)"><a cityurl="/jiaxing_jiashan/">西塘</a>
+                    </li>
+                    <li class="point_choose" city="xining" onclick="setInfo(&#39;西宁&#39;,&#39;xining&#39;)"><a
+                            cityurl="/xining/">西宁</a></li>
+                    <li class="point_choose" city="xuzhou" onclick="setInfo(&#39;徐州&#39;,&#39;xuzhou&#39;)"><a
+                            cityurl="/xuzhou/">徐州</a></li>
+                    <li class="point_choose" city="xishuangbanna"
+                        onclick="setInfo(&#39;西双版纳&#39;,&#39;xishuangbanna&#39;)"><a cityurl="/xishuangbanna/">西双版纳</a>
+                    </li>
+                    <li class="point_choose" city="xinxiang" onclick="setInfo(&#39;新乡&#39;,&#39;xinxiang&#39;)"><a
+                            cityurl="/xinxiang/">新乡</a></li>
+                    <li class="point_choose" city="mudanjiang_hailin"
+                        onclick="setInfo(&#39;雪乡&#39;,&#39;mudanjiang_hailin&#39;)"><a
+                            cityurl="/mudanjiang_hailin/">雪乡</a></li>
+                    <li class="point_choose" city="xianyang" onclick="setInfo(&#39;咸阳&#39;,&#39;xianyang&#39;)"><a
+                            cityurl="/xianyang/">咸阳</a></li>
+                    <li class="point_choose" city="xingtai" onclick="setInfo(&#39;邢台&#39;,&#39;xingtai&#39;)"><a
+                            cityurl="/xingtai/">邢台</a></li>
+                    <li class="point_choose" city="xiangxi" onclick="setInfo(&#39;湘西&#39;,&#39;xiangxi&#39;)"><a
+                            cityurl="/xiangxi/">湘西</a></li>
+                    <li class="point_choose" city="xiangtan" onclick="setInfo(&#39;湘潭&#39;,&#39;xiangtan&#39;)"><a
+                            cityurl="/xiangtan/">湘潭</a></li>
+                    <li class="point_choose" city="xinyang" onclick="setInfo(&#39;信阳&#39;,&#39;xinyang&#39;)"><a
+                            cityurl="/xinyang/">信阳</a></li>
+                    <li class="point_choose" city="xilinguole" onclick="setInfo(&#39;锡林郭勒&#39;,&#39;xilinguole&#39;)"><a
+                            cityurl="/xilinguole/">锡林郭勒</a></li>
+                    <li class="point_choose" city="xuchang" onclick="setInfo(&#39;许昌&#39;,&#39;xuchang&#39;)"><a
+                            cityurl="/xuchang/">许昌</a></li>
+                    <li class="point_choose" city="xinzhou" onclick="setInfo(&#39;忻州&#39;,&#39;xinzhou&#39;)"><a
+                            cityurl="/xinzhou/">忻州</a></li>
+                    <li class="point_choose" city="xuancheng" onclick="setInfo(&#39;宣城&#39;,&#39;xuancheng&#39;)"><a
+                            cityurl="/xuancheng/">宣城</a></li>
+                    <li class="point_choose" city="xiangfan" onclick="setInfo(&#39;襄樊&#39;,&#39;xiangfan&#39;)"><a
+                            cityurl="/xiangfan/">襄樊</a></li>
+                    <li class="point_choose" city="xingan" onclick="setInfo(&#39;兴安&#39;,&#39;xingan&#39;)"><a
+                            cityurl="/xingan/">兴安</a></li>
+                    <li class="point_choose" city="suqian" onclick="setInfo(&#39;宿迁&#39;,&#39;suqian&#39;)"><a
+                            cityurl="/suqian/">宿迁</a></li>
+                    <li class="point_choose" city="xianning" onclick="setInfo(&#39;咸宁&#39;,&#39;xianning&#39;)"><a
+                            cityurl="/xianning/">咸宁</a></li>
+                    <li class="point_choose" city="ahsuzhou" onclick="setInfo(&#39;宿州&#39;,&#39;ahsuzhou&#39;)"><a
+                            cityurl="/ahsuzhou/">宿州</a></li>
+                    <li class="point_choose" city="xiaogan" onclick="setInfo(&#39;孝感&#39;,&#39;xiaogan&#39;)"><a
+                            cityurl="/xiaogan/">孝感</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="Y">Y</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="yantai" onclick="setInfo(&#39;烟台&#39;,&#39;yantai&#39;)"><a
+                            cityurl="/yantai/">烟台</a></li>
+                    <li class="point_choose" city="yingkou" onclick="setInfo(&#39;营口&#39;,&#39;yingkou&#39;)"><a
+                            cityurl="/yingkou/">营口</a></li>
+                    <li class="point_choose" city="yunlin" onclick="setInfo(&#39;云林&#39;,&#39;yunlin&#39;)"><a
+                            cityurl="/yunlin/">云林</a></li>
+                    <li class="point_choose" city="yilan" onclick="setInfo(&#39;宜兰&#39;,&#39;yilan&#39;)"><a
+                            cityurl="/yilan/">宜兰</a></li>
+                    <li class="point_choose" city="yangzhou" onclick="setInfo(&#39;扬州&#39;,&#39;yangzhou&#39;)"><a
+                            cityurl="/yangzhou/">扬州</a></li>
+                    <li class="point_choose" city="yinchuan" onclick="setInfo(&#39;银川&#39;,&#39;yinchuan&#39;)"><a
+                            cityurl="/yinchuan/">银川</a></li>
+                    <li class="point_choose" city="yanbian" onclick="setInfo(&#39;延边&#39;,&#39;yanbian&#39;)"><a
+                            cityurl="/yanbian/">延边</a></li>
+                    <li class="point_choose" city="yangjiang" onclick="setInfo(&#39;阳江&#39;,&#39;yangjiang&#39;)"><a
+                            cityurl="/yangjiang/">阳江</a></li>
+                    <li class="point_choose" city="yichang" onclick="setInfo(&#39;宜昌&#39;,&#39;yichang&#39;)"><a
+                            cityurl="/yichang/">宜昌</a></li>
+                    <li class="point_choose" city="yancheng" onclick="setInfo(&#39;盐城&#39;,&#39;yancheng&#39;)"><a
+                            cityurl="/yancheng/">盐城</a></li>
+                    <li class="point_choose" city="yibin" onclick="setInfo(&#39;宜宾&#39;,&#39;yibin&#39;)"><a
+                            cityurl="/yibin/">宜宾</a></li>
+                    <li class="point_choose" city="yanan" onclick="setInfo(&#39;延安&#39;,&#39;yanan&#39;)"><a
+                            cityurl="/yanan/">延安</a></li>
+                    <li class="point_choose" city="yuncheng" onclick="setInfo(&#39;运城&#39;,&#39;yuncheng&#39;)"><a
+                            cityurl="/yuncheng/">运城</a></li>
+                    <li class="point_choose" city="yuxi" onclick="setInfo(&#39;玉溪&#39;,&#39;yuxi&#39;)"><a
+                            cityurl="/yuxi/">玉溪</a></li>
+                    <li class="point_choose" city="hljyichun" onclick="setInfo(&#39;伊春&#39;,&#39;hljyichun&#39;)"><a
+                            cityurl="/hljyichun/">伊春</a></li>
+                    <li class="point_choose" city="yili" onclick="setInfo(&#39;伊犁&#39;,&#39;yili&#39;)"><a
+                            cityurl="/yili/">伊犁</a></li>
+                    <li class="point_choose" city="yaan" onclick="setInfo(&#39;雅安&#39;,&#39;yaan&#39;)"><a
+                            cityurl="/yaan/">雅安</a></li>
+                    <li class="point_choose" city="jxyichun" onclick="setInfo(&#39;宜春&#39;,&#39;jxyichun&#39;)"><a
+                            cityurl="/jxyichun/">宜春</a></li>
+                    <li class="point_choose" city="yueyang" onclick="setInfo(&#39;岳阳&#39;,&#39;yueyang&#39;)"><a
+                            cityurl="/yueyang/">岳阳</a></li>
+                    <li class="point_choose" city="yulin" onclick="setInfo(&#39;玉林&#39;,&#39;yulin&#39;)"><a
+                            cityurl="/yulin/">玉林</a></li>
+                    <li class="point_choose" city="sxyulin" onclick="setInfo(&#39;榆林&#39;,&#39;sxyulin&#39;)"><a
+                            cityurl="/sxyulin/">榆林</a></li>
+                    <li class="point_choose" city="yiyang" onclick="setInfo(&#39;益阳&#39;,&#39;yiyang&#39;)"><a
+                            cityurl="/yiyang/">益阳</a></li>
+                    <li class="point_choose" city="guilin_yangshuo"
+                        onclick="setInfo(&#39;阳朔&#39;,&#39;guilin_yangshuo&#39;)"><a cityurl="/guilin_yangshuo/">阳朔</a>
+                    </li>
+                    <li class="point_choose" city="yangpu" onclick="setInfo(&#39;洋浦&#39;,&#39;yangpu&#39;)"><a
+                            cityurl="/yangpu/">洋浦</a></li>
+                </ul>
+                <div class="city_letter hgt_50" id="Z">Z</div>
+                <ul class="search_ul1 clearfloat">
+                    <li class="point_choose" city="zhengzhou" onclick="setInfo(&#39;郑州&#39;,&#39;zhengzhou&#39;)"><a
+                            cityurl="/zhengzhou/">郑州</a></li>
+                    <li class="point_choose" city="zhuhai" onclick="setInfo(&#39;珠海&#39;,&#39;zhuhai&#39;)"><a
+                            cityurl="/zhuhai/">珠海</a></li>
+                    <li class="point_choose" city="suzhou_kunshan"
+                        onclick="setInfo(&#39;周庄&#39;,&#39;suzhou_kunshan&#39;)"><a cityurl="/suzhou_kunshan/">周庄</a>
+                    </li>
+                    <li class="point_choose" city="zhanghua" onclick="setInfo(&#39;彰化&#39;,&#39;zhanghua&#39;)"><a
+                            cityurl="/zhanghua/">彰化</a></li>
+                    <li class="point_choose" city="zhoushan" onclick="setInfo(&#39;舟山&#39;,&#39;zhoushan&#39;)"><a
+                            cityurl="/zhoushan/">舟山</a></li>
+                    <li class="point_choose" city="zhongshan" onclick="setInfo(&#39;中山&#39;,&#39;zhongshan&#39;)"><a
+                            cityurl="/zhongshan/">中山</a></li>
+                    <li class="point_choose" city="zhangjiakou" onclick="setInfo(&#39;张家口&#39;,&#39;zhangjiakou&#39;)">
+                        <a cityurl="/zhangjiakou/">张家口</a></li>
+                    <li class="point_choose" city="zhangjiajie" onclick="setInfo(&#39;张家界&#39;,&#39;zhangjiajie&#39;)">
+                        <a cityurl="/zhangjiajie/">张家界</a></li>
+                    <li class="point_choose" city="zhangzhou" onclick="setInfo(&#39;漳州&#39;,&#39;zhangzhou&#39;)"><a
+                            cityurl="/zhangzhou/">漳州</a></li>
+                    <li class="point_choose" city="zhanjiang" onclick="setInfo(&#39;湛江&#39;,&#39;zhanjiang&#39;)"><a
+                            cityurl="/zhanjiang/">湛江</a></li>
+                    <li class="point_choose" city="zibo" onclick="setInfo(&#39;淄博&#39;,&#39;zibo&#39;)"><a
+                            cityurl="/zibo/">淄博</a></li>
+                    <li class="point_choose" city="zunyi" onclick="setInfo(&#39;遵义&#39;,&#39;zunyi&#39;)"><a
+                            cityurl="/zunyi/">遵义</a></li>
+                    <li class="point_choose" city="zaozhuang" onclick="setInfo(&#39;枣庄&#39;,&#39;zaozhuang&#39;)"><a
+                            cityurl="/zaozhuang/">枣庄</a></li>
+                    <li class="point_choose" city="zhenjiang" onclick="setInfo(&#39;镇江&#39;,&#39;zhenjiang&#39;)"><a
+                            cityurl="/zhenjiang/">镇江</a></li>
+                    <li class="point_choose" city="zhuzhou" onclick="setInfo(&#39;株洲&#39;,&#39;zhuzhou&#39;)"><a
+                            cityurl="/zhuzhou/">株洲</a></li>
+                    <li class="point_choose" city="zhaoqing" onclick="setInfo(&#39;肇庆&#39;,&#39;zhaoqing&#39;)"><a
+                            cityurl="/zhaoqing/">肇庆</a></li>
+                    <li class="point_choose" city="zigong" onclick="setInfo(&#39;自贡&#39;,&#39;zigong&#39;)"><a
+                            cityurl="/zigong/">自贡</a></li>
+                    <li class="point_choose" city="zhangye" onclick="setInfo(&#39;张掖&#39;,&#39;zhangye&#39;)"><a
+                            cityurl="/zhangye/">张掖</a></li>
+                    <li class="point_choose" city="zhongwei" onclick="setInfo(&#39;中卫&#39;,&#39;zhongwei&#39;)"><a
+                            cityurl="/zhongwei/">中卫</a></li>
+                    <li class="point_choose" city="zhoukou" onclick="setInfo(&#39;周口&#39;,&#39;zhoukou&#39;)"><a
+                            cityurl="/zhoukou/">周口</a></li>
+                    <li class="point_choose" city="zhumadian" onclick="setInfo(&#39;驻马店&#39;,&#39;zhumadian&#39;)"><a
+                            cityurl="/zhumadian/">驻马店</a></li>
+                    <li class="point_choose" city="zhaotong" onclick="setInfo(&#39;昭通&#39;,&#39;zhaotong&#39;)"><a
+                            cityurl="/zhaotong/">昭通</a></li>
+                    <li class="point_choose" city="ziyang" onclick="setInfo(&#39;资阳&#39;,&#39;ziyang&#39;)"><a
+                            cityurl="/ziyang/">资阳</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="mapAddress">
+        <div class="mapMask"></div>
+        <div class="position_off text-tk">
+            <div class="position_des">
+                <p class="c-333 f-16" id="tc_p1">定位服务未开启</p>
+                <p class="c-999 f-14" id="tc_p2">请在系统设置中开启定位服务</p>
+            </div>
+            <div class="bom">
+                <div class="left-btn" onclick="closetk();" id="tc_left_btn">取消</div>
+                <div class="right-btn" onclick="chooseCity();">手动选择城市</div>
+            </div>
+            <div class="close_tk" onclick="closetk();"></div>
+        </div>
+    </div>
+    <!--未完成订单提醒-->
+
+    <!--index相关的JS-->
+
+
+    <div class="daterangepicker dropdown-menu show-calendar opensright" style="width:100%; top:0px;">
+        <div style="position:absolute; z-index:10000; width:100%; height:20px; background:#000; top:0px; ">
+            <header class="mayi-top head">
+                <div class="title list-top"><a class="c_black" name="date_start" id="mayi_date_start">入住日期-退房日期</a><a
+                        class="c_black" name="date_end" id="mayi_date_end"></a><a style="float: right;" id="dateClearUp"
+                        href="javascript:dateSearch();">清空</a></div><a class="back-left" id="rollback" rel="nofollow"
+                    href="javascript:void(0);"></a>
+            </header>
+        </div>
+        <div class=" ranges">
+            <div class="range_inputs">
+                <div class="daterangepicker_start_input" style="display:none;"><label
+                        for="daterangepicker_start">入住:</label><input class="input-mini" type="text"
+                        name="daterangepicker_start" value="" disabled="disabled"></div>
+                <div class="daterangepicker_end_input" style="display:none;"><label
+                        for="daterangepicker_end">离开:</label><input class="input-mini" type="text"
+                        name="daterangepicker_end" value="" disabled="disabled"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="mindays hidden" style="margin-left: 10px;"></div>
+        <div class="calendar left">
+            <div class="calendar-date">
+                <table class="table-condensed">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month"> 2019年 12月</th>
+                        </tr>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="t-2019-12-01" class="available off" onclick="javascript:void(0);" data-title="r1c0">
+                                1</td>
+                            <td id="t-2019-12-02" class="available off" onclick="javascript:void(0);" data-title="r1c1">
+                                2</td>
+                            <td id="t-2019-12-03" class="available off" onclick="javascript:void(0);" data-title="r1c2">
+                                3</td>
+                            <td id="t-2019-12-04" class="available off" onclick="javascript:void(0);" data-title="r1c3">
+                                4</td>
+                            <td id="t-2019-12-05" class="available start-date active" onclick="javascript:void(0);"
+                                data-title="r1c4">入住</td>
+                            <td id="t-2019-12-06" class="available end-date" onclick="javascript:void(0);"
+                                data-title="r1c5">离开</td>
+                            <td id="t-2019-12-07" class="available" onclick="javascript:void(0);" data-title="r1c6">7
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2019-12-08" class="available" onclick="javascript:void(0);" data-title="r2c0">8
+                            </td>
+                            <td id="t-2019-12-09" class="available" onclick="javascript:void(0);" data-title="r2c1">9
+                            </td>
+                            <td id="t-2019-12-10" class="available" onclick="javascript:void(0);" data-title="r2c2">10
+                            </td>
+                            <td id="t-2019-12-11" class="available" onclick="javascript:void(0);" data-title="r2c3">11
+                            </td>
+                            <td id="t-2019-12-12" class="available" onclick="javascript:void(0);" data-title="r2c4">12
+                            </td>
+                            <td id="t-2019-12-13" class="available" onclick="javascript:void(0);" data-title="r2c5">13
+                            </td>
+                            <td id="t-2019-12-14" class="available" onclick="javascript:void(0);" data-title="r2c6">14
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2019-12-15" class="available" onclick="javascript:void(0);" data-title="r3c0">15
+                            </td>
+                            <td id="t-2019-12-16" class="available" onclick="javascript:void(0);" data-title="r3c1">16
+                            </td>
+                            <td id="t-2019-12-17" class="available" onclick="javascript:void(0);" data-title="r3c2">17
+                            </td>
+                            <td id="t-2019-12-18" class="available" onclick="javascript:void(0);" data-title="r3c3">18
+                            </td>
+                            <td id="t-2019-12-19" class="available" onclick="javascript:void(0);" data-title="r3c4">19
+                            </td>
+                            <td id="t-2019-12-20" class="available" onclick="javascript:void(0);" data-title="r3c5">20
+                            </td>
+                            <td id="t-2019-12-21" class="available" onclick="javascript:void(0);" data-title="r3c6">21
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2019-12-22" class="available" onclick="javascript:void(0);" data-title="r4c0">22
+                            </td>
+                            <td id="t-2019-12-23" class="available" onclick="javascript:void(0);" data-title="r4c1">23
+                            </td>
+                            <td id="t-2019-12-24" class="available" onclick="javascript:void(0);" data-title="r4c2">24
+                            </td>
+                            <td id="t-2019-12-25" class="available" onclick="javascript:void(0);" data-title="r4c3">25
+                            </td>
+                            <td id="t-2019-12-26" class="available" onclick="javascript:void(0);" data-title="r4c4">26
+                            </td>
+                            <td id="t-2019-12-27" class="available" onclick="javascript:void(0);" data-title="r4c5">27
+                            </td>
+                            <td id="t-2019-12-28" class="available" onclick="javascript:void(0);" data-title="r4c6">28
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2019-12-29" class="available" onclick="javascript:void(0);" data-title="r5c0">29
+                            </td>
+                            <td id="t-2019-12-30" class="available" onclick="javascript:void(0);" data-title="r5c1">30
+                            </td>
+                            <td id="t-2019-12-31" class="available" onclick="javascript:void(0);" data-title="r5c2">31
+                            </td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c3"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c4"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c5"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c6"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="calendar right">
+            <div class="calendar-date">
+                <table class="table-condensed">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month"> 2020年 1月</th>
+                        </tr>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c0"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c1"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c2"></td>
+                            <td id="t-2020-01-01" class="available" onclick="javascript:void(0);" data-title="r0c3">
+                                <i>元旦</i></td>
+                            <td id="t-2020-01-02" class="available" onclick="javascript:void(0);" data-title="r0c4">2
+                            </td>
+                            <td id="t-2020-01-03" class="available" onclick="javascript:void(0);" data-title="r0c5">3
+                            </td>
+                            <td id="t-2020-01-04" class="available" onclick="javascript:void(0);" data-title="r0c6">4
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-01-05" class="available" onclick="javascript:void(0);" data-title="r1c0">5
+                            </td>
+                            <td id="t-2020-01-06" class="available" onclick="javascript:void(0);" data-title="r1c1">6
+                            </td>
+                            <td id="t-2020-01-07" class="available" onclick="javascript:void(0);" data-title="r1c2">7
+                            </td>
+                            <td id="t-2020-01-08" class="available" onclick="javascript:void(0);" data-title="r1c3">8
+                            </td>
+                            <td id="t-2020-01-09" class="available" onclick="javascript:void(0);" data-title="r1c4">9
+                            </td>
+                            <td id="t-2020-01-10" class="available" onclick="javascript:void(0);" data-title="r1c5">10
+                            </td>
+                            <td id="t-2020-01-11" class="available" onclick="javascript:void(0);" data-title="r1c6">11
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-01-12" class="available" onclick="javascript:void(0);" data-title="r2c0">12
+                            </td>
+                            <td id="t-2020-01-13" class="available" onclick="javascript:void(0);" data-title="r2c1">13
+                            </td>
+                            <td id="t-2020-01-14" class="available" onclick="javascript:void(0);" data-title="r2c2">14
+                            </td>
+                            <td id="t-2020-01-15" class="available" onclick="javascript:void(0);" data-title="r2c3">15
+                            </td>
+                            <td id="t-2020-01-16" class="available" onclick="javascript:void(0);" data-title="r2c4">16
+                            </td>
+                            <td id="t-2020-01-17" class="available" onclick="javascript:void(0);" data-title="r2c5">17
+                            </td>
+                            <td id="t-2020-01-18" class="available" onclick="javascript:void(0);" data-title="r2c6">18
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-01-19" class="available" onclick="javascript:void(0);" data-title="r3c0">19
+                            </td>
+                            <td id="t-2020-01-20" class="available" onclick="javascript:void(0);" data-title="r3c1">20
+                            </td>
+                            <td id="t-2020-01-21" class="available" onclick="javascript:void(0);" data-title="r3c2">21
+                            </td>
+                            <td id="t-2020-01-22" class="available" onclick="javascript:void(0);" data-title="r3c3">22
+                            </td>
+                            <td id="t-2020-01-23" class="available" onclick="javascript:void(0);" data-title="r3c4">23
+                            </td>
+                            <td id="t-2020-01-24" class="available" onclick="javascript:void(0);" data-title="r3c5">
+                                <i>除夕</i></td>
+                            <td id="t-2020-01-25" class="available" onclick="javascript:void(0);" data-title="r3c6">
+                                <i>春节</i></td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-01-26" class="available" onclick="javascript:void(0);" data-title="r4c0">26
+                            </td>
+                            <td id="t-2020-01-27" class="available" onclick="javascript:void(0);" data-title="r4c1">27
+                            </td>
+                            <td id="t-2020-01-28" class="available" onclick="javascript:void(0);" data-title="r4c2">28
+                            </td>
+                            <td id="t-2020-01-29" class="available" onclick="javascript:void(0);" data-title="r4c3">29
+                            </td>
+                            <td id="t-2020-01-30" class="available" onclick="javascript:void(0);" data-title="r4c4">30
+                            </td>
+                            <td id="t-2020-01-31" class="available" onclick="javascript:void(0);" data-title="r4c5">31
+                            </td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r4c6"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="calendar third">
+            <div class="calendar-date">
+                <table class="table-condensed">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month"> 2020年 2月</th>
+                        </tr>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c0"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c1"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c2"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c3"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c4"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c5"></td>
+                            <td id="t-2020-02-01" class="available" onclick="javascript:void(0);" data-title="r0c6">1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-02-02" class="available" onclick="javascript:void(0);" data-title="r1c0">2
+                            </td>
+                            <td id="t-2020-02-03" class="available" onclick="javascript:void(0);" data-title="r1c1">3
+                            </td>
+                            <td id="t-2020-02-04" class="available" onclick="javascript:void(0);" data-title="r1c2">4
+                            </td>
+                            <td id="t-2020-02-05" class="available" onclick="javascript:void(0);" data-title="r1c3">5
+                            </td>
+                            <td id="t-2020-02-06" class="available" onclick="javascript:void(0);" data-title="r1c4">6
+                            </td>
+                            <td id="t-2020-02-07" class="available" onclick="javascript:void(0);" data-title="r1c5">7
+                            </td>
+                            <td id="t-2020-02-08" class="available" onclick="javascript:void(0);" data-title="r1c6">
+                                <i>元宵</i></td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-02-09" class="available" onclick="javascript:void(0);" data-title="r2c0">9
+                            </td>
+                            <td id="t-2020-02-10" class="available" onclick="javascript:void(0);" data-title="r2c1">10
+                            </td>
+                            <td id="t-2020-02-11" class="available" onclick="javascript:void(0);" data-title="r2c2">11
+                            </td>
+                            <td id="t-2020-02-12" class="available" onclick="javascript:void(0);" data-title="r2c3">12
+                            </td>
+                            <td id="t-2020-02-13" class="available" onclick="javascript:void(0);" data-title="r2c4">13
+                            </td>
+                            <td id="t-2020-02-14" class="available" onclick="javascript:void(0);" data-title="r2c5">14
+                            </td>
+                            <td id="t-2020-02-15" class="available" onclick="javascript:void(0);" data-title="r2c6">15
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-02-16" class="available" onclick="javascript:void(0);" data-title="r3c0">16
+                            </td>
+                            <td id="t-2020-02-17" class="available" onclick="javascript:void(0);" data-title="r3c1">17
+                            </td>
+                            <td id="t-2020-02-18" class="available" onclick="javascript:void(0);" data-title="r3c2">18
+                            </td>
+                            <td id="t-2020-02-19" class="available" onclick="javascript:void(0);" data-title="r3c3">19
+                            </td>
+                            <td id="t-2020-02-20" class="available" onclick="javascript:void(0);" data-title="r3c4">20
+                            </td>
+                            <td id="t-2020-02-21" class="available" onclick="javascript:void(0);" data-title="r3c5">21
+                            </td>
+                            <td id="t-2020-02-22" class="available" onclick="javascript:void(0);" data-title="r3c6">22
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-02-23" class="available" onclick="javascript:void(0);" data-title="r4c0">23
+                            </td>
+                            <td id="t-2020-02-24" class="available" onclick="javascript:void(0);" data-title="r4c1">24
+                            </td>
+                            <td id="t-2020-02-25" class="available" onclick="javascript:void(0);" data-title="r4c2">25
+                            </td>
+                            <td id="t-2020-02-26" class="available" onclick="javascript:void(0);" data-title="r4c3">26
+                            </td>
+                            <td id="t-2020-02-27" class="available" onclick="javascript:void(0);" data-title="r4c4">27
+                            </td>
+                            <td id="t-2020-02-28" class="available" onclick="javascript:void(0);" data-title="r4c5">28
+                            </td>
+                            <td id="t-2020-02-29" class="available" onclick="javascript:void(0);" data-title="r4c6">29
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="calendar fourth">
+            <div class="calendar-date">
+                <table class="table-condensed">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month"> 2020年 3月</th>
+                        </tr>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="t-2020-03-01" class="available" onclick="javascript:void(0);" data-title="r1c0">1
+                            </td>
+                            <td id="t-2020-03-02" class="available" onclick="javascript:void(0);" data-title="r1c1">2
+                            </td>
+                            <td id="t-2020-03-03" class="available" onclick="javascript:void(0);" data-title="r1c2">3
+                            </td>
+                            <td id="t-2020-03-04" class="available" onclick="javascript:void(0);" data-title="r1c3">4
+                            </td>
+                            <td id="t-2020-03-05" class="available" onclick="javascript:void(0);" data-title="r1c4">5
+                            </td>
+                            <td id="t-2020-03-06" class="available" onclick="javascript:void(0);" data-title="r1c5">6
+                            </td>
+                            <td id="t-2020-03-07" class="available" onclick="javascript:void(0);" data-title="r1c6">7
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-03-08" class="available" onclick="javascript:void(0);" data-title="r2c0">8
+                            </td>
+                            <td id="t-2020-03-09" class="available" onclick="javascript:void(0);" data-title="r2c1">9
+                            </td>
+                            <td id="t-2020-03-10" class="available" onclick="javascript:void(0);" data-title="r2c2">10
+                            </td>
+                            <td id="t-2020-03-11" class="available" onclick="javascript:void(0);" data-title="r2c3">11
+                            </td>
+                            <td id="t-2020-03-12" class="available" onclick="javascript:void(0);" data-title="r2c4">12
+                            </td>
+                            <td id="t-2020-03-13" class="available" onclick="javascript:void(0);" data-title="r2c5">13
+                            </td>
+                            <td id="t-2020-03-14" class="available" onclick="javascript:void(0);" data-title="r2c6">14
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-03-15" class="available" onclick="javascript:void(0);" data-title="r3c0">15
+                            </td>
+                            <td id="t-2020-03-16" class="available" onclick="javascript:void(0);" data-title="r3c1">16
+                            </td>
+                            <td id="t-2020-03-17" class="available" onclick="javascript:void(0);" data-title="r3c2">17
+                            </td>
+                            <td id="t-2020-03-18" class="available" onclick="javascript:void(0);" data-title="r3c3">18
+                            </td>
+                            <td id="t-2020-03-19" class="available" onclick="javascript:void(0);" data-title="r3c4">19
+                            </td>
+                            <td id="t-2020-03-20" class="available" onclick="javascript:void(0);" data-title="r3c5">20
+                            </td>
+                            <td id="t-2020-03-21" class="available" onclick="javascript:void(0);" data-title="r3c6">21
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-03-22" class="available" onclick="javascript:void(0);" data-title="r4c0">22
+                            </td>
+                            <td id="t-2020-03-23" class="available" onclick="javascript:void(0);" data-title="r4c1">23
+                            </td>
+                            <td id="t-2020-03-24" class="available" onclick="javascript:void(0);" data-title="r4c2">24
+                            </td>
+                            <td id="t-2020-03-25" class="available" onclick="javascript:void(0);" data-title="r4c3">25
+                            </td>
+                            <td id="t-2020-03-26" class="available" onclick="javascript:void(0);" data-title="r4c4">26
+                            </td>
+                            <td id="t-2020-03-27" class="available" onclick="javascript:void(0);" data-title="r4c5">27
+                            </td>
+                            <td id="t-2020-03-28" class="available" onclick="javascript:void(0);" data-title="r4c6">28
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-03-29" class="available" onclick="javascript:void(0);" data-title="r5c0">29
+                            </td>
+                            <td id="t-2020-03-30" class="available" onclick="javascript:void(0);" data-title="r5c1">30
+                            </td>
+                            <td id="t-2020-03-31" class="available" onclick="javascript:void(0);" data-title="r5c2">31
+                            </td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c3"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c4"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c5"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c6"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="calendar fifth">
+            <div class="calendar-date">
+                <table class="table-condensed">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month"> 2020年 4月</th>
+                        </tr>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c0"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c1"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c2"></td>
+                            <td id="t-2020-04-01" class="available" onclick="javascript:void(0);" data-title="r0c3">1
+                            </td>
+                            <td id="t-2020-04-02" class="available" onclick="javascript:void(0);" data-title="r0c4">2
+                            </td>
+                            <td id="t-2020-04-03" class="available" onclick="javascript:void(0);" data-title="r0c5">3
+                            </td>
+                            <td id="t-2020-04-04" class="available" onclick="javascript:void(0);" data-title="r0c6">
+                                <i>清明</i></td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-04-05" class="available" onclick="javascript:void(0);" data-title="r1c0">5
+                            </td>
+                            <td id="t-2020-04-06" class="available" onclick="javascript:void(0);" data-title="r1c1">6
+                            </td>
+                            <td id="t-2020-04-07" class="available" onclick="javascript:void(0);" data-title="r1c2">7
+                            </td>
+                            <td id="t-2020-04-08" class="available" onclick="javascript:void(0);" data-title="r1c3">8
+                            </td>
+                            <td id="t-2020-04-09" class="available" onclick="javascript:void(0);" data-title="r1c4">9
+                            </td>
+                            <td id="t-2020-04-10" class="available" onclick="javascript:void(0);" data-title="r1c5">10
+                            </td>
+                            <td id="t-2020-04-11" class="available" onclick="javascript:void(0);" data-title="r1c6">11
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-04-12" class="available" onclick="javascript:void(0);" data-title="r2c0">12
+                            </td>
+                            <td id="t-2020-04-13" class="available" onclick="javascript:void(0);" data-title="r2c1">13
+                            </td>
+                            <td id="t-2020-04-14" class="available" onclick="javascript:void(0);" data-title="r2c2">14
+                            </td>
+                            <td id="t-2020-04-15" class="available" onclick="javascript:void(0);" data-title="r2c3">15
+                            </td>
+                            <td id="t-2020-04-16" class="available" onclick="javascript:void(0);" data-title="r2c4">16
+                            </td>
+                            <td id="t-2020-04-17" class="available" onclick="javascript:void(0);" data-title="r2c5">17
+                            </td>
+                            <td id="t-2020-04-18" class="available" onclick="javascript:void(0);" data-title="r2c6">18
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-04-19" class="available" onclick="javascript:void(0);" data-title="r3c0">19
+                            </td>
+                            <td id="t-2020-04-20" class="available" onclick="javascript:void(0);" data-title="r3c1">20
+                            </td>
+                            <td id="t-2020-04-21" class="available" onclick="javascript:void(0);" data-title="r3c2">21
+                            </td>
+                            <td id="t-2020-04-22" class="available" onclick="javascript:void(0);" data-title="r3c3">22
+                            </td>
+                            <td id="t-2020-04-23" class="available" onclick="javascript:void(0);" data-title="r3c4">23
+                            </td>
+                            <td id="t-2020-04-24" class="available" onclick="javascript:void(0);" data-title="r3c5">24
+                            </td>
+                            <td id="t-2020-04-25" class="available" onclick="javascript:void(0);" data-title="r3c6">25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-04-26" class="available" onclick="javascript:void(0);" data-title="r4c0">26
+                            </td>
+                            <td id="t-2020-04-27" class="available" onclick="javascript:void(0);" data-title="r4c1">27
+                            </td>
+                            <td id="t-2020-04-28" class="available" onclick="javascript:void(0);" data-title="r4c2">28
+                            </td>
+                            <td id="t-2020-04-29" class="available" onclick="javascript:void(0);" data-title="r4c3">29
+                            </td>
+                            <td id="t-2020-04-30" class="available" onclick="javascript:void(0);" data-title="r4c4">30
+                            </td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r4c5"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r4c6"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="calendar sixth">
+            <div class="calendar-date">
+                <table class="table-condensed">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="month"> 2020年 5月</th>
+                        </tr>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c0"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c1"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c2"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c3"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r0c4"></td>
+                            <td id="t-2020-05-01" class="available" onclick="javascript:void(0);" data-title="r0c5">
+                                <i>五一</i></td>
+                            <td id="t-2020-05-02" class="available" onclick="javascript:void(0);" data-title="r0c6">2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-05-03" class="available" onclick="javascript:void(0);" data-title="r1c0">3
+                            </td>
+                            <td id="t-2020-05-04" class="available" onclick="javascript:void(0);" data-title="r1c1">4
+                            </td>
+                            <td id="t-2020-05-05" class="available" onclick="javascript:void(0);" data-title="r1c2">5
+                            </td>
+                            <td id="t-2020-05-06" class="available" onclick="javascript:void(0);" data-title="r1c3">6
+                            </td>
+                            <td id="t-2020-05-07" class="available" onclick="javascript:void(0);" data-title="r1c4">7
+                            </td>
+                            <td id="t-2020-05-08" class="available" onclick="javascript:void(0);" data-title="r1c5">8
+                            </td>
+                            <td id="t-2020-05-09" class="available" onclick="javascript:void(0);" data-title="r1c6">9
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-05-10" class="available" onclick="javascript:void(0);" data-title="r2c0">10
+                            </td>
+                            <td id="t-2020-05-11" class="available" onclick="javascript:void(0);" data-title="r2c1">11
+                            </td>
+                            <td id="t-2020-05-12" class="available" onclick="javascript:void(0);" data-title="r2c2">12
+                            </td>
+                            <td id="t-2020-05-13" class="available" onclick="javascript:void(0);" data-title="r2c3">13
+                            </td>
+                            <td id="t-2020-05-14" class="available" onclick="javascript:void(0);" data-title="r2c4">14
+                            </td>
+                            <td id="t-2020-05-15" class="available" onclick="javascript:void(0);" data-title="r2c5">15
+                            </td>
+                            <td id="t-2020-05-16" class="available" onclick="javascript:void(0);" data-title="r2c6">16
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-05-17" class="available" onclick="javascript:void(0);" data-title="r3c0">17
+                            </td>
+                            <td id="t-2020-05-18" class="available" onclick="javascript:void(0);" data-title="r3c1">18
+                            </td>
+                            <td id="t-2020-05-19" class="available" onclick="javascript:void(0);" data-title="r3c2">19
+                            </td>
+                            <td id="t-2020-05-20" class="available" onclick="javascript:void(0);" data-title="r3c3">20
+                            </td>
+                            <td id="t-2020-05-21" class="available" onclick="javascript:void(0);" data-title="r3c4">21
+                            </td>
+                            <td id="t-2020-05-22" class="available" onclick="javascript:void(0);" data-title="r3c5">22
+                            </td>
+                            <td id="t-2020-05-23" class="available" onclick="javascript:void(0);" data-title="r3c6">23
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-05-24" class="available" onclick="javascript:void(0);" data-title="r4c0">24
+                            </td>
+                            <td id="t-2020-05-25" class="available" onclick="javascript:void(0);" data-title="r4c1">25
+                            </td>
+                            <td id="t-2020-05-26" class="available" onclick="javascript:void(0);" data-title="r4c2">26
+                            </td>
+                            <td id="t-2020-05-27" class="available" onclick="javascript:void(0);" data-title="r4c3">27
+                            </td>
+                            <td id="t-2020-05-28" class="available" onclick="javascript:void(0);" data-title="r4c4">28
+                            </td>
+                            <td id="t-2020-05-29" class="available" onclick="javascript:void(0);" data-title="r4c5">29
+                            </td>
+                            <td id="t-2020-05-30" class="available" onclick="javascript:void(0);" data-title="r4c6">30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t-2020-05-31" class="available" onclick="javascript:void(0);" data-title="r5c0">31
+                            </td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c1"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c2"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c3"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c4"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c5"></td>
+                            <td class="available" onclick="javascript:void(0);" data-title="r5c6"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+   
+</script>
 </html>

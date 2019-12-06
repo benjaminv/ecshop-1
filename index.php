@@ -325,22 +325,20 @@ else {
 	$smarty->assign('travels',$travels);
 	//特色推荐
 	$sgoods = recommend_house();
-	$smarty->assign('sgoods',$sgoods);
+	$smarty->assign('sgoods',$sgoods,true);
 	// var_dump($sgoods);die;
 	//优质
-	$nobrand = 0;
+	$notbrand = 0;
 	if(!empty($sgoods)) $notbrand = $sgoods[0]['brand_id'];
 	$hgoods = recommend_house(0,$notbrand);
-	$smarty->assign('hgoods',$hgoods);
+	$smarty->assign('hgoods',$hgoods,true);
 	// var_dump($smarty->get_template_vars());
-	// var_dump($smarty);die;
-	// var_dump($_SESSION);die;
 	//轮播
 	$silders = silders();
 	$smarty->assign('silders',$silders);
 	/*-end-*/
 	if(empty($_GET['sz'])){
-		$smarty->display('index.dwt', $cache_id);
+		$smarty->display('index.dwt',$cache_id);
 	}else{
 		$smarty->display('index_bak.dwt');
 	}

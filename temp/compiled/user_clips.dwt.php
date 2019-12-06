@@ -1928,10 +1928,10 @@ if ($this->_foreach['name']['total'] > 0):
 											<input type="hidden" value="<?php echo $this->_var['consignee']['province']; ?>" ectype="ragionItem" name="province"></dt>
 											<dd ectype="layer">
 												<div class="option" data-value="0"><?php echo $this->_var['lang']['please_select']; ?><?php echo $this->_var['name_of_region']['1']; ?></div>
-												<?php $_from = $this->_var['province_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'province_0_04916500_1575516514');if (count($_from)):
-    foreach ($_from AS $this->_var['province_0_04916500_1575516514']):
+												<?php $_from = $this->_var['province_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'province_0_85952200_1575531960');if (count($_from)):
+    foreach ($_from AS $this->_var['province_0_85952200_1575531960']):
 ?>
-												<div class="option" data-value="<?php echo $this->_var['province_0_04916500_1575516514']['region_id']; ?>" data-text="<?php echo $this->_var['province_0_04916500_1575516514']['region_name']; ?>" data-type="2" ectype="ragionItem"><?php echo $this->_var['province_0_04916500_1575516514']['region_name']; ?></div>
+												<div class="option" data-value="<?php echo $this->_var['province_0_85952200_1575531960']['region_id']; ?>" data-text="<?php echo $this->_var['province_0_85952200_1575531960']['region_name']; ?>" data-type="2" ectype="ragionItem"><?php echo $this->_var['province_0_85952200_1575531960']['region_name']; ?></div>
 												<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 											</dd>
 										</dl>

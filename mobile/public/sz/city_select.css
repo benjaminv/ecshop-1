@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.city_select_tit {
+  padding-left: 1.70666667rem;
+}
+.city_select_tit .search_icon {
+  left: 0.2rem;
+  top: 0.42666667rem;
+}
+.city_select_tit input {
+  padding: 0.21333333rem 0.66666667rem 0.21333333rem 0.8rem;
+}
+.city_select_tit .del {
+  right: 2rem;
+}
+.search_history li {
+  padding-left: 0.66666667rem;
+}
+.search_history .history_icon {
+  top: 50%;
+  margin-top: -0.2rem;
+  left: 0;
+}
+.search_box .search_near .right_icon {
+  margin-top: 0.46666667rem;
+}
+.search_box .hot_city_ul {
+  padding-bottom: 0.66666667rem;
+}
+.search_box .hot_city_ul li {
+  width: 2rem;
+  margin: 0.24rem 0.26666667rem 0 0;
+}
+.search_box .hot_city_ul li.focus, .search_box .hot_city_ul li.focus a {
+  color: white;
+  background: #3eb382;
+}
+.search_box .hot_city_ul li:nth-child(4n) {
+  margin-right: 0;
+}
+.search_box .all_city .city_letter .up-icon {
+  margin-top: 0.5rem;
+}
+.suggest_no {
+  padding-top: 1.73333333rem;
+  height: 16.4rem;
+}
+.suggest_cnt i{
+	vertical-align: inherit;
+}
+.sug_title {
+  width: 65%;
+}
+.room_sug_li {
+  padding-top: 0.26666667rem;
+  padding-bottom: 0.26666667rem;
+}
+.room_sug_li .icon_after:after {
+  content: "|";
+  color: #b4b9bf;
+  top: 1px;
+}
+.room_sug_li .icon_after:last-child:after {
+  content: "";
+}

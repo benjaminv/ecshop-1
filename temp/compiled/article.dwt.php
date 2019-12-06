@@ -83,13 +83,13 @@ if ($this->_foreach['cat']['total'] > 0):
                 <a href="javascript:;" class="prev"><span class="iconfont icon-left"></span></a>
                 <a href="javascript:;" class="next"><span class="iconfont icon-right"></span></a>
                 <div class="bd">
-                    <?php $_from = $this->_var['related_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'related_goods_0_89281300_1575518098');if (count($_from)):
-    foreach ($_from AS $this->_var['related_goods_0_89281300_1575518098']):
+                    <?php $_from = $this->_var['related_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'related_goods_0_45786000_1575531774');if (count($_from)):
+    foreach ($_from AS $this->_var['related_goods_0_45786000_1575531774']):
 ?>
                     <div class="item">
-                        <div class="p-img"><a href="<?php echo $this->_var['related_goods_0_89281300_1575518098']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['related_goods_0_89281300_1575518098']['goods_img']; ?>" alt=""></a></div>
-                        <div class="p-name"><a href="<?php echo $this->_var['related_goods_0_89281300_1575518098']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['related_goods_0_89281300_1575518098']['goods_name']); ?>" target="_blank"><?php echo $this->_var['related_goods_0_89281300_1575518098']['goods_name']; ?></a></div>
-                        <div class="p-price"><?php echo $this->_var['related_goods_0_89281300_1575518098']['shop_price']; ?></div>
+                        <div class="p-img"><a href="<?php echo $this->_var['related_goods_0_45786000_1575531774']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['related_goods_0_45786000_1575531774']['goods_img']; ?>" alt=""></a></div>
+                        <div class="p-name"><a href="<?php echo $this->_var['related_goods_0_45786000_1575531774']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['related_goods_0_45786000_1575531774']['goods_name']); ?>" target="_blank"><?php echo $this->_var['related_goods_0_45786000_1575531774']['goods_name']; ?></a></div>
+                        <div class="p-price"><?php echo $this->_var['related_goods_0_45786000_1575531774']['shop_price']; ?></div>
                     </div>
                     <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
                 </div>

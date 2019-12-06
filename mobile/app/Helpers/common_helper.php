@@ -3440,14 +3440,16 @@ function get_return_self_url()
 
 function get_category_tree_leve_one($parent_id = 0)
 {
-	$sql = 'SELECT cat_id, cat_name, category_links FROM ' . $GLOBALS['ecs']->table('category') . ' WHERE parent_id = 0 AND is_show = 1 ORDER BY sort_order ASC, cat_id ASC';
+	$sql = 'SELECT cat_id, cat_name, cat_icon,category_links FROM ' . $GLOBALS['ecs']->table('category') . ' WHERE parent_id = 0 AND is_show = 1 ORDER BY sort_order ASC, cat_id ASC';
 	$res = $GLOBALS['db']->getAll($sql);
 	$arr = array();
 
 	foreach ($res as $key => $row) {
 		$arr[$row['cat_id']]['id'] = $row['cat_id'];
 		$arr[$row['cat_id']]['url'] = build_uri('category', array('cid' => $row['cat_id']), $row['cat_name']);
-
+		/* sz  */
+		$arr[$row['cat_id']]['cate_icon'] = $row['cat_icon'];
+		/* sz */
 		if (!empty($row['category_links'])) {
 			if (empty($type)) {
 				$cat_name_arr = explode('、', $row['cat_name']);
@@ -3473,10 +3475,16 @@ function get_category_tree_leve_one($parent_id = 0)
 				$arr[$row['cat_id']]['name'] = $cat_name_str;
 				$arr[$row['cat_id']]['category_link'] = 1;
 				$arr[$row['cat_id']]['oldname'] = $row['cat_name'];
+				/* sz  */
+				$arr[$row['cat_id']]['cate_icon'] = $row['cat_icon'];
+				/* sz */
 			}
 			else {
 				$arr[$row['cat_id']]['name'] = $row['cat_name'];
 				$arr[$row['cat_id']]['oldname'] = $row['cat_name'];
+				/* sz  */
+				$arr[$row['cat_id']]['cate_icon'] = $row['cat_icon'];
+				/* sz */
 			}
 		}
 		else {

@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:77:"C:/Users/Administrator/Desktop/ecshop/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575528605;s:8:"maketime";i:1575525005;}<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:1:{i:0;s:42:"D:/ecshop/themes/ecmoban_dsc2017/index.dwt";}s:7:"expires";i:1575607468;s:8:"maketime";i:1575603868;}<!doctype html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
